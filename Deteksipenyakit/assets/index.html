@@ -1,0 +1,1372 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mendeteksi Penyakit</title>
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+<link rel="stylesheet" href="jquery.mobile/testing.css"/>
+<link rel="stylesheet" href="jquery.mobile/tambahan.css"/>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> 	 
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="../css/jquery.mobile-1.2.0.min.css" rel="stylesheet" />
+<link href="../css/styles.min.css" rel="stylesheet" />
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+		// all dialog buttons should close their parent dialog
+		$(".ui-dialog button").live("click", function() {		
+			$("[data-role='dialog']").dialog("close");		
+		});
+		$(document).on("mobileinit", function(){
+		  $.mobile.defaultPageTransition = "slide";
+		});
+	
+function pageScroll() {
+   	window.scrollBy(0,60);
+   	scrolldelay = setTimeout('pageScroll()',10000); // scrolls every 1000 milliseconds
+}
+function stopScroll() {
+   	clearTimeout(scrolldelay);
+}
+function jumpScroll() {
+window.scroll(0,0); // horizontal and vertical scroll targets
+}
+</script>
+<script src="../js/jquery.mobile-1.2.0.min.js"></script>
+<script src="../js/dw_tooltip_c.min.js" type="text/javascript"></script>
+<script src="../js/chords.min.js" type="text/javascript"></script>
+
+
+</head>
+
+<body>
+<div data-role="page" id="halaman" data-theme="a">
+<header data-role="header" data-position="fixed">
+<h1>Mendeteksi Penyakit</h1>
+</header>
+  <div data-role="content"><div class="choice_list">
+
+
+
+
+<center>
+<marquee scrolldelay="350">
+<div class="tanggal">
+<script>
+
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+var dayarray=new Array("Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu")
+var montharray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember")
+document.write("<b><i><u>"+dayarray[day]+", "+daym+" "+montharray[month]+" "+year+"</b></i></u>")
+
+</script>
+</div></marquee>
+</center>
+
+
+
+
+
+
+	  <ul data-role="listview" data-theme="c" data-inset="true">
+        
+<li><a href="#Pendahuluan" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><center>Pendahuluan</center></a></li>
+<div data-role="popup" id="Pendahuluan" class="ui-content" style="max-width:280px">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+<p style="text-align:justify">Berikut ini Aplikasi yang berisi tentang Cara Mendeteksi Penyakit dari bagian tubuh. Untuk mengetahui selengkapnya silahkan buka dibawah.
+</p><hr>
+Salam Pengembang<br>
+Semoga bermanfaat.<hr>
+
+<br>
+Kritik dan Saran: afandityo17@gmail.com
+
+</div>	
+
+<div data-role="content"  role="main">
+<ul data-role="listview" data-filter="false" data-inset="true" data-filter-placeholder="cari yang pernah anda buka disini..."
+
+
+<p align="left"> 
+<center> <img src="images/judul1 - Copy - Copy.png"/< center><p></p></center>
+
+<li><font color="#FFFFFF"><center>Mendeteksi Penyakit</center></marquee></font></li>
+<li><a href="#a1"><h3>Mendeteksi Penyakit</h3><p>Mendeteksi Dari Rupa Kuku</p></a></li>
+
+<li><a href="#a2"><h3>Mendeteksi Penyakit</h3><p>Mendeteksi Dari Wajah</p></a></li>
+        
+<li><a href="#a3"><h3>Mendeteksi Penyakit</h3><p>Mendeteksi Tubuh Melalui Warna Kotoran</p></a></li>
+        
+<li><a href="#a4"><h3>Mendeteksi Penyakit</h3><p>Mendeteksi Dari Telapak Tangan</p></a></li>
+        
+<li><a href="#a5"><h3>Mendeteksi Penyakit</h3><p>Mendeteksi Penyakit Lewat Mata</p></a></li>
+
+<li><a href="#a6"><h3>Mendeteksi Penyakit</h3><p>Mendeteksi Penyakit Dari Kaki</p></a></li>
+
+<li><a href="#a8"><h3>Mendeteksi Penyakit</h3><p>Mendeteksi Penyakit Dari Telapak Dan Jari Tangan</p></a></li>
+
+<li><a href="#a9"><h3>Mendeteksi Penyakit</h3><p>Mendeteksi Penyakit Dari Lidah</p></a></li>
+
+<li><a href="#a10"><h3>Mendeteksi Penyakit</h3><p>Mendeteksi Penyakit Dari Kulit</p></a></li>
+
+<li><a href="#a11"><h3>Mendeteksi Penyakit</h3><p>Mendeteksi Penyakit Dari Telinga</p></a></li>
+
+<li><a href="#a12"><h3>Mendeteksi Penyakit</h3><p>Mendeteksi Penyakit Dari Warna Bibir</p></a></li>
+
+<li><a href="#a13"><h3>Mendeteksi Penyakit</h3><p>Mendeteksi Penyakit Dari Hidung (Ingus)</p></a></li>
+
+<li><a href="#a14"><h3>Mendeteksi Penyakit</h3><p>Mendeteksi Penyakit Dari Rambut</p></a></li>
+
+  <br>
+<li><a href="#kontakkami" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><center>Kontak Kami</center></a></li>
+<div data-role="popup" id="kontakkami" class="ui-content" style="max-width:280px">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+<p style="text-align:justify">Anda dapat menghubungi kami jika ingin menyampaikan hal yang sekiranya kami harus mengetahuinya, baik itu berupa kritik, saran, atau hal lain yang ingin di sampaikan kepada kami, anda dapat menghubungi kami di:
+<hr>
+afandityo17@gmail.com</p>
+</div>	
+
+
+      
+      
+      
+     
+      
+      
+      </div>
+      
+	</div><!--choice-list-->
+  </div><!--content-->
+<div data-role="footer">
+	<h1>AffandiStudio</h1>
+</div>
+<center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="home" data-theme="a">Menu</a>
+</div><!--content--></div> <!--page--></div></center>
+
+
+
+
+
+              
+<!-- daris sini --><div data-role="page" id="a1" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Mendeteksi Kesehatan</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Mendeteksi Penyakit Dari Rupa Kuku</I></b></center><hr>
+ <p>
+  <p align="left"> 
+<center> <img src="images/kuku.jpg"/< center><p></p></center>
+<hr><p align="center">
+<b>Mendeteksi Kesehatan Tubuh dari Rupa Kuku</b></font>
+<hr>
+Penampilan kuku bisa membuka segudang informasi mengenai kesehatan tubuh Anda. Terkadang, sejumlah perubahan penampilan kuku menandakan adanya infeksi bakteri atau cedera, namun sejumlah tanda lainnya bisa merujuk kepada penyakit tertentu yang lebih serius.<p>
+
+Laju pertumbuhan kuku pun bisa memberikan petunjuk tentang kondisi kesehatan Anda yang mungkin tidak Anda ketahui sebelumnya. Kuku jemari yang sehat tumbuh kira-kira 3,5 mm per bulannya, dan dipengaruhi oleh asupan nutrisi, obat-obatan, trauma, penyakit, dan proses penuaan tubuh.<p>
+
+Jika Anda menyadari adanya perbedaan yang berarti pada kuku Anda, termasuk pembengkakan, perubahan warna, atau perubahan bentuk dan ketebalan kuku, konsultasikan dengan dokter sesegera mungkin.<p> Gejala tersebut mungkin tidak berbahaya dan bisa hilang dengan sendirinya, tapi mungkin juga menunjukkan suatu kondisi kesehatan tertentu (misalnya, masalah pada kuku umum dialami oleh penderita diabetes).<p>
+<hr>
+<b>Di bawah ini adalah kompilasi penampilan kuku jari dan hubungannya dengan kesehatan Anda:</b><p>
+<hr>
+<b>Kuku Kuning</b><br><br>
+Kuku kuning umum disebabkan oleh faktor penuaan dan penggunaan kuteks yang rutin. Merokok juga meninggalkan noda kekuningan pada permukaan kuku jari Anda.<p>
+
+Jika kuku jari Anda tebal, rapuh, dan berwarna kekuningan, penyebab utamanya adalah infeksi jamur.
+Sangat jarang, kuku kuning merupakan indikasi dari penyakit tiroid, diabetes, psoriasis, atau masalah pernapasan (bronkitis kronis atau sinusitis).<p>
+<hr>
+<b>Kuku kering, pecah-pecah, atau rapuh</b><br><br>
+Kuku lembek dan rapuh adalah efek dari lempeng kuku yang kering akibat berenang, penggunaan aseton yang rutin, atau berada di lingkungan rumah yang kering. Kuku rapuh juga mungkin diakibatkan oleh kekurangan asupan vitamin A, B, dan C.<p>
+
+Penyebab lainnya adalah paparan terhadap zat-zat kimia dalam produk pembersih (cuci baju atau cuci piring tanpa sarung tangan) atau penuaan. Untuk mengatasinya, aplikasikan krim pelembap tangan. Walaupun teksturnya keras, kuku adalah organ tubuh yang mudah menyerap cairan, layaknya kulit.<p>
+
+Gunakan produk pelembap tangan yang mengandung hyaluronic acid, glycerin atau Shea butter. Atau, konsumsi pil biotin, suplemen non-resep yang menunjang pertumbuhan kuku sehat.<p>
+
+Namun, jika masalah ini tidak kunjung hilang, konsultasikan dengan dokter Anda. Terkadang, kuku kering dan mudah rapuh adalah salah satu efek samping dari hipotiroidisme.<p>
+<hr>
+<b>Clubbing</b><br><br>
+Kuku clubbing adalah kondisi di mana jaringan di bawah kuku menebal dan ujung jari membulat dan membengkak. Ujung kuku bertumbuh ke arah dalam mengikuti bentuk ujung jari.<p>
+
+Clubbing diduga sebagai hasil dari peningkatan aliran darah ke ujung jari, merupakan kondisi turunan dan tidak berbahaya. Namun jika Anda tiba-tiba menyadari adanya kelainan ini, clubbing bisa jadi tanda kurangnya kadar oksigen dalam darah dan berhubungan dengan penyakit paru-paru, sirosis, atau kanker.<p>
+
+Clubbing juga bisa menunjukkan tanda dan gejala dari penyakit hati, jantung, ginjal, atau AIDS. Jika Anda menyadari kondisi ini pada kuku Anda, konsultasikan dengan dokter.<p>
+<hr>
+<b>Bercak Putih</b><br><br>
+Bercak atau noda putih yang timbul di permukaan kuku umumnya merupakan reaksi trauma ringan, bukan karena defisiensi kalsium seperti yang banyak diberitakan.<p>
+
+Ini bukan kondisi medis yang mengkhawatirkan dan akan hilang dengan sendirinya. Namun jika bercak putih tidak kunjung hilang, mungkin infeksi jamur penyebabnya.<p>
+<hr>
+<b>Garis putih horizontal (Beau’s lines)</b><br><br>
+Garis-garis horizontal di permukaan kuku bisa jadi diakibatkan oleh trauma atau penyakit yang diikuti oleh demam tinggi, misalnya scarlet fever atau pneumonia.<p>
+
+Kondisi ini terjadi akibat sistem respon yang menunda pertumbuhan kuku karena tubuh lebih memprioritaskan proses pemulihan terhadap masalah lain yang mungkin diidap oleh tubuh Anda.<p>
+
+Garis-garis putih horizontal ini juga bisa disebabkan oleh psoriaris, diabetes yang tidak dikontrol, masalah sirkulasi darah, defisiensi zat besi parah, atau reaksi terhadap obat-obatan tertentu (seperti kemoterapi).<p> Garis-garis horizontal namun berwarna, disebut Meel’s lines, adalah tanda dan gejala dari keracunan arsenik, penyakit Hodgkin, malaria, lepra/kusta, atau keracunan karbon monoksida.<p>
+<hr>
+<b>Garis vertikal</b><br><br>
+Garis-garis vertikal adalah tanda alami dari penuaan. Garis-garis ini akan semakin jelas terlihat seiring bertambahnya usia dan bukan termasuk kondisi medis yang perlu dikhawatirkan.
+Pada kasus tertentu, garis vertikal di kuku mungkin diakibatkan oleh defisiensi B12 dan magnesium.
+<hr>
+<b>Kuku Sendok (Koilonychia)</b><br><br>
+Jika kuku jari Anda terlihat seperti sendok, lempeng permukaan kuku menjorok ke dalam dan ujung-ujungnya bertumbuh ke arah luar, mungkin Anda memiliki anemia tipe defisiensi zat besi, hemokromatosis (penyerapan zat besi berlebih), penyakit jantung, lupus, penyakit Raynaud, atau hipotiroidisme.<p>
+<hr>
+<b>Kuku berlubang atau berlekuk</b><br><br>
+Lubang-lubang kecil atau lekukan tidak rata di permukaan kuku bisa menjadi tanda dari psoriasis, eksim, sindrom Reiter, alopecia areata, atau artritis reaktif.<p>
+
+<b>Kuku jempol kaki tebal dan bertumbuh seperti cakar</b><br><br>
+Terkadang, kuku jempol kaki bisa bertumbuh dengan sangat cepat hingga menebal di ujungnya, dan terlihat seperti cakar. Kuku seperti ini sulit untuk dipotong dengan gunting kuku biasa.<p>
+Kondisi ini disebut onychogryphosis, umum dijumpai pada kaum lansia atau sebagai reaksi dari tekanan jangka panjang pada kuku kaki.<p>
+<hr>
+<b>Kuku menghitam</b><br><br>
+Kuku yang terlihat menghitam karena ada darah di kulit di bawahnya, memang biasanya merupakan luka alias trauma yang diakibatkan cedera.<p>
+
+Namun jika warna hitam tersebut bukan berasal dari kulit di bawah kuku, melainkan langsung di permukaan kuku itu sendiri, dan diikuti oleh pertumbuhan kuku yang menyakitkan, ini bisa jadi merupakan tanda dari melanoma, kanker kulit yang paling mematikan. Segera konsultasikan dengan dokter jika Anda menemui masalah ini.<p>
+
+Umumnya, melanoma subungual hanya mempengaruhi satu kuku. Selain itu, melanoma juga menyebabkan garis-garis hitam tersebut berubah (misalnya, menghitam atau semakin lebar) dan pigmentasi ini juga bisa memengaruhi kulit jari di sekitar kuku tersebut.<p>
+<hr>
+<b>Kuku putih dan kecokelatan</b><br><br>
+Kuku yang setengah putih dan setengah cokelat (cokelat di ujung-ujung jari) bisa menjadi tanda dari gagal ginjal. Dokter belum bisa mengetahui pasti hubungan antar keduanya, namun salah satu teorinya.<p>
+
+Gagal ginjal menyebabkan perubahan kimiawi dalam darah yang mendorong melanin dilepaskan ke dasar kuku. Ada juga kemungkinan lain bahwa gagal ginjal menyebabkan peningkatan jumlah pembuluh darah kecil di kuku.<p>
+
+Diperkirakan hingga 40% dari penderita ginjal memiliki kondisi kuku “setengah-setengah” ini. Kondisi kuku yang sama juga ditunjukkan oleh penderita AIDS dan penderita kanker yang menjalankan kemoterapi.<p>
+<hr>
+<b>Kuku putih</b><br><br>
+Jika permukaan kuku Anda berwarna putih dan bukan diakibatkan oleh kuku yang terlepas dari alasnya, kemungkinan kondisi ini disebabkan oleh infeksi jamur atau tanda dari kurangnya asupan darah ke ujung-ujung jari, alias Terry’s nails.<p>
+
+Terry’s nails adalah kondisi kuku yang berwarna putih susu dengan ujung berwarna kemerahan atau gelap, sebagai akibat dari sirosis hati, gagal jantung, hati, atau ginjal, diabetes, anemia tipe defisiensi zat besi, reaksi kemoterapi, hipertiroidisme, atau malnutrisi.
+
+
+
+<br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+                
+<!-- daris sini --><div data-role="page" id="a2" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Mendeteksi Penyakit</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Mendeteksi Penyakit Dari Wajah</I></b></center><hr>
+ <p>
+  
+<center> <img src="images/23.jpg"/< center><p></p></center>
+<hr><p align="center">
+Mendeteksi Penyakit dari Wajah
+<hr>
+Wajah tak hanya berfungsi untuk mengekspresikan perasaan marah, sedih, atau senang. Ternyata wajah juga bisa digunakan untuk mendeteksi penyakit dalam tubuh.<p>
+
+Pengobatan tradisional Cina selama berabad-abad telah menggunakan wajah untuk mendiagnosa penyakit. Daerah wajah tertentu bisa menunjukkan kondisi kesehatan organ dalam dan kondisi emosional seseorang.<p>
+<hr>
+<b>Berikut bagian wajah yang bisa membantu Anda untuk mendeteksi adanya gangguan kesehatan:</b>
+<hr>
+<b>Pipi Tengah</b><br><br>
+Sistem pernapasan berhubungan dengan pipi, sehingga ruam ringan di sekitar pipi bisa mengindikasikan tubuh mengalami kekurangan oksigen. Diperlukan latihan pernapasan untuk memperdalam napas.<p>
+
+Seorang naturopathy spa, Hannah Yang menyarankan untuk melakukan meditasi, olahraga, atau latihan pernapasan untuk memperbaiki napas Anda.
+<p>
+
+Kebiasaan merokok juga dapat menyebabkan rusaknya kapiler sehingga muncul perubahan warna dan garis-garis halus di area ini sebagaimana yang ditunjukkan penderita asma, pilek, atau flu.<p>
+
+Warna merah yang berlebihan pada pipi bisa juga menandakan terkena rosacea. Mengonsumsi alkohol dan kopi bisa membuat pipi makin merah.<p>
+<hr>
+
+<b>Mulut</b><br><br>
+Mulut bisa menunjukan konidsi kesehatan organ dalam perut. Bagian bibir menunjukkan kondisi kesehatan usus dan lambung, sementara itu area sekitar mulut sampai ke rahang memperlihatkan kondisi kesehatan usus besar.<p>
+
+Perubahan warna atau flek di daerah bibir bisa mendiagnosa penyakit seperti kembung, nafsu makan berkurang, atau sembelit.
+Kelebihan asam lambung ditunjukkan dengan gusi berdarah. Kondisi bibir bersisik dan kering jelas menunjukkan tanda-tanda tubuh mengalami dehidrasi.<p>
+
+Bibir pecah-prcah dan berdarah mengindikasikan bahwa limpa Anda membutuhkan perawatan. Jika tanda-tanda ini muncul sebaiknya segera penuhi asupan zat besi dan vitamin B dalam tubuh.<p>
+<hr>
+
+<b>Dagu</b><br><br>
+Dagu bisa mendiagnosa penyakit yang berhubungan dengan ginjal dan kandung kemih. Daerah ini bisa menunjukkan adanya ketidakseimbangan hormon yang ditunjukkan dengan timbulnya jerawat di bagian ini.<p>
+
+Penggumpalan darah di dagu bisa mengindikasikan bahwa ginjal terlalu lelah bekerja atau Anda dalam kondisi terlalu stres.<p>
+<hr>
+<b>Dahi Tengah</b><p>
+Dahi tengah berhubungan dengan organ jantung, kandung kemih, dan usus halus. Kondisi dahi yang memerah dan bersisik bertanda bahwa ada masalah di saluran pencernaan Anda sehingga butuh pelumasan.<p>
+
+Supaya kondisi pencernaan tetap baik, kurangi konsumsi makanan berminyak, produk susu, dan daging olahan.<p>
+<hr>
+<b>Daerah di antara alis</b><p>
+Daerah ini berhubungan dengan hati sehingga bisa menunjukkan bahwa Anda terlalu banyak mengonsumsi alkohol atau adanya racun lain pada hati Anda. Kondisi emosional seseorang juga bisa ditunjukkan pada daerah ini. Pengobatan tradisioanl Cina mengaitkan kondisi hati dengan kemarahan. Jika terdapat tanda-tanda pada daerah ini sebaiknya kontrol kemarahan Anda.
+
+
+
+
+<br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+
+                
+<!-- daris sini --><div data-role="page" id="a3" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Mendeteksi Penyakit</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Mendeteksi Penyakit Tubuh Melalui Warna Kotoran</I></b></center><hr>
+ <p>
+  
+<center> <img src="images/judul6.png"/< center><p></p></center>
+<hr><p align="center">
+Mendeteksi Kelainan pada tubuh Melalui Warna Kotoran
+<hr>
+Tinja atau kotoran manusia umumnya berwarna coklat. Kotoran manusia berwarna coklat karena perpaduan antara bilirubin yang berasal dari sel darah merah yang telah mati dan cairan empedu yang berasal dari kandung empedu.<p> Cairan empedu selanjutnya akan dimetabolisme oleh bakteri yang terdapat di dalam usus anda. Metabolisme ini akan menghasilkan produk sampingan yang disebut stercobilin.<p>
+
+Dan paduan antara bilirubuin dan stercobilin inilah yang akan membuat kotoran tampak berwarna kecoklatan. Ilustrasi kotoran manusia (sebenarnya bantal) Tanpa stercobilin, kotoran anda akan terlihat berwarna putih atau keabu-abuan.<p>
+
+Karena itu, jika kotoran anda berwarna putih atau keabuan seperti itu, ini adalah salah satu tanda dan gejala bahwa anda mungkin sedang mengalami masalah dengan produksi cairan empedu.<P>
+
+Yang mungkin disebabkan karena saluran empedu tersumbat oleh batu empedu atau sesuatu yang lebih serius lagi seperti misalnya kanker pankreas. Selain itu, pada bayi yang baru lahir, tubuh belum dapat menghasilkan bilirubin.<p>
+
+Karena itu, kotoran akan terlihat berwarna kekuningan atau kehijauan. Karena pewarnaan kotoran hanya melibatkan cairan empedu saja. Setelah tubuh mampu menghasilkan bilirubin dari daur ulang sel darah merah yang telah mati, barulah kotoran bayi akan terlihat kecoklatan.<p>
+
+Jika kotoran anda berwarna cokelat, hal ini berarti merupakan pertanda bagus bahwa anda sedang dalam kondisi yang relatif sehat dan tidak mempunyai masalah dalam produksi cairan empedu atau bilirubin.<p>
+
+Sedangkan jika kotoran anda sedikit berbeda dengan warna kotoran pada umumnya bisa jadi ini adalah tanda anda sedang mengalami masalah kesehatan.<p><hr>
+<b>Berikut beberapa warna kotoran manusia dan penyebabnya:</b><p>
+<hr>
+<b>Merah</b><p>
+Jika anda melihat kotoran anda berwarna merah, ini bisa menjadi pertanda adanya perdarahan internal pada usus atau daerah sekitar rektum atau anus anda.<p>
+
+Namun anda jangan keburu khawatir, karena kotoran warna merah ini bisa juga diakibatkan hanya karena anda baru saja konsumsi makanan atau minuman berwarna.<p>
+
+Selain itu, walaupun sangat jarang terjadi, hal ini bisa juga diakibatkan karena kelebihan produksi cairan empedu sehingga menyebabkan diare yang sangat hebat dan menyebabkan saluran pencernaan anda mengalami pendarahan.<p>
+<hr>
+<b>Hitam</b><p>
+Warna kotoran yang kehitaman bisa jadi diakibatkan karena pendarahan yang terjadi pada lambung atau tenggorokan. Walaupun pendarahan biasanya menyebabkan warna kotoran anda menjadi merah.<p>
+
+Namun pendarahan pada organ lambung atau tenggorokan anda akan menghasilkan warna kotoran yang hitam. Hal ini dikarenakan darah akan mengalami proses oksidasi ketika melewati cairan asam lambung dan menghasilkan warna kehitaman.<p>
+<hr>
+<b>Kuning</b><p>
+Kotoran berwarna kuning berarti terdapat banyak kandungan lemak dalam tinja anda. Dan hal ini bukanlah merupakan pertanda yang baik. Cobalah sedikit demi sedikit untuk mengubah pola makan tinggi lemak anda.<p>
+
+Selain itu, kotoran warna kuning juga akan memiliki aroma dan bau yang sangat kuat, yang akan membuat waktu buang air besar anda menjadi saat-saat yang tidak nyaman.<p>
+<hr>
+<b>Hijau</b><p>
+Kotoran berwarna hijau terutama disebabkan karena waktu transit kotoran yang sangat singkat di usus. Hal ini akan menyebabkan proses “pewarnaan” kotoran menjadi sangat singkat dan menghasilkan kotoran dengan warna kehijauan.<p>
+
+Selain itu, kotoran berwarna hijau juga bisa jadi merupakan indikator dari beberapa jenis infeksi bakteri, karena peradangan pada usus juga menyebabkan waktu transit kotoran menjadi singkat.<p>
+
+Kotoran berwarna hijau ini juga bisa jadi diakibatkan karena gaya hidup anda yang memang seorang vegetarian. Karena zat klorofil yang terkandung dalam daun tidak dapat tercerna dan akan ikut terbawa bersama kotoran.
+
+  
+<br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+
+<!-- daris sini --><div data-role="page" id="a4" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Mendeteksi Penyakit</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Mendeteksi Penyakit Dari Telapak Tangan</I></b></center><hr>
+ <p>
+ 
+<center> <img src="images/jari2.png"/< center><p></p></center>
+<hr><p>
+
+
+<b>Masalah Kolon (Sembelit)</b><p>
+
+Kolon (colon) atau usus besar adalah salah satu organ pencernaan yang merupakan tempat berlalunya sisa – sisa makanan - hasil metabolisme tubuh - sebelum selanjutnya dibuang melalui anus.<p>
+
+Tidak semua sisa – sisa makanan tersebut dapat dikeluarkan. Sebagianya masih menempel pada dinding – dinding usus besar. Kondisi inilah yang biasa dikenal dengan sembelit. Sebagian besar penyakit – baik penyakit kronis maupun degenaratif berasal dari masalah kolon (sembelit).<p>
+ 
+Bagaimana cara untuk mengetahui seseorang yang terkena sembelit (mengalami gangguan  kolon) melalui telapak tangan?<p>
+
+Pasien yang mengalami masalah sembelit biasanya pada telapak tangannya terdapat <b>tanda – tanda sebagai berikut:</b><br>
+ <ul>
+<li>Garis ruas jari-jari pada punggung tangan berwarna gelap. Semakin gelap warnanya, mengindikasikan sembelit yang diderita semakin parah.
+<li>Garis-garis pada telapak tangan dan ruas seluruh jari berwarna gelap, semakin gelap warnanya mengindikasikan gangguan yang diderita semakin parah.
+<li>Terdapat bayangan kehitaman secara keseluruhan dari telapak tangan, menandakan lebih kronik dari garis-garis berwarna gelap pada ruas jari.
+<li>Apabila jari telunjuk dan jari tengah direntangkan terasa sakit.
+<li>Ibu jari (jempol) bengkok. Biasanya bengkok ke arah belakang.
+<li>Jari telunjuk bengkok (ke samping kiri, kanan atau ke belakang) juga mengindikasikan adanya permasalahan pada usus besar. </li></ul><p>
+
+Pada tingkat serangan awal atau keadaan yang belum parah, sembelit tidak menunjukkan kelainan atau gangguan yang berarti bagi penderitanya. Karena itulah banyak orang yang tidak menyadari bila dirinya telah mengalami sembelit.<p>
+        
+Berdasarkan pengalaman di lapangan sering dijumpai orang yang pada telapak tangannya terdapat tanda – tanda sebagaimana di atas tetapi tidak mau mengakui bahwa dirinya terkena sembelit.<p>
+
+<b>Untuk megecek kebenarannya kita bisa melihat gejala-gejala  (symptom) dari sembelit sebagai berikut:</b><br>
+<ul>
+<li>Tinja (sisa – sisa makanan) dikeluarkan lebih dari 14 jam ( > 14jam).
+<li>Tinja dikeluarkan seperti odol (pasta gigi).
+<li>Buang air besar (BAB) sering (tiap hari) tapi tak cukup kadarnya.
+<li>Buang air besar (BAB) sering (tiap hari) tapi tak keluar habis.
+<li>Terjadi kekurangan air dalam badan atau dehidrasi, biasanya orang yang bersangkutan kurang minum air.
+<li>Selalu mengantuk.
+<li>Buang air besar selang satu hari atau bahkan selang dua hari.
+<li>Diare (mencret). Kondisi ini menunjukkan bahwa serangan sembelit yang sudah parah.</li></ul><p>
+
+Sembelit bila dibiarkan dapat mengakibatkan timbulnya penyakit – penyakit  degeneratif seperti kencing manis (diabetes mellitus), darah tinggi (hipertensi), asam urat (uric acid), dan sebagainya.<p>
+<hr>
+<b>Masalah Angin</b><p>
+Masalah angin dalam pembahasan ini maksudnya adalah di dalam tubuh terdapat banyak penumpukan angin terutama gas karsinogen yang berlebihan. Apabila gas tersebut dibiarkan lama berada dalam tubuh dapat bersifat racun yang berbahaya, bahkan dapat menjadi pemicu terjadinya kanker.<p>
+
+Dalam pandangan Perubatan Jawi ketidak seimbangan angin ini merupakan salah satu punca (sumber utama) penyakit, selain toksin dan ketidakseimbangan suhu.<p>
+
+<b>Biasanya masalah angin diakibatkan oleh kebiasaan hidup yang tidak baik (bad habit) seperti:</b><p>
+<ul>
+<li>Kebiasaan menggunakan kipas angin (fan)
+<li>Kebiasaan menggunakan AC (Air Conditional)
+<li>Kebiasaan tidur tidak memakai baju
+<li>Kebiasaan tidur di lantai (tanpa alas tidur)
+<LI>Kebiasaan begadang (tidur hingga larut malam)
+<li>Sering keluar pada malam hari
+<li>Sering mengendarai kendaraan bermotor terutama pada malam hari.</li></ul><p>
+
+Masalah angin erat kaitannya dengan masalah pencernaan bahkan dapat dikaitkan dengan sembelit. Seseorang yang mengalami masalah angin biasanya pada telapak tangannya nampak tanda bintik – bintik berwarna putih atau merah.<p>
+
+Apabila dasar telapak tangan berwarna merah maka bintik-bintik tersebut berwarna putih. Sebaliknya jika dasar telapak tangan putih, maka bintik-bintik tersebut berwarna merah.<p>
+ 
+<b>Sympton (gejala) yang sering ditimbulkan akibat gangguan masalah angin antara lain:</b><p> cepat marah (emosi), nada suaranya tinggi (seperti orang marah) dan bila dibekam darah yang keluar lebih kental. Selain itu  pada saat dibekam angin akan keluar dan menempel pada dinding – dinding  mangkok  (cuping), sehingga nampak seperti uap. <p>
+<hr>
+<b>Masalah Stress</b><p>
+Faktor pikiran sangat erat kaitannya dengan kesehatan manusia. Apabila seseorang dalam keadaan stress (mengalami tekanan pikiran) tubuh akan mengeluarkan hormon adrenalin dan kortisol yang dapat melemahkan sistem imuniti.<p>
+
+Hormon – hormon tersebut dapat meningkatkan tekanan darah, detak jantung dan mengacaukan metabolisme. Bila stress berlangsung cukup lama, dapat menjadi toksin hormonal yang membahayakan tubuh.<p>
+
+Bagi Ibu hamil, tekanan pikiran (stress) dapat mempengaruhi reaksi dan perkembangan janin yang dikandungnya. Sebuah penelitian mencatat bahwa gerakan tubuh janin meningkat beberapa ratus persen sewaktu ibu mengalami stress.<p>
+
+Bayi yang lahir dari ibu yang selalu gundah dan tidak bahagia lebih memungkinkan terjadi premature (lahir sebelum waktunya) atau memiliki berat badan rendah saat lahir, cenderung hiperaktif, rewel, sering menggeliat dan memanifestasikan kesulitan seperti makan tidak teratur, buang air besar secara berlebihan, kembung, mengalami gangguan tidur, cengeng dan ingin selalu mendapat belaian atau dipeluk.<p>
+
+<b>Seseorang yang mengalami tekanan pikiran (stress) biasanya pada telapak tangannya terdapat tanda – tanda sebagai berikut:</b><p>
+<ul>
+<li>Terdapat urat – urat berwarna biru atau kehijauan di permukaan telapak tangan ; sepanjang jari dan pergelangan tangan
+<li>Terdapat urat – urat warna biru atau kehijauan yang nampak jelas di betis kaki.
+</li></ul>
+	Simptom (gejala) yang biasa muncul pada penderita tekanan pikiran (stress) antara lain ; nampak terlalu sedih, gangguan emosi/cepat marah, tidur tidak nyenyak  dan kadang – kadang mengalami sakit kepala sebelah (migren).<p>
+    
+Stress yang berkepanjangan dapat mengakibatkan terjadinya penyakit kronis dan degeneratif seperti gangguan jantung, paru – paru dan lain – lain.<p>
+<hr>
+<b>Masalah Jantung</b><p>
+Yang dimaksud masalah jantung dalam pembahasan ini tidak indentik dengan sakit jantung, tetapi lebih mengarah pada gangguan atau kelemahan pada organ tersebut. Misalnya, jantung lemah sehingga tidak dapat berfungsi sebagaimana mestinya.<p>
+ 
+<b>Tanda - tanda yang nampak pada telapak tangan seseorang yang mengalami masalah jantung antara lain sebagai berikut:</b><p>
+<ul>
+<li>Jari kelingking bengkok. Keadaan ini biasanya mengindikasikan adanya permasalahan pada organ dalam jantung.
+<li>Jari tengah bengkok. Keadaan ini biasanya mengindikasikan adanya permasalahan pada organ pembungkus jantung.
+<li>Telapak tangan berpeluh/berkeringat. Keadaan ini menandakan gangguan pada jantung, paru-paru, sesak nafas dan stress.
+<li>Kuku bergelombang.</li></ul><p>
+
+<b>Simptom (gejala) yang muncul pada penderita masalah jantung antara lain:</b><br> dada kiri terasa sakit, kesemutan pada jari-jari, nyeri seperti ditusuk, mudah terperanjat, berdebar-debar, sukar tidur.<p>
+
+Masalah ini ada hubungannya dengan kolesterol atau tingginya kadar LDL (Low Density Lipoprotein) dalam tubuh dan bila berkepanjangan dapat mengakibatkan serangan tumor.<p>
+<hr>
+<b>Masalah Kolesterol</b><p>
+Masalah kolesterol hampir menimpa kebanyakan masyarakat modern, diakibatkan oleh pola makan yang kurang memperhatikan kaedah – kaedah kesehatan.<p>
+Makanan yang banyak mengandung minyak (seperti gorengan), santan kelapa, daging (terutama daging binatang yang diternak menggunakan makanan buatan, seperti ayam potong) merupakan contoh makanan yang  banyak mengandung kolesterol.<p>
+
+Masalah kolesterol sangat erat kaitannya dengan masalah jantung dan kardiovaskuler. Jika dibiarkan Kolesterol dapat mengakibatkan munculnya masalah – masalah kesehatan lain yang lebih serius seperti obesitas (kegemukan), migren, hipertensi (tekanan darah tinggi), stroke dan lain – lain.<p>
+ 
+<b>Tanda-tanda di telapak tangan seseorang yang mengalami permasalahan kolesterol adalah sebagai berikut:</b><p>
+<ul>
+<li>Ruas ujung jari berwarna lebih merah / lebih gelap dibanding ruas jari di sekitarnya. Semakin gelap warnanya menandakan kadar kolesterol di tubuh semakin tinggi.
+<li>Telapak tangan berwarna merah, terlihat bengkak dan terdapat urat berwarna biru.
+<li>Simptom (gejala) dari masalah kolesterol adalah gangguan emosi atau cepat marah</li></ul><p>
+<hr>
+<b>Masalah Pernafasan (Alergi, Resdung, Sinusitis)</b><p>
+Alergi, resdung, sinusitis hampir menimpa kebanyakan penduduk Asia. Masalah ini biasanya dikaitkan dengan masalah paru-paru (pernafasan) atau asma. <p>
+
+<b>Tanda-tanda pada telapak tangan seseorang yang mengalami permasalah ini adalah:</b><p>
+<ul>
+<li>Terdapat urat-urat berwarna biru/kehijau-hijauan pada perut telapak tangan di bagian bawah ibu jari 
+<li>Ibu jari bagian atas kempot. Keadaan ini menandakan berlakunya masalah sinusitis.</li></ul><p>
+
+Simptom (gejala) dari masalah alergi, resdung, sinusitis adalah bersin-bersin terutama di waktu pagi, rambut rontok, mata sering terasa gatal, kaki pegal-pegal, cepat lelah dan asma. Jika kondisi ini berkepanjangan akan menimbulkan masalah keputihan bagi perempuan, atau ambeien (gangguan prostat) bagi laki-laki.
+<hr>
+<p>
+<b>Masalah Hormon Tidak Seimbang (Imbalance Hormone)</b><p>
+Masalah ketidakseimbangan hormon (imbalance hormone) dapat menyebabkan berkurangnya gaerah seksual (tetapi tidak identik dengan impotensi), dan masalah rahim (reproduksi). Masalah ini biasanya berlanjut pada masalah tiroid, ovary, prostat, uterus, fibroid, endrometritis, dan kanker rahim.<p>
+<b>Tanda-tanda di tangan pasien yang mengalami permasalahan ketidak seimbangan hormon adalah:</b><p>
+<ul>
+<li>Telapak tangan berwarna merah pucat, terdapat urat berwarna biru dan terlihat sangat mencolok
+<li>Telapak tangan licin/kesat dan kulit telapak tangan kering.
+<li>Terdapat tanda seperti bulan sabit terbalik hanya di kuku ibu jari, menandakan hormon dalam keadaan seimbang. Sebaliknya apabila tanda bulan sabit terbalik tersebut ada di semua kuku, atau ada di kuku-kuku lain selain ibu jari, menandakan terdapat masalah ketidakseimbangan hormon.
+<li>Jari kelingking kempot menandakan berkurangnya kemampuan seks (lemah syahwat).
+<li>Jari kelingking bengkok (pada wanita) menandakan masalah kesuburan yang rendah.</li></ul><p>
+
+Simptom (gejala) dari masalah ketidakseimbangan hormon adalah berkurangnya keinginan (gairah) seks, perasaan rendah diri, kemurungan yang mendalam, bahkan depresi.<p>
+<hr>
+<b>Masalah Kewanitaan (Rahim dan Uterus)</b><p>
+Masalah kewanitaan yang banyak dialami oleh para wanita  dewasa ini adalah rahim jatuh (prolapsus), keputihan, senggugut, fibroid, dan endometrosis. Masalah wanita ini apabila berkepanjangan akan menyebabkan terjadinya kanker rahim.<p>
+
+<b>Selain faktor-faktor tersebut ada  beberapa kondisi yang menyebabkan seorang wanita mudah terserang kanker:</b><p>
+<ul>
+<li>Datang bulan (haid) pada usia di bawah 10 tahun.
+<li>Berhenti haid (menstruasi) pada usia di atas 50 tahun.
+<li>Tidak melahirkan anak.
+<li>Melahirkan anak pertama pada usia 35 tahun.
+<li>Tidak menyusukan anak.
+<li>Pernah menderita tumor jinak.
+<li>Memiliki garis keturunan yang terserang kanker.
+<li>Pengguna pil kesuburan (hormon) ataupun KB.</li></ul><p>
+
+<b>Seseorang yang mengalami masalah kewanitaan biasanya pada telapak tangannya terdapat tanda – tanda sebagai berikut:</b><p>
+<ul>
+<li>Jari kelingking meruncing/menirus menandakan masalah rahim/peranakan.
+<li>Jari kelingking bengkok bagian atasnya saja menandakan rahim jatuh (prolapsus), jika berkelanjutan akan mengarah pada permasalahan tumor.
+<li>Jari kelingking bengkok, menandakan rendahnya kesuburan (kurang subur).</li></ul>
+<b>Simptom (gejala) dari masalah kewanitaan antara lain adalah: keputihan, nyeri waktu haid, stress dalam jangka waktu lama, cepat lelah.</b><p>	
+<hr>
+<b>Masalah Ginjal</b><p>
+Masalah ginjal (buah pinggang) yang banyak dialami adalah masalah pegal-pegal di pinggang, kencing tidak lancar, menahan kencing, batu ginjal, kencing tidak keluar (edena), kencing darah, dan lain-lain.<p>
+
+Masalah ginjal ada kaitannya dengan masalah hati dan jantung. Biasanya apabila kondisi kerusakan ginjal masih di bawah 25% belum memberikan kesan rasa sakit pada diri pasien.<p>
+ 
+Berdasarkan sebuah penelitian, orang tua yang menderita masalah ginjal, sekitar 60% anak yang dilahirkan akan mewarisi masalah ginjal tersebut.<p>
+
+<b>Seseorang yang menderita masalah ginjal biasanya pada telapak tangannya terdapat tanda – tanda sebagai berikut:</b><p>
+<ul>
+<li>Ruas pertama seluruh jari terlihat kembung/bengkak air.
+<li>Ruas pertama jari telunjuk keriput, menandakan kurang air atau sering menahan air kencing, biasanya juga terlihat kelopak mata berwarna hitam.
+<li>Terasa sakit di tiga jari (ibu jari, jari telunjuk, dan jari tengah).
+<li>Ujung-ujung jari relatif tidak meruncing menandakan seseorang mengalami masalah ginjal, untuk wanita biasanya letak rahim tidak pada tempatnya.
+<li>Mata kaki bengkak atau mata berkantong, menandakan ada masalah ginjal dan jantung.
+<li>Ruas ujung – ujung jari bengkok ke dalam, menandakan adanya masalah batu ginjal atau asam urat.</li></ul><p>
+
+Simptom (gejala) yang biasa timbul pada penderita masalah ginjal antara lain : terasa sakit di pinggang, obesitas (kegemukan), kesemutan pada ujung jari, dan pernah terjatuh dalam keadaan duduk (kecelakaan).<p> 
+<hr>
+<b>Masalah Lainnya</b><p>
+<b>Selain tanda-tanda seperti yang diuraikan di atas, masih terdapat tanda-tanda lain yang bisa dilihat pada telapak tangan, diantaranya adalah:</b><p>
+<ul>
+<li>Apabila kuku bergelombang, strik (bergaris-garis) dan telapak tangan keras/terdapat benjolan, menandakan keracunan / toksin heavy metal (logam berat). 
+<li>Bagian bawah mata dan telapak tangan terlihat pucat, banyak bintik-bintik putih dan urat biru tersebar merata menandakan seseorang mengalami masalah tekanan darah rendah atau anemia. Kondisi ini juga dapat dilihat jika kuku ditekan beberapa saat sampai berwarna putih, dan perlu waktu yang lama untuk kembali ke keadaan normal.
+<li>Adanya garis di tepi perut ibu jari, terlihat bergetar berwarna biru/kehijauan, ini menandakan masalah tiroid atau masalah maag (gastric). Gejalanya adalah jika letih/lapar terasa sakit di ulu hati.
+<li>Mata minus atau pernah mengalami kecelakaan, dapat dilihat juga pada ujung jari kelingking yang bengkok.
+<li>Tanda kadar gula yang tinggi dapat dilihat di punggung jari-jari tepat di bawah kuku, semakin gelap warnanya maka semakin tinggi kadar gulanya.
+<li>Kuku berwarna agak kemerah-merahan (pink) menunjukkan seseorang mudah bingung.
+<li>Kuku bergelombang menunjukkan kelainan (gangguan) pada hati.
+<li>Kuku bergaris menunjukkan kelainan (gangguan) pada ginjal.</li></ul><p>
+<hr>
+<b>Masalah Daya Tahan Tubuh (Sistem Imunitas Tubuh)</b><p>
+Dari keseluruhan tanda-tanda yang dijelaskan di atas, baru sebatas indikasi adanya permasalahan pada organ yang bersangkutan. Biasanya permasalahan tersebut akan muncul pada pasien apabila sistem imunitas tubuhnya dalam keadaan menurun/rendah.<p>
+
+<b>Tanda-tanda sistem imunitas tubuh menurun/rendah adalah:</b><p>
+<ul>
+<li>Ujung jari manis terlihat bengkok. Selain itu juga terdapat masalah pada usus kecil dan usus 12 jari (masalah pencernaan). Ini ada kaitannya juga dengan masalah empedu, ulu hati, dan maag.
+<li>Telapak tangan berwarna hitam legam, menandakan kondisi daya tahan tubuh lemah dan jelek.
+<li>Telapak tangan cekung, menandakan sistem imunitas tubuh yang rendah, juga menandakan adanya gangguan pada saraf dalam. Jika diiringi rasa sakit di pundak/belikat, apabila terjadi pada wanita ada kaitannya dengan rahim. Jika pria ada kaitannya dengan kemampuan seks.</li></ul><p>
+<hr>
+<b>Penutup</b><br>
+Diagnosa penyakit dengan menggunakan analisa telapak tangan sebagaimana dijelaskan di atas, sifatnya hanya untuk memperkirakan masalah (karena adanya faktor fisiologis) sehingga perlu dipadukan dengan analisa penyakit dengan cara yang lain untuk mendapatkan tingkat akurasi (ketepatan) 100%.<p>
+        
+Untuk mendapatkan ketrampilan dalam menganalisis penyakit melalui telapak tangan ini diperlukan banyak mempraktekannya pada pasien (disarankan sampai 1000 pasien). Di samping itu belajar pada si pasien sangat membantu dalam meningkatkan ketrampilan ini, yaitu melalui counter cek pertanyaan kepada pasien.<p>
+
+ 
+ 
+ <br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+
+<!-- daris sini --><div data-role="page" id="a5" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Mendeteksi Penyakit</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Mendeteksi Penyakit Lewat Mata</I></b></center><hr>
+ <p>
+ 
+<center> <img src="images/62248-kondisi-kesehatan-mata.jpg"/< center><p></p></center>
+<hr><p align="center">
+<b>Deteksi Penyakit Lewat Mata</b>
+<hr>
+Mata merupakan jendela dunia. Tanpa mata, kita takkan bisa merasakan indahnya dunia. Itulah mengapa amat penting menjaga kesehatan mata. Kondisi mata ternyata bisa menjadi sinyal adanya gangguan kesehatan pada tubuh kita.<p>
+
+Oleh karena itu, dokter mata menjadi orang pertama yang mendeteksi adanya masalah kesehatan yang serius, seperti diabetes atau tekanan darah tinggi. Sekitar 65 persen dokter mara bisa mengetahui bahwa pasiennya memiliki kolesterol tinggi sebelum mengecek kesehatan mereka ke dokter umum.<p>
+<hr>
+<b>Pembuluh darah keperakan(Tekanan Darah Tinggi)</b><p>
+Lebih dari 20 persen orang dengan darah tinggi tidak menyadari bahwa gejala hipertensi bisa diketahui dari mata.
+
+<b>“Kita bisa tahu seseorang menderita Hipertensi dengan mendeteksinya melalui mata karena keadaan itu menyebabkan arteri retina berubah warna agak keperakan”</b><p>
+
+Demikian ungkap Shantan Reddy, dokter spesialis mata dari New York University Langone Medical Center. Jika tidak segera diobati, kondisi ini bisa menyebabkan pembuluh darah di retina dan di seluruh tubuh mengeras yang meningkatkan risiko serangan jantung atau stroke.<p>
+<hr>
+<b>Tahi lalat di lapisan dalam mata(Melanoma)</b><p>
+Ternyata paparan sinar matahari tak hanya menyebabkan masalah pada kulit, seperti melanoma atau jenis kanker kulit mematikan. Melanoma juga bisa terjadi di mata. <b>“Kanker terlihat seperti titik kecil pada lapisan pigmen mata” </b><p>
+
+Papar Sophie J. Bakri, dokter mata dari Mayo Clinic di Rochester, Minnesotta. Lakukan pemeriksaan melanoma mata sejak dini karena tidak memiliki gejala dan dengan cepat dapat bermetastasis ke jaringan sekitarnya.<p>
+<hr>
+<b>Pembuluh darah mata bocor: Diabetes</b><p>
+Gula darah tinggi dapat menyumbat atau merusak pembuluh darah retina dari waktu ke waktu, sehingga membuat retina menjadi lemah dan pecah.<p>
+
+Dokter mata sering menemukan pembuluh darah baru abnormal tumbuh untuk menggantikan pengganti pembuluh darah yang pecah. Selain itu, diabetes juga merusak saraf mata yang menyebabkan kebutaan.<p>
+<hr>
+<b>Peradangan (Penyakit Autoimun)</b><p>
+Kondisi autoimun dapat menyebabkan tubuh menyerang sel sehat dan jaringan (termasuk di mata) yang menyebabkan peradangan. Jika Anda menemukan peradangan yang disertai pembengkakan pada permukaan okular.<p>
+
+30-50 persen mata merah dan timbul rasa gatal serta berair menandakan jika Anda memiliki gejala awal terdiagnosa penyakit autoimun, seperti lupus atau rheumatoid arthritis.<p>
+<hr>
+<b>Mata lecet (CSR atau Central Serous Retinopathy)</b><p>
+Biasanya CSR disebabkan oleh stres mental atau emosional yang berlebihan, sehingga terjadi suatu kelainan pada retina, tepatnya pada macula lutea. Gejala yang paling sering adalah pasien memiliki penglihatan menjadi kabur dan menjadi tidak fokus.<p>
+<hr>
+<b>Pembengkakan pembuluh darah di bagian putih mata (Alergi)</b><p>
+Alergen udara seperti serbuk sari tanaman, debu, bulu binatang seringkali mempengaruhi kesehatan mata. Untuk melindungi, mata memproduksi histamin dan zat-zat kimia lain untuk melawan alergi.<p>
+
+Proses ini bisa menyebabkan pembengkakan pembuluh darah mata sehingga bola mata tampak memerah, gatal dan berair.<p>
+<hr>
+<b>Cincin putih di sekitar iris mata (Kolesterol Tinggi)</b></p>
+Sebuah cincin putih di sekitar iris mata dapat menjadi tanda kolesterol Anda tinggi.  Dikenal sebagai arcus senilis, cincin putih ini karena adanya timbunan lemak di kornea, daerah di depan mata,” ujar Oliver Backhouse, seorang ahli bedah mata Rumah Sakit Mata Yorkshire.<p>
+
+Ia menyarankan warna putih berbentuk cincin tersebut harus hilang dengan pengobatan dan perubahan gaya hidup. Tidak semua orang dengan kolesterol tinggi akan mengembangkan gejala ini.<p>
+<hr>
+<b>Cairan mata berkurang (Menopause)</b><p>
+“Hal ini mempengaruhi tingkat perubahan hormon yang berdampak pada mekanisme pelumasan mata,” ujar David Allamby, seorang ahli bedah mata dan direktur medis dari Klinik Fokus Laser Eye, London.<p>
+
+Cairan untuk pelumasan permukaan mata berkurang, sehingga menyebabkan mata kering. “Untuk mengatasi masalah itu, tutup mata Anda selama 20 detik setiap sepuluh menit,” saran James Ball, konsultan ahli bedah mata di Rumah Sakit St James di Leeds. Bekerja di kantor ber-AC, atau meninggalkan lensa kontak dalam terlalu lama juga dapat menyebabkan mata kering.<p>
+<hr><p align="center">
+<b>Deteksi Penyakit Melalui Iris Mata</b>
+<hr>
+Kuncinya adalah retina, lapisan tipis di mata yang mengandung banyak pembuluh darah. Tidak hanya penyakit yang berhubungan dengan mata, perubahan kondisi retina juga menjadi petunjuk terkait penyakit yang berhubungan dengan pembuluh darah seperti jantung, stroke, diabetes, dan liver.<p>
+
+Mata menjadi jendela yang menunjukkan kondisi arteri. Mata yang mengalami oklusi bisa menunjukkan kemungkinan terjadinya plak atau penumpukan kolesterol yang terlalu banyak di dinding arteri. Ini biasanya ditandai dengan terjadinya penyumbatan aliran darah ke mata.<p>
+
+Pembengkakan saraf optik yang disertai gumpalan darah di mata juga menjadi indikasi awal adanya tumor otak. Sementara melemahnya penglihatan dan kondisi mata yang keruh biasanya mengarahkan diagnosis diabetes.<p>
+
+Karenanya, penting melakukan tes mata secara rutin. Bukan hanya demi stabilitas kesehatan mata, tapi juga meningkatkan kewaspadaan dini terhadap penyakit serius lainnya.<p>
+
+“Pemeriksaan mata rutin penting untuk melindungi kesehatan mata dan tubuh secara umum. Dengan alat khusus yang dimiliki dokter mata, kita bisa segera bertindak melakukan penanganan dini,” kata Larry Benjamin dari The Royal College Ophthalmologist, seperti dikutip Huffington Post.<p>
+
+Dunia medis bahkan telah memperkenalkan deteksi kesehatan tubuh melalui iris mata, area berwarna di bola mata yang mengelilingi pupil: iridologi.<p>
+
+Kenapa iris mata? Karena, iris mata merupakan perluasan otak. Organ-organ di dalam tubuh mengirimkan getaran-getaran ke seluruh sel tubuh dan direkam di otak. Rekaman ini kemudian dapat dilihat melalui iris mata yang berhubungan langsung dengan otak.<p>
+<hr>
+<b>Iridologi</b><p>
+
+Iridologi sesungguhnya adalah ilmu yang mempelajari tanda-tanda yang terdapat pada struktur jaringan iris mata. Iris mata adalah area berwarna di bola mata yang mengelilingi pupil.<p>
+
+Dari warna, tekstur, dan lokasi bercak-bercak pigmen di iris mata inilah kondisi kesehatan seseorang dapat dianalisis.
+Kenapa iris mata? Karena, iris mata merupakan perluasan otak.<p>
+
+Organ-organ di dalam tubuh mengirimkan getaran-getaran ke seluruh sel tubuh dan direkam di otak. Rekaman ini kemudian dapat dilihat melalui iris mata yang berhubungan langsung dengan otak.<p>
+
+<b>Bagaimana Penyakit Dideteksi?</b><br>
+
+Layaknya ‘peta jalan’, iris mata dilengkapi dengan tanda-tanda yang mampu mengindikasikan adanya kelainan di dalam tubuh. Tanda-tanda yang terdapat pada iris mata merupakan gambaran detail kondisi badan secara keseluruhan, termasuk genetika dasar, endapan toksin, bendungan sirkulasi, dan kelemahan lainnya.<p>
+
+<b>Setiap mata memberikan informasi yang berbeda. Informasi yang bisa dianalisis adalah:</b><p>
+
+<b>Mata kanan</b><br>
+Menggambarkan kondisi kesehatan bagian tubuh sebelah kanan dan otak.<p>
+
+<b>Mata kiri</b><br>
+Menggambarkan kondisi kesehatan bagian tubuh sebelah kiri dan otak.<p>
+
+<b>Bagian atas iris</b><br>
+Memberikan informasi yang berkaitan dengan otak dan jantung.<p>
+
+<b>Bagian tengah iris</b><br>
+Berhubungan dengan perut dan pencernaan.<p>
+
+<b>Bagian terluar iris</b><br>
+Memberikan indikasi mengenai kondisi kolon, ginjal, hati, punggung, dan kulit.<p>
+
+<b>Lingkaran kebiruan yang mengelilingi bagian terluar iris</b><br>
+Menunjukkan kondisi kejiwaan, stres misalnya.<p>
+
+<b>Ukuran pupil</b><br>
+Menentukan seberapa besar energi yang dimiliki oleh orang yang bersangkutan.<p>
+<hr><p align="center">
+<b>Cara pemeriksaan</b>
+<hr>
+
+Metode tes ini sangatlah mudah. Anda cukup duduk di kursi, dagu diletakkan di atas alat penopang, mata Anda dibelalakkan, lalu kamera digital akan memotret mata Anda sebelah kiri dan kanan.<p>
+
+Proses pemotretannya tak beda dengan pemeriksaan mata minus atau plus di dokter mata atau optik-optik. Jadi, tak ada rasa sakit, waktunya pun berlangsung singkat, kira-kira 5-10 menit. <p>
+
+ 
+
+  <br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+
+<!-- daris sini --><div data-role="page" id="a6" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Mendeteksi Penyakit</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Mendeteksi Penyakit Dari Kaki</I></b></center><hr>
+ <p>
+ 
+<center> <img src="images/titikpijattelapakkaki.jpg"/< center><p></p></center>
+<hr><p>
+
+Mengandung seperempat jumlah tulang dari seluruh tubuh Anda, dan setiap kaki juga memiliki 33, 100 tendon dan otot, dan ligament, dan syarar-syaraf dan pembuluh darah yang seluruhnya mengalir ke jantung, dan otak yang tak terhitung jumlahnya.<p>
+
+Masalah kaki yang tidak terpecahkan dapat menimbulkan konsekuensi yang tidak diharapkan. Sakit yang tidak segera dirawat dapat mengakibatkan seseorang untuk menjadi lebih lamban dan meningkatnya berat badan, contohnya, untuk keseimbangan denggan cara yang tidak alamiah, meningkatkan resiko jatuh dan patah tulang.<p>
+
+<b>Jadi ketika telapak kaki mengirimkan 18 pesan peringatan ini, pasti ada sesuatu:</b><p>
+<hr>
+<b>Kuku kaki dengan bentuk agak sedikit masuk ke dalam, lekukan berbentuk sendok</b><p> 
+<b>Apa artinya:</b><br> Anemia (kekurangan zat besi) sering menunjukkan bentuk tidak alami, atau seperti sendok hingga ke pangkal kuku, terutama pada kasus sedang hingga parah.<p>
+
+Hal ini disebabkan oleh jumlah hemoglobin dan protein kaya zat-besi sel-sel pada darah yang mengangkut oksigen, tidak cukup. Pendarahan dalam (seperti mencret) atau menstruasi yang tidak lancar dapat memicu anemia.<p>
+
+<b>Petunjuk lain:</b><br> Pada jari seperti pada kaki, kulit dan kuku muncul warna pucat. Kuku tersebut juga, dan kaki mungkin terasa dingin. Kelelahan adalah gejala utama anemia, sama dengan nafas yang pendek-pendek, merasa pusing ketika berdiri, dan sakit kepala.<p>
+
+<b>Apa yang harus dilakukan:</b><br> Pengecekan jumlah sel darah merah paling sering dilakukan untuk mendiagnosa anemia. Pemeriksaan fisik bisa. Pertolongan pertama yaitu dengan mengkonsumsi suplemen zat besi dan perubahan menu diet untuk menambah zat besi dan vitamin yang mempercepat penyerapan zat besi.<p>
+<hr>
+<b>Kaki atau Jari Ujung kaki yang tidak berbulu</b><p>
+<b>Apa artinya:</b><br> sirkulasi yang buruk, biasanya disebabkan oleh penyakit jantung, dapat membuat rambut rontok dari kaki. Ketika jantung kehilangan kemampuan untuk memompa darah yang cukup ke tempat yang paling ujung dikarenakan asterosklerosis (biasanya sering dikenal sebagai penyumbatan arteri), tubuh harus memprioritaskan penggunaannya.<p>
+
+<b>Petunjuk lain:</b><br> Berkurangnya suplai darah juga membuat sulit untuk merasakan rangsangan di kaki. (Cek pada bagian atas telapak kaki atau di dalam sendi.) Ketika Anda berdiri, kaki Anda bisa menjadi merah atau, ketika menekuk, tiba-tiba berubah menjadi merah.<p>
+
+Orang-orang dengan sirkulasi darah yang buruk cenderung telah tahu bahwa mereka memiliki kondisi kardiovaskular (seperti penyakit jantung atau ateri carotid) tetapi bisa saja tidak menyadari bahwa mereka memiliki masalah sirkulasi.<p>
+
+<b>Apa yang harus dilakukan:</b><br> Mengobati jaringan vascular dapat meningkatkan sirkulasi. Bulu rambut jarang bisa tumbuh kembali, tetapi tak seorangpun yang terlalu mengkomplain hal itu.<p>
+<hr>
+<b>Sering kram kaki atau kesemutan</b><p>
+<b>Apa artinya:</b><br> Kram tiba-tiba di kaki pada dasarnya, kontraksi yang keras pada otot dapat dipicu oleh permasalahan yang berurutan seperti olahraga atau dehidrasi.<p>
+
+Tetapi jika itu sering muncul, diet Anda kemungkinan kurang kalsium, kalium, atau magnesium. Wanita hamil pada trimester yang ketiga khususnya sangat rentan karena peningkatan volume darah dan mengurangi sirkulasi ke kaki.<p>
+
+<b>Petunjuk lain:</b><br> Kesemutan cenderung muncul secara sering ketika Anda hanya berbaring. Kesemutan bisa muncul pada sebuah otot yang tajam dan muncul secara menjalar. Rasa nyeri dapat bertahan lama setelahnya.<p>
+
+<b>Yang harus dilakukan:</b><br> Cobalah untuk memijat pada area yang sakit. Anda juga bisa merelaksasikan otot dengan mengaplikasikan kain dingin atau mengusapnya dengan alkohol. Untuk mencegah kram, selonjorkan kaki sebelum tidur. Kemudian minumlah segelas susu hangat. (untuk kebutuhan kalsiumnya)<p>
+<hr>
+<b>Nyeri yang tidak sembuh-sembuh pada telapak kaki</b><p>
+<b>Apa artinya:</b><br> Ini adalah bukti utama gejala diabetes. Level glukosa dalam darah membahayakan rangsangan pada kaki yang artinya bahwa luka ringan atau iritasi disebabkan oleh tekanan atau sering tidak diperhatikan.<P>
+
+Terutama oleh seseorang yang tidak menyadari bahwa dia memiliki penyakit. Tidak langsung diobati, luka-luka ini dapat menyebabkan infeksi, bahkan amputasi.<p>
+
+<B>Bukti lain:</B><BR> potongan berbau tidak enak khususnya terdeteksi karena memang sudah ada sebelumnya. Gejala diabetes lain yaitu selalu merasa kehausan, sering buang air kecil, keseringan lelah, pandangan menjadi kabur, lapar yang berlebihan, dan turunnya berat badan.<p>
+
+Apa yang harus dilakukan: Rawat luka segera dan periksakan ke dokter untuk evaluasi diabetes. Penderita diabetes harus memperhatikan kaki mereka setiap hari (para lansia atau orang yang obesitas harus meminta orang lain untuk melakukannya) dan datanglah ke klinik kesehatan yang profesional setiap tiga bulan.<p>
+<hr>
+<b>Kaki dingin</b><p> 
+<b>Apa artinya:</b><br> Perempuan, terutama melaporkan kaki dingin (atau lebih jelasnya, pasangan mereka komplain tentang itu). Bisa jadi itu bukan apa-apa atau itu mungkin mengindikasikan gangguan jaringan tiroid.<p>
+
+Perempuan berumur lebih dari 40 tahun yang memiliki kaki yang dingin sering memiliki masalah fungs pada tiroidnya, kelenjar yang mengatur suhu dan metabolisme. Sirkulasi yang buruk (pada setiap jenis kelamin) adalah penyebab lain yang mungkin terjadi.<p>
+
+<b>Bukti lain:</b><br> Gejala hipotiroid sering muncul dengan gejala lain (kelelahan, depresi, naiknya berat badan, kulit yang kering).<p>
+
+<b>Yang harus dilakukan:</b><br> (Coba kaos kaki wool dan sepatu kain). Jika Anda juga memiliki masalah kesehatan lain, sebutkan juga kaki dingin Anda kepada dokter. Sayangnya, berdasarkan perawatan denga pengobatan yang berhubungan dengan masalah tiroid, cenderung menjadi gejala yang tidak mudah teratasi.<p>
+<hr>
+<b>Kuku yang Tebal, Kuning, dan mengarah kebawah secara aneh</b><p> 
+<b>Apa artinya:</b> Infeksi jamur sedang menjalar di bawah permukaan kuku. Onychomicosis dapat mengakibatkan rasa sakit selama bertahun-tahun. Karena tidak beraksi secara kasat mata, infeksinya semakin meningkat dan dapat menyebar ke seluruh kuku bahkan hingga ke jari kuku.<p>
+
+<b>Petunjuk lain:</b><br> Kuku juga berbau kemudian berubah menjadi kehitaman. Masyarakt harus menyadari hal ini; para penderita diabetes gangguan sirkulasi, atau kelainan berkurangnya system imun (seperti rematik kritis).<p>
+
+Jika seorang lansia mengalami kesulitan berjalan, kadang-kadang masalahnya dapat ditelusur dengan fakta sederhana bahwa kuku yang terinfeksi menjadi lebih tebal, akan sangat sulit dipotong dan mengabaikan pusat sakit.<p>
+
+<b>Apa yang harus dilakukan:</b><br> Periksakan ke spesialis kaki atau ahli perawatan. Pada kasus yang serius, penggunaan obat anti jamur tidak selalu efektif seprti kombinasi antara pengobatan luar dan yang diminum dan pemotongan untuk membuang penyakit secara professional.<p>
+<hr>
+<b>Jari Kaki yang Tiba-Tiba Membesar dan Terlihat Menakutkan</b><p>
+<b>Apa artinya:</b><br> Kemungkinan encok. Ya, penyakit jadul (jaman dulu) ini masih ada dimana-mana dan Anda tidak harus berumur lebih dari 65 tahun untuk mengalamaninya.
+Encok merupakan sakit sejenis arthritis yang biasanya disebabkan oleh terlalu banyak asam urin, substansi alami.<p>
+
+Asam urin yang berlebihan membentuk Kristal yang seperti jarum, terutama pada temperature yang sangat rendah. Pada bagian yang terdingin, yang merupakan bagian terjauh dari jantung, menjadi bengkak.<p>
+
+“Hampir 75% Anda terbangun dengan jari kaki yang membengkak yang merupakan gejala pertama sakit encok,” Andersen, seorang podriatis, mengungkapkan.<p>
+
+<b>Petunjuk lain:</b><br> Kulit yang merah membangkak dan berwarna keunguan dengan rasa panas dan nyeri juga dapat muncul pada instp, tendon Achilles, lutut, dan paha.<p>
+Setiap orang dapat terkena encok, meskipun laki-laki yang berumur 40 dan 50-an yang paling mungkin. Wanita yang mengalami encok biasanya terjadi pasca menstruasi.<p>
+
+<b>Yang harus dilakukan:</b><br> Periksakan ke dokter untuk mengontrol penyebab encok dengan menggunakan menu diet atau pengobatan. Ahli penyakit kaki dapat mengobati rasa sakit dan mempertahankan fungsi kaki.<p>
+<hr>
+<b>Rasa Kaku di kedua kaki</b><p> 
+<b>Apa artinya:</b><br> Tidak mampu untuk merasakan kaki Anda atau merasakan sensasi tekanan berat seperti menginjak paku merupakan tanda utama terganggunya system syaraf peripheral.<p>
+
+Terganggunya system syaraf peripheral memiliki beberapa penyebab tapi yang paling sering adalah diabetes dan kecanduan alcohol. Kemoterapi adalah penyebab umum lain.<p>
+
+<b>Petunjuk lain:</b><br> Rasa terbakar dapat juga muncul pada tangan dan secara bertahap menyebar ke lengan hingga kaki. Rasanya seperti Anda mengenakan sarung tangan atau kaos kaki yang sangat berat.<p>
+
+<b>Yang harus dilakukan:</b><br> Periksakan ke dokter untuk menentukan penyebabnya (terutama jika bukan karena kecanduan alkohol). Belum ada pengobatan untuk gangguan system saraf peripheral, tetapi ada obat untuk mengurangi rasa sakit hingga anti depresan.<p>
+<hr>
+<b>Nyeri di Sendi Jari Kaki </b><p>
+<b>Apa artinya:</b><br> Rheumatoid arthritis (RA), penyakit melemahnya fungsi sendi, sering dirasakan pertama kali pada sendi-sendi yang lebih kecil, seperti jari kaki dan lekukan jari tangan.<p>
+
+<b>Petunjuk lain:</b><br> Rasa kaku dan bengkak biasanya muncul bersamaan ketika merasa sakit. Sakit ini cendirung simetris, contohnya, sakit ini terjadi secara simultan di kedua jempol kaki atau jari kaki lainnya.<p>
+
+RA berkembang lebih cepat daripada jenis penyakit arthritis lainnya, dan bisa datang dan pergi. Wanita terkena dampak empat kali lebih besar dari laki-laki.<p>
+
+<b>Yang harus dilakukan:</b><br> harus dilakukan pemeriksaan secara penuh untuk menentukan penyebab nyeri sendi. Untuk RA, ada beberapa pengobatan dan terapi yang dapat menimalisir rasa sakit, dengan diagnose sejak dini, resiko cacat secara permanen dapat dihindari.<p>
+<hr>
+<b>Kuku Kaki Seperti Berlubang</b><p>
+<b>Apa artinya:</b><br> hampir separo penderita psoriaris, penyakit kulit juga muncul pada kuku dengan ciri banyak lubang-lubang kecil, yang tipis atau dalam. Lebih dari 75% penderita psoriatic arthritis, kelainan yang berkaitan dengan sendi dan kulit juga memiliki lubang-lubang dalam kuku ini.<p>
+
+<b>Petunjuk lain:</b><br> Kuku, baik kaki maupun tangan akan menebal. Kuku-kuku tersebut akan berubah warna menjadi kuning kecoklatan atau berwarna seperti ikan salmon. Buku jari yang terdekat dengan kuku juga cenderung kering, merah, dan meradang.<p>
+
+<b>Yang harus dilakukan:</b><br> lakukan pengobatan yang variatif untuk psosiaris dan pasosiaric arthtritis dan mengembalikan kondisi buku jari kaki, terutama jika perawatan telah dilakukan sejak dini.<p>
+<hr>
+<b>Tidak Bisa/Kesulitan Mengangkat Kaki ke Atas</b><p>
+<b>Apa artinya:</b><br> Gangguan pada otot dan syaraf bisa berasal dari kaki Anda. Obat kemoterapi tertentu dapat juga mengakibatkan kesulitan mengangkat kaki bagian depan ketika berdiri maupun berjalan.<p>
+
+<b>Petunjuk lain:</b><br> Ada kemungkinan sakit dan terasa kaku. kadang-kadang rasa sakit ini dirasakan pada kaki bagian depan atau tulang belakang bagian bawah, dimana syaraf (karena kelainan atau tumor).
+Pada beberapa kasus, kaki. Hal ini jarang terjadi pada kedua kaki.<p>
+
+<b>Yang harus dilakukan:</b><br> Periksakan ke dokter, karena gangguan ini bisa permanen, tergantung pada penyebab dan perawatannya.<p>
+<hr>
+<b>Kulit Kering</b><p> 
+<b>Apa artinya:</b><br> Jika wajah atau tangan terasa kering jangan abaikan kondisi kulit ini pada bagian telapak kaki Anda. Infeksi jamur biasanya dimulai pada kulit kaki yang kering dan gatal kemudian menjalar hingga rasa terbakar dan muncul bentolan-bentolan. Ketika bentolan itu pecah, infeksi akan menyebar.<p>
+
+<b>Petunjuk lain:</b><br> Infeksi jamur/kutu air ini biasanya muncul diantara sela jari kaki. Kemudian bisa menyebar ke bagian tubuh lain, seperti ketiak, biasanya penularan terjadi ketika menggaruk.<p>
+
+<b>Apa yang harus dilakukan:</b><br> Kasus sederhana biasa diatasi dengan membasuh kaki sesering mungkin dan keringkan secara menyeluruh. Kemudian pastikan kaki tetap kering, termasuk mengunakan bedak kaki pada sepatu dan kaos kaki.<p>
+
+Jika tidak ada peningkatan dalam dua minggu dan infeksi semakin parah, dokter akan memberikan resep pengobatan antijamur baik obat luar maupun dalam.<p>
+<hr>
+<b>Perubahan Warna Kaki secara Ekstrim</b><p> 
+<b>Apa artinya:</b><br> Pada suhu dingin, penyakit Raynaud menyebabkan perubahan warna kaki secara ektrim, dari putih kemudian berubah menjadi biru, dan pada akhirnya berubah menjadi merah sebelum kembali ke warna semula.<p>
+
+Untuk alasan yang masih belum jelas, pembuluh darah mengalami over reaksi yang menyebabkan perubahan warna pada kaki.<p>
+
+<b>Petunjuk lain:</b><br> Ada area lain yang terinfeksi seperti jari, hidung, bibir dan daun telinga. Bagian kulit yang terkena akan terasa kaku. Wanita dan orang-orang yang tinggal di daerah dingin lebih sering terkena penyakit Raynaud tersebut. Biasanya muncul pada usia sekitar 25 hingga 40 tahun.<p>
+
+<b>Yang harus dilakukan:</b><br> Periksakan ke dokter tentang pengobatan yang dapat melebarkan pembuluh darah, yang akan mengurangi infeksi kemungkinan yang lebih parah.<p>
+<hr>
+<b>Telapak Kaki Terasa Amat Sakit untuk Berjalan </b><p>
+<b>Apa artinya:</b><br> faktor stress yang tidak terdiagnosa umum menyebabkan nyeri pada kaki. Rasa sakit ini dapat dirasakan pada seluruh bagian telapak kaki.<p>
+
+Faktor ini sering muncul secara berulang-ulang dapat disebabkan oleh masalah lain seringnya osteopenia (kurangnya kepadatan tulang terutama yang terjadi pada perempuan yang berumur lebih dari 50 tahun atau kasus malnutrisi lainnya, termasuk kekurangan vitamin D, masalah penyerapan kalsium, atau anoreksia.<p>
+
+<b>Petunjuk lain:</b><br> Anda masih bisa berjalan ketika kaki patah, hanya terasa sakit.<p>
+
+<b>Apa yang harus dilakukan:</b><br> Periksakan ke dokter tentang semua sakit yang dirasakan.</p>
+<hr>
+<b>Jempol Kaki Mencuat </b><p>
+<b>Apa artinya:</b><br> Ketika bentuk jempol kaki mencuat ke arah yang tidak semestinya, itu tandanya ada masalah paru-paru, termasuk fibrosis dan kanker paru-paru. Penyakit jantung dan gangguan pada perut juga bisa terjadi.<p>
+
+<b>Petunjuk lain:</b><br> Jari kaki lainnya juga terihat mencuat, dan terjadi pada beberapa jari saja, atau bahkan seluruhnya.<p>
+
+<b>Yang harus dilakukan:</b><br> Perawatan bergantung pada penyebab, jadi laporkan gejala serius ini kepada dokter.<p>
+<hr>
+<b>Rasa Sakit yang Menusuk pada Tumit</b><p>
+<b>Apa artinya:<br></b> Plantar fasciitis nama umum untuk rasa terbakar pada jaringan ikat yang menjalar pada kaki penegangan yang abnormal pada jaringan ikat.<p>
+
+<b>Petunjuk Lain:</b><br> Rasa sakit muncul ketika Anda menapakkan kaki di pagi hari dan sering meningkat ketika Anda memakai alas kaki. Lari dan melompat terlalu sering dapat menyebabkan rasa sakit ini.<p>
+
+Anda akan berada dalam bahaya jika Anda hanya berjalan dengan kaki telanjang pada permukaan jalan yang keras.<p>
+
+<b>Yang harus dilakukan:</b><br> Jika rasa sakit munul lebih dari beberapa minggu dan terasa semakin buruk, bawalah ke ahli podiatri. Pastikan untuk meminta saran dalam menggunakan alas kaki yang tepat selama perawatan.<p>
+<hr>
+<b>Bau Kaki</b><p> 
+<b>Apa artinya:</b><br> Kaki yang bau cenderung memberikan alarm yang lebih banyak dibanding gejala lain. Kaki biasanya lebih berkeringat dibanding bagian tubuh lain. Penggunaan sepatu dan kaos kaki yang melembabkan kaki, membuat kaki bau.<p>
+
+<b>Yang harus dilakukan:</b><br> Cuci dengan sabun antibakteri dan keringkan dengan sempurna. Usap anti perspirant pada telapak kaki. Seringlah menggunakan alas kaki yang terbuat dari bahan alami, seperti kulit dan kain. Buka tali sepatu dan keringkan. Itu saja.<p>
+<hr>
+<b>Sepatu Tua</b><p>
+Berbahaya! Anda sedang menjalankan bom kesehatan jika sepatu setiap hari anda sudah lebih dari 2 tahun atau jika sepatu berjalan atau berlari anda sudah digunakan lebih dari 350-500 mil.<p>
+
+Sepatu tua kurang mendukung kebutuhan kaki – dan alas kaki lebih cepat habis dibandingkan dengan yang dikira kebanyakan orang, kata para spesialis kaki.<p>
+
+<b>Petunjuk lainnya:</b><br> adalah melepuh (terlalu ketat), bengkak pada ibu jari (terlalu sempit), sakit pada tumit (tidak cukup penyangga) – jika Anda memiliki masalah kaki seperti ini, setidaknya ada kemungkinan 50-50 alas kaki anda buruk atau tidak pas.<p>
+
+Orang-orang yang lebih tua khususnya lebih rentan karena mereka memiliki kebiasaan sudah terbiasa mengenakan sepatu tua yang mungkin kurang penyangga, fleksibilitas atau kurang memiliki daya lekat atau cengkram yang bagus.
+
+
+
+  <br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+
+<!-- daris sini --><div data-role="page" id="a8" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Mendeteksi Penyakit</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Mendeteksi Penyakit Dari Telapak Dan Jari Tangan</I></b></center><hr>
+ <p>
+ 
+<center> <img src="images/judul5.png"/< center><p></p></center>
+<hr><p>
+
+<b>Mendeteksi Penyakit dari Telapak dan Jari Tangan</b><p>
+<hr>
+Tangan adalah bagian tubuh yang paling penting untuk melakukan aktifitas sehari-hari mulai dari mengetik, menulis, mengambil barang dan lain-lain.<p> Hal ini menyebabkan orang seringkali menyepelekan perubahan kondisi tangan yang merupakan pertanda gejala-gejala penyakit yang bisa jadi berbahaya.<p>
+<hr>
+<b>Berikut adalah 7 petunjuk penting yang dapat diungkapkan oleh tangan mengenai kesehatan manusia:</b><p>
+<hr>
+<b>Noda Merah pada Telapak Tangan</b><p>
+Dalam jangka pendek, telapak tangan berwarna merah dapat disebabkan mencengkeram benda terlalu keras, terlalu lama mencuci tangan atau mengangkat teko yang masih panas.<p>
+
+Pada ibu hamil, telapak tangan merah adalah kondisi yang normal karena aliran darah yang meningkat menyebabkan kemerahan pada perempuan. Tetapi jika telapak tangan tetap memerah untuk jangka waktu yang panjang, kondisi ini disebut eritema palmaris, yaitu tanda penyakit hati kronis (sirosis) dan penumpukan lemak pada hati.<p>
+
+“Peradangan hati secara bertahap mengganggu kinerja hati sehingga hati tidak lagi mampu membuang limbah dari tubuh secara efisien,” kata Blanchard.<p>
+
+Hasilnya adalah kelebihan hormon-hormon yang pada gilirannya menyebabkan pembuluh darah di tangan dan kaki membesar sehingga dapat terlihat dari kulit.<p>
+
+Jika hal ini terjadi, segera periksa ke dokter untuk mengevaluasi gejala lain penyakit hati seperti kaki dan perut bengkak, urat yang menonjol pada perut dan tubuh bagian atas, serta kelelahan. Tes yang paling umum untuk mengetahui kerusakan hati adalah mengukur jumlah bilirubin dan enzim hati.<p>
+<hr>
+<b>Panjang Jari</b><p>
+Perbandingan panjang jari dapat memberitahu kemungkinan penyakit tertentu. Jari manis pria cenderung lebih panjang daripada jari telunjuknya, namun sebaliknya pada wanita.<p>
+
+Wanita dengan pola ‘maskulin’ memiliki jari manis lebih panjang daripada jari telunjuknya dan dua kali lebih berisiko menderita osteoartritis, demikian menurut penelitian tahun 2008 yang diterbitkan dalam jurnal Arthritis and Rheumatism.<p>
+
+Penelitian ini menemukan bahwa osteoartritis lutut lebih umum ditemui pada pria dan wanita dengan jari manis yang lebih panjang, tetapi efeknya paling menonjol pada wanita.<p>
+
+Jari telunjuk yang lebih panjang juga dikaitkan dengan tingginya risiko kanker payudara pada wanita dan risiko kanker prostat pada pria.<p>
+
+Sebuah penelitian tahun 2010 menemukan bahwa laki-laki yang jari telunjuknya lebih panjang dari jari manis 33 persen lebih berisiko terserang kanker prostat.<p>
+
+Para ilmuwan belum yakin mengapa, tetapi percaya bahwa panjang jari dipengaruhi oleh jumlah hormon testosteron dan estrogen di dalam rahim.<p>
+
+Jari manis yang lebih panjang mengindikasikan paparan testosteron yang tinggi ketika dalam kandungan, sementara jari telunjuk yang lebih panjang menunjukkan paparan estrogen yang lebih tinggi.<p>
+
+Karena estrogen adalah bahan bakar kanker payudara, jari telunjuk yang lebih panjang berkorelasi dengan risiko kanker payudara yang lebih tinggi. Pada pria, testosteron yang lebih banyak terkait risiko kanker prostat yang lebih tinggi.<p>
+
+Wanita yang memiliki jari manis lebih panjang sebaiknya waspada terhadap gejala lemah sendi, terutama di lutut. Pria yang berisiko tinggi terkena kanker prostat harus proaktif melakukan pengetesan kanker.<p>
+
+Perempuan yang berisiko tinggi terserang kanker payudara sebaiknya menjalani mammogram atau menjadwalkan MRI. Beberapa peneliti percaya bahwa panjang jari sebaiknya digunakan sebagai kriteria untuk mencari tahu keberadaan kanker secara komprehensif. Namun gagasan ini masih diperdebatkan.
+<p><hr>
+<b>Jari Bengkak</b><p>
+Jari bengkak dapat terjadi karena penyebab sederhana seperti cuaca panas akan mengalami menstruasi, atau terlalu banyak makan makanan asin.<p>
+
+Tetapi jika jari-jari terasa tebal dan kaku atau tidak muat dimasuki cincin setelah banyak minum atau mengurangi makanan asin, pembengkakan dapat jadi pertanda kekurangan hormon tiroid (hipotiroidisme).<p>
+
+Ketika tiroid kurang aktif, hormon-hormon penting yang mengatur metabolisme dan menjaga fungsi tubuh dengan benar juga berkurang. Dan ketika metabolisme melambat, hasilnya adalah pertambahan berat badan dan pengumpulan air.<p>
+
+“Salah satu tempat pertama yang dapat dilihat bahwa berlebihnya air adalah jari. Yang bersangkutan juga dapat merasakan jari-jari terasa kaku karena sulit ditekuk,” kata Kenneth Blanchard, endokrinologi yang menulis ‘What Your Doctor May Not Tell You About Hypothyroidism’.<p>
+
+Mintalah kepada dokter untuk melakukan pemeriksaan tiroid secara rutin dengan tes darah untuk mengukur tingkat thyroid-stimulating hormone atau TSH. Pastikan dokter menyadari pedoman skrining baru yang menyatakan bahwa tingkat TSH harus antara 0,3 dan 3,0.<p>
+<hr>
+<b>Kuku Pucat</b><p>
+Dalam keadaan normal, kuku yang ditekan akan menjadi putih. Dan ketika tekanan dilepas, kuku berubah merah muda lagi. Jika kuku tetap putih lebih dari satu menit setelah ditekan atau terlihat pucat sepanjang waktu, bisa jadi pertanda anemia.<p>
+
+Anemia atau kekurangan zat besi menyebabkan kuku pucat kerana tidak cukup terdapat sel darah merah yang beredar dalam aliran darah. Jika tidak diobati dari waktu ke waktu, kekurangan zat besi yang parah juga dapat menyebabkan kuku berbentuk sedikit cekung.<p>
+
+Jika anemia adalah penyebab kuku pucat, garis tipis di bagian bawah kuku cenderung terlihat sangat pucat.<p>
+
+“Kekurangan zat besi dapat menyebabkan kelelahan. Gejala ini dapat diobati dengan cara meningkatkan asupan makanan yang kaya zat besi seperti seperti bayam, daging merah, sayuran hijau, dan kacang-kacangan. Tetapi mungkin perlu mengkonsumsi suplemen zat besi juga,” kata Blanchard.<p>
+
+Jika zat besi menyebabkan masalah pencernaan, sebaiknya minum formula anti sembelit. Akan lebih baik jika mengkonsumsi vitamin C pada saat yang sama karena membantu penyerapan zat besi.<p>
+<hr>
+<b>Garis-garis Kecil Berwarna Merah di Bawah Kuku</b><p>
+Garis-garis ini disebut sempalan perdarahan karena terlihat seperti serpihan kecil berwarna merah atau kecoklatan di bawah kuku. Ini dapat menjadi pertanda infeksi jantung atau darah. Seiring dengan arah pertumbuhan kuku, area ini menyerupai pecahan yang terjebak di bawah kuku.<p>
+
+Serpihan perdarahan terjadi ketika gumpalan darah menghambat aliran darah dalam pembuluh kapiler kecil di bawah kuku. Gejala ini paling sering terjadi karena infeksi pada katup jantung yang disebut subacute bacterial endocarditis.<p>
+
+Jika terdapat bintik-bintik merah di bawah kuku namun tidak pernah didiagnosis dengan masalah jantung, jangan panik. Kemungkinan besar ini disebabkan hal lain. Bisa jadi hanya luka pada tangan.<p>
+
+Periksalah suhu tubuh untuk memastikan kemungkinan demam, sebab bacterial endocarditis biasanya disertai dengan demam ringan.<p>
+
+Jika belum pernah diperiksa namun cemas tentang gejala-gejala ini, hubungi dokter untuk dilakukan pemeriksaan. Dokter akan menjalankan serangkaian tes untuk mengevaluasi aliran darah di jantung.<p>
+<hr>
+<b>Ujung Jari yang Tebal dan Bulat</b><p>
+Penebalan ujung jari bisa jadi tanda penyakit jantung atau paru-paru. Biasanya terlihat juga pembulatan kuku sehingga jari-jari terlihat melengkung ke bawah.<p>
+
+Jika sistem peredaran darah dari jantung atau paru-paru terganggu, kadar oksigen dalam darah cenderung menurun. Seiring waktu, hal ini menyebabkan jaringan pada bantalan jari tumbuh, sehingga ujung jari tampak menonjol keluar.<p>
+
+Jika jari-jari tangan dan kaki telah menebal, kemungkinan sudah terjadi gejala lain seperti sesak napas atau batuk kronis. Penebalan juga terjadi pada penyakit katup jantung yang menyebabkan kelelahan dan nyeri dada. Temui dokter untuk memeriksa jantung dan paru-paru secara menyeluruh.<p>
+<hr>
+<b>Ujung Jari Berwarna Biru</b><p>
+Ujung jari berwarna abu-abu, kebiru-biruan, atau mati rasa dapat menjadi tanda gangguan sirkulasi yang dikenal sebagai penyakit Raynaud atau sindrom Raynaud.<p>
+
+Sindrom Raynaud menyebabkan kejang mendadak sementara dalam pembuluh darah dan arteri. Arteri menyempit dan menyulitkan aliran darah ke tangan dan jari. Gejalanya adalah ujung jari mati rasa, semburat kebiruan, serta tangan terasa dingin.<p>
+
+Sebanyak 5 hingga 10 persen orang dari populasi mengalami kondisi ini. Sindrom Raynaud lebih sering terjadi pada wanita dibandingkan pria dan memburuk dalam cuaca dingin. Bisa juga disebabkan karena stres.<p>
+
+Perubahan suhu mendadak, misalnya memegang es batu, dapat meyebabkan sindrom Raynaud. Pakailah sarung tangan jika pergi ke luar rumah dalam cuaca dingin, karena dingin merupakan salah satu pemicu utama sindrom Raynaud.<br> Suhu di bawah 15 derajat Celcius sudah menjadi masalah bagi penderita sindrom Raynaud.<p>
+
+Sangat penting untuk tidak mengabaikan gejala ini, karena serangan sindrom Raynaud dari waktu ke waktu dapat membatasi sirkulasi dan menyebabkan kerusakan jaringan.<p>
+
+Cara terbaik untuk mencegahnya adalah mengubah gaya hidup untuk menjaga sirkulasi darah tetap sehat. Merokok dan kafein dapat menyempitkan pembuluh darah.<p>
+
+Berhentilah merokok dan kurangi kopi, teh, dan cola. Perbanyak latihan aerobik untuk meningkatkan denyut jantung dan membuat darah tetap terpompa.<p>
+<b>Lebih detailnya sebagai berikut tentang warna kuku:</b><p>
+<ul type="circle">
+<li>Lingkaran sabit (lengkungan kecil) dikuku ibu jari berwarna merah muda berarti peredaran darah pankreas kurang baik. Akibatnya pasien mudah lesu, bila dibiarkan dapat berkembang menjadi kencing gula. Pijatlah titik dibawah ibu jari.
+<li>Lingkaran sabit dikuku jari telunjuk bewarna merah muda berarti usus dan lambung lemah. Dalam kasus ini peredaran darah di usus dan lambung kurang lancar. Pijatlah titik dibawah kuku jari telunjuk.
+<li>Lingkaran sabit dikuku jari tengah  bewarna merah muda berarti mudah gelisah dan terjadi kelemahan energi dibagian jantung. Pijatlah titik dibawah kuku jari tengah bila tidur tak nyenyak, banyak mimpi, sering mengeluh sakit kepala, tidak dapat berkonsentrasi.
+<li>Lingkaran sabit dikuku jari manis bewarna merah muda berarti haid tidak teratur karena suhu badan naik turun akan mengganggu peredaran darah, daya tahan tubuh menjadi lemah. Pijatlah titik dibawah kuku jari manis bila anda menderita gejala tersebut.
+<li>Lingkaran sabit dikuku jari kelingking bewarna merah muda berarti energi jantung menjadi lemah. Sakit jantung biasanya sulit diketahui secara dini. Bila telah diketahui biasanya sakit jantung sudah kronis. Untuk mendeteksi secara dini sering-seringlah memijit 2 titik dibawah kuku jari kelingking dibagian dalam dan luar.
+<li>Kuku  masuk/ tenggelam kedalam daging berarti hati lemah. Pasien dengan kondisi demikian karena terlalu banyak makan daging, kurang makan sayuran dan buah-buahan. Hal tersebut menyebabkan hati jadi kurang sehat. Pijatlah titik diruas kedua jari manis dibagian jari dalam.
+<li>Di kuku timbul garis-garis mendatar berarti pasien supaya berhati-hati dengan usus dan lambung. Kuku manusia setiap hari selalu tumbuh. Bila terjadi gangguan pencernaan maka pertumbuhan kuku akan terhambat akibatnya timbul garis-garis mendatar. Pijatlah titik ditempat kuku ada garisnya.
+<li>Dikuku timbul garis vertikal berarti metabolisme kurang bekerja dengan baik. Garis-garis vertikal tersebut adalah daging dibawah kuku yang berkerut. Bila kuku jari tengah ada garis vertikal berarti hati dan ginjal kurang baik dan kurang sehat. Pijitlah titik dibawah ujung kuku bagian tengah.
+<li>Di kuku berbintik-bintik hitam dan merah. Berarti peredaran darah di otak kurang lancar, sehingga menyebabkan lesu, mengantuk dan aktivitas menurun. Bila jari telunjuk ada bintik-bintiknya, peredaran darah di otak kurang baik. Pijatlah titik di bawah ujung kuku jari telunjuk.
+<li>Untuk menjaga kesehatan anda secara teratur pijatlah semua titik-titik dibawah kuku setiap hari. Bila kuku jari menjadi merah setelah ditekan, berarti peredaran darahnya baik dan organ yang berhubungan dengan meridian ditangan cukup baik. Bila kuku jari setelah ditekan tidak segera memerah, berarti peredaran darah tidak lancar, dan organ yang berhubungan dengan meridian ditangan kurang sehat. Organ-organnya ialah paru-paru, jantung, usus besar dan usus kecil.</li></ul><p>
+<hr> 
+<b>Berikut ini adalah beberapa hubungan tangan dengan meredian syaraf dan tanda-tanda yang dapat membantu kita mendeteksi penyakit:</b><p>
+
+<b>Meredian paru-paru</b><br>
+dimulai dari titik di sisi luar atas ibu jari tepat di bawah kuku ibu jari. melintasi gunung-gunungan jempol.jalur ini berhubungan dengan paru-paru dan saluran pernafasan.<p>
+
+Bila di pijat terasa sakit berarti si penderita terkena flu, asma, infeksi saluran pernafasan dan lain-lain. Bila ibu jari kanan yang sakit berarti organ pernafasan kanan yang sakit, begitu juga sebaliknya.<P>
+
+<B>Meredian jantung</B><br>
+dimulai dari titik bawah kuku kelingking sebelah dalam. melinatasi gunung-gunungan di bawah jari kelingking. jalur ini berhubungan dengan jantung dan peredaran darah.<p>
+
+Bila di pijat sakit berarti si penderita mengalami gangguan dengan jantung atau penyakit yang berhubunngan dengan ginjal, mengompol, rasa tidak enak dalam dada, berdebar-debar, pusing, pikiran tegang dll.<p>
+
+<b>Meredian selaput jantung</b><br>
+dimulai dari titik yang terletak di bawah kuku jari tengah melintasi telapak tangan bagian tengah.jalur ini mempengaruhi kegiatan jantung, peredaran darah, usus kecil. bila di pijat sakit berarti pasien dalam keadaan gelisah, sakit mulut, sakit perut, juga sakit kelainan pada limfa.<p>
+<b>Meredian usus besar</b><br>
+dimulai dari bawah kuku jari telunjuk melewati punggung tangan. Bila di pijat sakit berarti pasien mengalami gangguan sistem pencernaan, pundak dan bahu terasa nyeri, sakit kepala depan, sakit di pinggang, bokong dan paha.<p>
+
+<b>Meredian usus kecil</b><br>
+di mulai dari titik yang terletak di bawah kuku jari kelingking sebelah luar melewati punggung tangan sebelah luar. Jalur ini berhubungan dengan usus kecil. bila di pijat sakit berarti pasien mengalami sembelit, sakit di bagian perut, sakit bagian kepala belakang, nyeri tangan.<p>
+
+<b>Meredian tri pemanas</b><br>
+dimulai dari titik yang terletak di bawah kuku jari manis. meredian ini mengatur sistem lymfe dan sistem hormonal. bila di pijat sakit berarti penderita mengalami suhu badan yang panas atau dingin, migrain, nyeri dada, kolik kandung empedu.<p>
+
+dari telapak tangan dan punggung kita dapat mengetahui penyakit yang ada di tubuh kita dengan cepat dan jelas. Menurut ilmu akupuntur tradisional, dengan melihat warna, elastisitas daging dan otot tangan serta kelembabannya, dapat menolong mengurangi dan menyembuhkan penyakit yang bersarang di tubuh kita.<p>
+<hr>
+<b>Gangguan usus besar/Sembelit</b><p>
+<ul type="disc">
+<li>Garis ruas jari pada pungung tangan berwarna gelap warnanya, mengindikasikan sembelit yang semakin parah
+<li>garis-garis pada telapak tangan dan ruas seluruh jari tangan berwarna gelap, indikasi sembelit semakin parah
+<li>ada bayangan kehitaman secara keseluruhan dari telapak tangan, menandakan sembelit lebih kronik dari pada garis berwarna gelap pada ruas jari
+<li>jari telunjuk dan jari tengah di renggangkan terasa sakit
+<li>ibu jari ( jempol) bengkok, biasanya bengkok kearah belakang
+<li>jari telunjuk bengkok ( kekiri, kekanan atau ke belakang juga mengindikasikan adanya permasalahan pada usus besar</li></ul><p>
+<hr>
+<b>Masalah Angin</b><p>
+Masalah angin pada seseorang bisa di lihat dari warna telapak tangannya, warna yang tidak merata ( terdapat bintik-bintik warna atau putih) mengindikasikan bahwa di tubuh terdapat banyak angin.<p>
+
+Warna dasar telapak tangan adalah putih atau merah, apabila warna dasar telapak tangan putih maka gangguan angin di  tandai dengan bintik-bintik merah pada telapak tangan, sedangkan apabila warna dasar telapak tangan merah maka gangguan di tandai dengan adanya bintik-bintik warna putih.<p>
+<hr>
+<b>Masalah Jantung</b><p>
+<b>Tanda-tanda yang nampak apabila ada gangguan jantung:</b><p>
+<ul type="circle">
+<li>Jari kelingking bengkok
+<li>jari tenggah bengkok. indikasi gangguan pembungkus jantung ( perikardium)
+<li>Telapak tangan berkeringat. indikasi gangguan jantung, paru-paru, sesak nafas dan stress.
+li>kuku bergelombang</li></ul><p>
+<hr>
+<b>Masalah Ginjal</b><p>
+<b>Masalah ginjal di tandai dengan tanda-tanda di tangan sebagai berikut:</b><p>
+<ul type="square">
+<li>Ruas pertama seluruh jari terlihat kembung (bengkak air)
+<li>Ruas pertama jari telunjuk keriput, indikasi kurang air atau sering menahan air kencing
+<li>Terasa sakit di tiga Jari ( ibu jari, telunjuk dan jari tengah)
+<li>ujung-ujung jari relatif tidak meruncing menandakan seseorang mengalami masalah ginjal, untuk wanita biasanya letak rahim tidak pada tempatnya.
+<li>mata kaki bengkak atau mata berkantong, indikasi masalah ginjal dan jantung.
+<li>ruas ujung-ujung jari bengkok.</li></ul><p>
+
+<hr> 
+ <b>Infeksi HPV Sebabkan Kutil seperti di jari tangan, kuku dan telapak kaki</b><p>
+Human Papilloma Virus (HPV) biasanya diketahui sebagai virus yang menyebabkan penyakit kanker rahim. Selain itu, ternyata infeksi HPV bisa menyebabkan kutil pada tubuh manusia. Ada lebih dari 100 varietas human papillomavirus (HPV).<p>
+
+Berbagai jenis infeksi HPV dapat menyebabkan kutil di berbagai bagian tubuh. Ada yang menyebabkan kutil pada kaki dan yang paling sering yaitu yang menyebabkan kutil pada tangan atau wajah.<p>
+
+Ada lebih dari 40 jenis HPV berbeda yang secara khusus mempengaruhi daerah genital. Kebanyakan infeksi HPV tidak menyebabkan kanker, tetapi beberapa jenis HPV dapat menyebabkan kanker leher rahim.<p>
+
+<b>Gejala</b><br>
+Pada banyak kasus, sistem kekebalan tubuh mengalahkan infeksi HPV sebelum memiliki kesempatan untuk menciptakan kutil.<b><br> Ketika kutil tampil, bentuknya dapat bervariasi tergantung pada jenis HPV yang terlibat, antara lain:</b><p>
+<ul type="circle">
+<li>Kutil kelamin dapat muncul sebagai luka yang datar, kecil, berbentuk seperti kembang kol, atau berbentuk seperti tonjolan batang kecil. Pada wanita, kutil kelamin muncul paling sering pada vulva tetapi mungkin juga terjadi di dekat anus, pada leher rahim atau di vagina. Pada pria, kutil kelamin dapat muncul pada penis dan skrotum atau sekitar anus. Kutil kelamin jarang menimbulkan ketidaknyamanan atau rasa sakit.
+<li>Kutil umum berbentuk benjolan kasar yang biasanya muncul pada jari tangan atau sekitar kuku. Dalam kebanyakan kasus, kutil umum mengganggu karena bentuknya tetapi juga mungkin menyakitkan atau rentan terhadap cedera atau perdarahan.
+<li>Kutil telapak kaki. Kutil telapak kaki biasanya muncul pada tumit atau mata kaki atau daerah kaki yang paling merasakan tekanan. Kutil ini dapat menyebabkan ketidaknyamanan atau rasa sakit.
+<li>Kutil datar berbentuk datar, sedikit terangkat, dan lebih gelap dari warna kulit biasa. Biasanya muncul pada leher, wajah, tangan, pergelangan tangan, siku atau lutut. Infeksi HPV yang menyebabkan kutil datar biasanya mempengaruhi anak-anak, remaja dan dewasa muda.
+<li>Kanker serviks. Kebanyakan kasus kanker serviks disebabkan oleh dua varietas spesifik HPV genital. Kedua jenis HPV biasanya tidak menyebabkan kutil, sehingga perempuan seringkali tidak menyadari bahwa mereka telah terinfeksi.
+Tahap awal kanker serviks biasanya tidak menimbulkan tanda atau gejala. Itulah mengapa penting bagi wanita untuk melakukan tes Papsmeer secara teratur. Tes ini dapat mendeteksi perubahan prekanker pada serviks yang dapat menyebabkan kanker.</li></ul><p>
+
+<b>Perawatan & Pengobatan</b><br>
+Kutil sering hilang sendiri tanpa pengobatan. Walaupun kutil sudah hilang atau dihapus, pasien masih dapat mengeluarkan HPV dan dapat menularkan virus kepada orang lain.<p>
+
+Obat untuk menghilangkan kutil biasanya dipakai langsung ke bagian kutil dan biasanya memerlukan pemakaian yang teratur sebelum berhasil.<br><b> Obat tersebut antara lain:</b><p>
+<ul>
+<li>Asam salisilat. Perawatan dengan obat yang mengandung asam salisilat bekerja dengan menghapus lapisan kutil sedikit demi sedikit. Jangan menggunakan produk ini untuk kutil kelamin, karena akan menyebabkan iritasi parah.
+<li>Imiquimod (Aldara, Zyclara). Krim yang dapat meningkatkan kemampuan sistem kekebalan tubuh untuk melawan HPV.
+<li>Podofilox (Condylox). Krim podofiloks bekerja dengan menghancurkan jaringan kutil kelamin.
+<li>Asam Triklorasetik. Obat kimia yang membakar habis kutil kelamin.</li></ul><p>
+
+<b>Jika obat tidak manjur, dokter mungkin akan menyarankan salah satu dari prosedur berikut:</b><p>
+<ul>
+<li>Pembekuan dengan nitrogen cair (cryotherapy)
+<li>Elektrokauter, yang menggunakan arus listrik untuk membakar kutil atau lesi
+<li>Bedah
+<li>Operasi Laser</li></ul><p>
+
+
+
+  <br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+
+<!-- daris sini --><div data-role="page" id="a9" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Mendeteksi Penyakit</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Mendeteksi Penyakit Dari Lidah</I></b></center><hr>
+ <p>
+ 
+<center> <img src="images/capture.png"/< center><p></p></center>
+<hr><p>
+<hR>
+<b><center>Warna Lidah Menandakan Adanya Penyakit</center></b>
+<hr><p>
+
+Saat tubuh mengalami beberapa masalah di tubuhnya, biasanya tubuh juga akan memberikan pertanda yang dapat dilihat dengan kasat mata atau dirasakan pada beberapa bagian tubuh manusia. Salah satu bagian tubuh yang dapat mengindikasikan adanya masalah pada tubuh adalah lidah, khususnya dalam hal warna lidah yang ternyata dapat berubah ubah seiring adanya perubahan kondisi pada tubuh.<p>
+
+Lidah sendiri adalah sebuah organ tubuh yang memiliki fungsi sebagai pengecap makanan yang tentu saja akan berpengaruh pada rasa makanan ataupun pada selera makan kita. Fungsi lidah sebagai pengecap ini dapat menghilang saat terjadi sebuah kelainan maupun penyakit. Namun lidah sendiri dapat difungsikan sebagai pendeteksi adanya penyakit pada tubuh manusia. Normalnya, kita hanya mengetahui jika lidah memiliki warna merah muda. Namun, lidah kadang berubah warna sesuai dengan kondisi yang terjadi pada tubuh manusia.<p>
+
+Diantara warna-warna tersebut adalah:<p>
+
+<b>Lidah berwarna putih</b><p>
+
+Saat lidah mengalami perubahan ke warna putih, hal ini menandakan orang tersebut biasanya menderita tifus, namun warna putih pada lidah ini juga dapat menunjukkan gejala flu atau masalah pencernaan, jika warna putih ini tipis-tipis, biasanya orang tersebut sedang kekurangan darah.<p>
+
+<b>Lidah berwarna kuning</b><p>
+
+Saat lidah mengalami warna kekuningan, dapat diindikasikan bahwa tubuh mengalami infeksi bakteri. Jika warna kuningnya agak kehijauan, maka infeksi bakteri sudah cukup tinggi. Warna kuning dapat berarti adanya panas tubuh yang berlebih, yang bisa disebabkan oleh adanya konsumsi rokok, makanan pedas, alkohol, atau adanya stress.<p>
+
+<b>Lidah berwarna merah</b><p>
+
+Jika lidah anda menjurus ke warna merah, hal ini menandakan adanya aktifitas panas pada tubuh. Jika warna merah hanya ada di ujung lidah, hal ini menandakan adanya panas pada jantung, sementara itu jika warna mereah berada di ujung kanan atau kiri lidah, bisa jadi ada masalah di ginjal dan kandung empedu.<p>
+
+<b>Lidah berwarna biru</b><p>
+
+Jika lidah mengalami perubahan warna ke warna biru, maka hal ini menandakan adanya darah yang dingin atau statis, tidak bergerak. Jika warna biru menjurus ke keunguan, brarti kondisi darah justru lebih parah.<p>
+
+<b>Lidah berwarna ungu</b><p>
+
+Jika lidah berwarna keunguan, maka ada indikasi adanya aliran darah yang tidak lancar atau adanya demam. Bahkan, jika warna ungun meliputi seluruh bagian lidah, bagian organ dalam tubuh diindikasikan sedang mengalami panas yang cukup tinggi.<p>
+
+
+<br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+<!-- daris sini --><div data-role="page" id="a10" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Mendeteksi Penyakit</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Mendeteksi Penyakit Dari Kulit</I></b></center><hr>
+ <p>
+ 
+<center> <img src="images/capture1.png"/< center><p></p></center>
+<hr><p>
+
+Penyakit kulit merupakan salah satu bencana paling buruk bagi yang sangat mengutamakan penampilan. Namun bagi praktisi kesehatan, kemunculan penyakit kulit bisa bermanfaat dalam mendeteksi adanya penyakit lain yang lebih parah.<p>
+
+"Kondisi kulit selalu mencerminkan segala sesuatu yang terjadi di dalam tubuh," ungkap Dr Jeffrey Dover, seorang profesor dermatologi dari Yale School of Medicine.<p>
+
+Beberapa kondisi kulit yang dimaksud oleh Dr Jeffrey seperti dikutip dari AOL Health, adalah sebagai berikut:<p>
+
+<b>Ruam berbentuk kupu-kupu di wajah</b><p>
+
+Wajah memerah tidak selalu menandakan seseorang sdang tersipu. Jika sering muncul di pangkal hidung dan sekitar pipi, ruam bisa menandakan penyakit autoimun Lupus, apalagi jika disertai rasa letih, lemah dan nyeri sendi.<p>
+
+<b>Gatal di seluruh tubuh</b><p>
+Bila tidak disertai bentol-bentol, ruam atau eksim, gatal yang terjadi di seluruh tubuh bisa menunjukkan gejala lymphoma (kanker limfa), ganguan ginjal maupun hati. Jika gatal itu tidak hilang berhari-hari, disarankan untuk segera memeriksakan diri untuk mencegah kemungkinan adanya penyakit tersebut.<p>
+
+<b>Psoriasis</b><p>
+Gangguan kulit yang ditandai dengan bercak-bercak putih atau kemerahan di tangan, lutut dan siku ini sangat mengganggu karena gatal dan sering menyebabkan rasa malu bagi pengidapnya.<p>
+
+Namun yang perlu dikhawatirkan bukan hanya itu saja, sebab seringkali penyakit ini juga menyertai komplikasi lain yang lebih berat. Di antaranya penyakit jantung dan diabetes.<p>
+
+<b>Spider-vein</b><p>
+Pelebaran pembuluh darah yang membentuk lingkaran terpusat seperti sarang laba-laba sering dialami oleh wanita hamil. Namun jika kemunculannya sangat banyak atau ukurannya tidak wajar, spider-vein dapat menandakan penyakit hati yang kronis terutama jika muncul di daerah leher, wajah dan lengan.<p>
+
+<b>Jerawat</b><p>
+Salah satu gangguan hormonal yang bisa menyebabkan jerawat tak terkendali adalah penyakit policystic ovary. Gejala lain yang menyertai penyakit ini selain jerawat adalah sering terlambat datang bulan, obesitas dan pertumbuhan rambut halus di wajah yang berlebihan.<p>
+
+<b>Kutil</b><p>
+Munculnya 1 atau 2 kutil dalam waktu bersamaan masih bisa dianggap wajar, tetapi perlu diwaspadai jika belasan kutil muncul bersamaan atau paling tidak, berdekatan. Gejala ini sering mengindikasikan adanya kanker di dalam tubuh, terutama di bagian payudara, usus dan paru-paru.<p>
+
+<b>Ruam di tangan dan wajah</b><p>
+Ruam kemerahan yang muncul dalam jumlah banyak di wajah dan tangan (terutama punggung tangan, sela-sela jari dan buku jari) adalah gejala klasik yang menunjukkan adanya kanker. Gejala yang disebut dermatomyositis ini biasanya
+disertai dengan rasa kurang bergairah dan melemahnya otot secara keseluruhan.<p>
+
+<b>Kulit tangan mengeras</b><p>
+Hilangnya elastisitas kulit tangan atau disebut scloderma sering menjadi petunjuk untuk mengetahui adanya masalah pada ginjal, paru-paru dan tenggorokan. Scloderma terjadi karena aliran darah di tangan berkurang, sehingga kulit dan jemari mengeras dan menjadi seperti cakar.<p>
+
+<br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+<!-- daris sini --><div data-role="page" id="a11" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Mendeteksi Penyakit</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Mendeteksi Penyakit Dari Telinga</I></b></center><hr>
+ <p>
+ 
+<center> <img src="images/capture2.png"/< center><p></p></center>
+<hr><p>
+
+Kamu tahu enggak sih kalau telinga itu bisa mengindikasikan kondisi kesehatan? Apa sih artinya kalau telinga Kamu memiliki bentuk yang berbeda dibandingkan telinga orang lain pada umumnya? Apa artinya kalau telinga Kamu sakit atau berdengung? Hal-hal tersebut bisa menjadi pertanda suatu penyakit atau kondisi yang tersembunyi yang tidak pernah Kamu pikirkan. Mau tahu tentang hal tersebut? Berikut penjelasannya!<p>
+
+<b>Lipatan Daun Telinga</b><p>
+
+Adanya lipatan diagonal di telinga biasa mengindikasikan kondisi Frank’s sign. Lipatan diagonal di daun telinga tersebut bisa menjadi pertanda penyakit jantung. Ahli tidak tahu secara tepat apa yang menyebabkan lipatan diagonal tersebut. Selain itu, tidak semua orang yang memiliki lipatan diagonal di telinga mereka menderita penyakit jantung. Namun, kalau Kamu memiliki lipatan diagonal tersebut, lebih baik coba konsultasikan dengan dokter.<p>
+ 
+<b>Lubang dan Lipatan Di Telinga</b><p>
+
+Pada beberapa kasus, bayi lahir dengan kondisi yang bisa memengaruhi perkembangan mereka nantinya. Salah satu kondisi tersebut adalah sindrom Beckwith-Wiedemann, sindrom yang menyebabkan sejumlah lipatan dan lubang kecil di sekitar telinga. Bayi dengan sindrom Beckwith-Wiedemann juga bisa tumbuh lebih besar daripada anak bayi pada umumnya. Selain itu, mereka juga cenderung memiliki lidah yang besar dan gula darah rendah.<p>
+
+Sindrom ini pada umumnya tidak menyebabkan kondisi kesehatan yang serius. Namun, ketika anak yang menderita sindrom ini tumbuh, salah satu sisi tubuhnya cenderung lebih besar ketimbang sisi lainnya. Mereka juga memiliki risiko lebih tinggi terkena jenis tumor tertentu.<p>
+ 
+<b>Letak Telinga Rendah</b><p>
+
+Letak telinga yang agak rendah seringkali dikaitkan dengan down syndrome dan turner syndrome. Penyebab kedua sindrom tersebut adalah masalah kromosom. Penderita down syndrome juga memiliki perbedaan fisik lainnya serta masalah-masalah yang memengaruhi perkembangannya. <p>
+
+Sementara itu, turner syndrome bisa menyebabkan kelainan pada bentuk kepala dan leher serta masalah-masalah yang berhubungan dengan pertumbuhan dan pubertas. Dua kondisi langka lain, yaitu sindrom Shprintzen-Goldberg dan sindrom Jacobsen juga menyebabkan letak telinga yang agak rendah serta masalah perkembangan.<p>
+ 
+<b>Bagian Luar Telinga Hilang</b><p>
+
+Hilangnya daun telinga bisa menjadi pertanda anotia, kondisi yang sudah ada sejak lahir pada beberapa orang. Dokter dan ahli belum menemukan penyebabnya, namun kemungkinan besar hal-hal seperti lingkungan dan konsumsi obat-obat tertentu saat kehamilan menjadi salah satu penyebabnya. Pada banyak kasus, dokter bisa membentuk daun telinga untuk penderita anotia dengan prosedur operasi plastik.<p>
+
+<b>Bentuk Telinga yang Tidak Biasa</b><p>
+
+Bentuk telinga yang tidak biasa hingga hal kecil seperti skin tag, atau daging tumbuh berukuran sekecil jerawat, atau menyerupai tahi lalat namun berwarna kulit, bisa menjadi pertanda masalah ginjal. Hal tersebut dikarenakan ginjal bayi berkembang di saat yang bersamaan dengan telinganya. Kalau dokter menyadari kondisi ini pada bayi Kamu, biasanya ia akan melakukan pemeriksaan pada ginjal dengan melakukan ultrasound.<p>
+ 
+<b>Telinga Berdengung (Tinitus)</b><p>
+
+Kondisi ini biasanya disebabkan oleh suatu hal yang berkaitan langsung dengan telinga Kamu, misalnya seperti penumpukan kotoran telinga atau berada di sekitar lingkungan yang berisik. Namun, telinga berdengung juga bisa menjadi pertanda masalah persendian, tepatnya tempat dimana sendi tulang rahang dan tulang tengkorak bertemu. Telinga berdengung juga bisa menjadi pertanda cedera leher atau kepala. Kalau Kamu sering mendengar dengungan di telinga yang tidak kunjung berhenti, periksakan ke dokter.<p>
+ 
+<b>Telinga Gatal</b><p>
+
+Infeksi telinga atau iritasi telinga lainnya seringkali menyebabkan telinga gatal. Kemungkinan penyebab lain dari kondisi ini adalah psoriasis, penyakit yang menyebabkan sistem imun menyerang kulit. Psoriasis bisa menimbulkan rasa sakit jika menyerang bagian dalam telinga, bagian dimana lapisan kulit tipis. <p>
+
+Penyakit ini bisa menyerang bagian dalam dan luar telinga dan menyebabkan penumpukan kulit mati yang membuat Kamu sulit mendengar. Meski psoriasis tidak bisa diobati, dokter akan memberikan obat untuk meredakan gejala-gejalanya.<p>
+ 
+<b>Rasa Sakit di Telinga</b><p>
+
+Rasa sakit di telinga bisa menjadi pertanda infeksi telinga, infeksi tenggorokan, penumpukan kotoran telinga, atau abses gigi. Segera kunjungi dokter kalau Kamu mengalami rasa sakit di telinga yang tidak kunjung berhenti atau disertai gejala lain seperti demam, muntah, nyeri tenggorkan, dan keputihan atau cairan dari telinga.<p>
+
+Seperti yang sudah dijelaskan di atas, masalah telinga bisa menjadi pertanda suatu kondisi kesehatan tertentu. Oleh sebab itu, kalau Kamu mengalami masalah telinga yang tidak kunjung berhenti, segera periksakan ke dokter.<p>
+
+<br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+<!-- daris sini --><div data-role="page" id="a12" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Mendeteksi Penyakit</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Mendeteksi Penyakit Dari Warna Bibir</I></b></center><hr>
+ <p>
+ 
+<center> <img src="images/12.jpg"/< center><p></p></center>
+<hr><p>
+
+Tanda pertama dari berbagai penyakit sebagian besar dapat terlihat lewat bibir. Karenanya, bibir disebut sebagai jendela kesehatan oleh para ahli kesehatan tradisional China.<p>
+
+Jika warna bibir berubah, ini adalah cara tubuh mengatakan pada kita kalau ada sesuatu yang tidak baik. Posisi tubuh, organ internal, suhu, dan tekanan darah bisa diketahui dari warna bibir.<p>
+
+Berikut ini kondisi kesehatan yang dapat terlihat dari warna bibir seperti:<p>
+
+<b>Pucat atau putih</b><bR>
+Ini adalah tanda yang jelas adanya anemia. Warna bibir ini artinya tubuh Anda kekurangan sel darah merah atau hemoglobin. Hemoglobin merupakan bagian utama dan sel darah merah yang mengikat oksigen. Karena itu, jika Anda kekurangan hemoglobin, bibir Anda akan menjadi pucat. Mengonsumsi makanan kaya besi, seperti bayam, buah kering, dan roti bisa menjadi permulaan meningkatkan hemoglobin Anda.<p>
+
+<b>Merah</b><bR>
+Bibir berwarna merah berarti suhu tubuh Anda sangat panas. Di saat seperti ini, Anda akan mengalami tanda lainnya seperti bau mulut dan dorongan untuk ngemil. Menurut para ahli, kondisi ini menjadi tanda Anda mengalami disfungsi liver, yang mengakibatkan tubuh Anda melepaskan panas. Di samping itu, bibir berwarna merah juga menandakan adanya alergi dari berbagai jenis makanan atau cairan sehingga membuat bibir bengkak.<p>
+
+<b>Ungu atau biru</b><br>
+Ini merupakan fenomena yang kerap terjadi saat musim dingin, tapi bibir berwarna ungu atau biru tidak boleh dibiarkan jika terjadi dalam waktu lama. Hal ini karena kemungkinan Anda mengalami masalah jantung atau pernapasan. Selain itu, juga bisa berarti sirkulasi darah dalam tubuh tidak berjalan benar. Jika ada garis hijau di sekitar bibir Anda, menandakan adanya sirkulasi darah yang buruk di sekitar liver dan limpa.<p>
+
+<b>Merah tua hingga biru</b><br>
+Warna bibir ini menandakan Anda butuh mendetoksifikasi tubuh segera dengan makanan dan minuman sehat. Warna ini menunjukkan sistem pencernaan Anda mengalami stres karena racun dan tubuh butuh menghilangkan agen mengganggu ini. Menjalani diet alkalin bisa jadi salah satu caranya.<p>
+
+<b>Garis ungu di sekitar bibir</b><bR>
+Menurut teori kesehatan China, garis ungu atau kehijauan pada bibir mengindikasikan adanya ketidakseimbangan energi di dalam tubuh. Artinya, energi negatif menyelubungi tubuh Anda. Mengonsumsi makanan yang netral di alam, penggunaan bumbu yang ringan, dapat membantu Anda menghilangkan energi negatif ini.<p>
+
+<b>Merah muda</b><bR>
+Bibir berwarna merah muda mengindikasikan kesehatan tubuh dengan pikiran yang seimbang. Artinya, Anda sudah melakukan segala sesuatu dengan benar untuk menjaga tubuh tetap bugar. Pola makan serta olahraga yang Anda jalani juga sesuai untuk tubuh.
+
+
+<br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+<!-- daris sini --><div data-role="page" id="a13" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Mendeteksi Penyakit</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Mendeteksi Penyakit Dari Hidung (Ingus)(</I></b></center><hr>
+ <p>
+ 
+<center> <img src="images/hidung.jpg"/< center><p></p></center>
+<hr><p>
+
+Jika hidung anda terkena infeksi atau virus maka ingus akan diproduksi secara berlebihan pada lapisan mukosa hidung dan lendir ingus pada hidung memiliki warna-warna tertentu yang dari warna tersebut menandakan beberapa penyakit atau infeksi yang anda alami.<p>
+
+Berikut ulasan tentang Cara Deteksi penyakit dari warna ingus anda dan membedakan warna ingus:<p>
+
+<b>1. Jika Ingus anda berwarna bening atau putih </b><bR>
+
+Warna ingus bening atau putih menandakan bahwa ada peningkatan lendir yang disebabkan oleh seseorang terkena infeksi atau alergi. atau gejala dari commons cold atau influenza. beda antara kedua hal tersebut adalah dari virus yang menyerang. jika commons cold disebabkan virus salesma tetapi untuk influenza disebabkan oleh virus flu atau influenza.</p><p>
+
+<b>2. Ingus berwarna kuning atau kuning kehijauan</b><bR>
+
+Anda mungkin pernah mendengar apabila ada seseorang yang memiliki ingus berwarna kuning kehijauan penyebabnya infeksi, tetapi tidak semua jika warna ingus kuning atau kuning kehijauan disebabkan oleh infeksi bakteri.<p>
+
+<b>3. Ingus anda berwarna merah, oranye atau merah kecoklatan</b><bR>
+
+Jika warna tersebut diatas terjadi peradangan yang berlebihan pada hidung anda sehingga menyebabkan mukosa hidung anda yang kaya akan pembuluh darah lecet dan keluarnya darah di hidung.  atau hal lain warna ingus berwarna merah atau oranye adalah disebabkan keganasan kanker pada sinus walaupun kasusnya jarang terjadi.<p>
+
+<b>4. Ingus anda berwarna biru</b><bR>
+
+Hal ini terjadi akibat bakteri tertentu yang disebut dengan Pseudomonas pyocyanea. hal ini terjadi 1 dari 10000 orang. memang kasus ini terasa jarang. jika anda mengalami segera hubungi dokter.<p>
+
+
+Hal lain adalah anda menghirup udara biru atau serbuk biru yang ada di Udara, jika hal ini terjadi anda harus kembali normal dalam waktu 1 atau 2 hari.<p>
+
+<b>5. Ingus anda berwarna hitam</b><bR>
+
+Hal ini terjadi karena anda menghirup polutan dari asap, abu, kotoran dan debu atau zat-zat lain yang serupa. sehingga tugas lendir untuk mem-filter hal tersebut agar tidak terhirup ke paru-paru.<p>
+
+Demikianlah singkat kami tentang Cara Deteksi penyakit dari warna ingus anda semoga bermanfaat
+
+<br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+<!-- daris sini --><div data-role="page" id="a14" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Mendeteksi Penyakit</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Mendeteksi Penyakit Dari Rambut</I></b></center><hr>
+ <p>
+ 
+<center> <img src="images/ilustrasi-rambut-rontok_20170630_125209.jpg"/< center><p></p></center>
+<hr><p>
+
+Anda bisa mendeteksi masalah kesehatan di tubuh dengan melihat bagaimana kondisi rambut Anda. Kondisi rambut yang bercabang, kering, berminyak, dan rontok, bisa menjadi tanda dari masalah kesehatan yang serius. Nah, berikut adalah beberapa kondisi rambut dan faktor-faktor yang menyebabkannya.<p>
+
+<b>1. Rambut kering dan rapuh</b><bR>
+
+Rambut kering dan rapuh bisa menjadi tanda kekurangan protein, vitamin A, seng, asam lemak esensial dan masalah tiroid.<p>
+
+<B>2. Rambut berminyak dan susah diatur</B><br>
+
+Rambut berminyak dan susah diatur bisa menjadi tanda kekurangan seng, asam folat dan vitamin B6.<p>
+
+<b>3. Rambut kasar</b><bR>
+
+Rambut kasar bisa menjadi tanda kekurangan protein dan vitamin A, serta risiko terkena hipotiroidisme.<p>
+
+<b>4. Rambut bercabang</b><bR>
+
+Rambut bercabang bisa menjadi tanda anemia, kekurangan zat besi dan vitamin B6, magnesium, atau seng.<p>
+
+<b>5. Uban prematur</b><BR>
+
+Uban prematur bisa menjadi tanda dari stres, masalah hormon dan kekurangan vitamin B, tembaga atau asam folat.<p>
+
+<b>6. Gangguan di kulit kepala</b><bR>
+
+Gangguan di kulit kepala seperti ketombe, seborrhea, psoriasis bisa disebabkan oleh infeksi jamur, stres atau kekurangan vitamin B, zinc, dan asam lemak esensial.<p>
+
+Inilah enam kondisi rambut dan apa yang mungkin menyebabkan kondisi tersebut. Jangan abaikan setiap keluhan yang terjadi pada tubuh, karena itu bisa menjadi tanda dari masalah yang serius.
+
+
+<br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+
+
+
+
+
+
+</body>
+</html>
