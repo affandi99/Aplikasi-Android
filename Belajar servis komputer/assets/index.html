@@ -1,0 +1,902 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Galery Fabel</title>
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+<link rel="stylesheet" href="jquery.mobile/testing.css"/>
+<link rel="stylesheet" href="jquery.mobile/tambahan.css"/>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> 	 
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="../css/jquery.mobile-1.2.0.min.css" rel="stylesheet" />
+<link href="../css/styles.min.css" rel="stylesheet" />
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+		// all dialog buttons should close their parent dialog
+		$(".ui-dialog button").live("click", function() {		
+			$("[data-role='dialog']").dialog("close");		
+		});
+		$(document).on("mobileinit", function(){
+		  $.mobile.defaultPageTransition = "slide";
+		});
+	
+function pageScroll() {
+   	window.scrollBy(0,60);
+   	scrolldelay = setTimeout('pageScroll()',10000); // scrolls every 1000 milliseconds
+}
+function stopScroll() {
+   	clearTimeout(scrolldelay);
+}
+function jumpScroll() {
+window.scroll(0,0); // horizontal and vertical scroll targets
+}
+</script>
+<script src="../js/jquery.mobile-1.2.0.min.js"></script>
+<script src="../js/dw_tooltip_c.min.js" type="text/javascript"></script>
+<script src="../js/chords.min.js" type="text/javascript"></script>
+
+
+</head>
+
+<body>
+<div data-role="page" id="halaman" data-theme="g">
+<header data-role="header" data-position="fixed">
+<h1><font color="#FFFFFF">SERVIS KOMPUTER</font></h1>
+</header>
+  <div data-role="content"><div class="choice_list">
+
+
+
+
+<center>
+<marquee scrolldelay="350">
+<div class="tanggal">
+<script>
+
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+var dayarray=new Array("Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu")
+var montharray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember")
+document.write("<b><i><u>"+dayarray[day]+", "+daym+" "+montharray[month]+" "+year+"</b></i></u>")
+
+</script>
+</div></marquee>
+</center>
+
+
+
+
+
+	  <ul data-role="listview" data-theme="g" data-inset="true">
+        
+<li><a href="#Pendahuluan" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><font color="#fffff">Tentang Aplikasi</font></a></li>
+<div data-role="popup" id="Pendahuluan" class="ui-content" style="max-width:280px">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+<p style="text-align:justify"><font color="#000033">Aplikasi "Belajar Servis Komputer" berisi tentang kumpulan tutorial mengatasi berbagai kerusakan pada kamputer</font></p><hr>
+<font color="#000033">Semoga bermanfaat.</font><hr>
+<br></div>	
+
+<li><a href="#info" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><font color="#ffffff">Info fiture</font></a></li>
+<div data-role="popup" id="info" class="ui-content" style="max-width:280px">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+<p style="text-align:justify"><font color="#000033">Untuk menggunakan layar penuh Anda dapat mengetuk sekali pada layar</font><hr><font color="#000033">Untuk fiture "cari" digunakan untuk mencari Info yang ada </font><hr> <font color="#000033">Tombol scroll di gunakan untuk otomatis turun saat membaca</font><hr><font color="#000033">Tanggal yang tertera adalah tanggal yang sesuai dengan mestinya</font><Hr><font color="#000033">Untuk tombol Apikasi Kami Lainnya adalah untuk menuju ke Aplikasi kami lainnya</font></p>
+<font color="#000033">Semoga bermanfaat.</font><br></div>
+<br>
+
+<div data-role="content"  role="main">
+<ul data-role="listview" data-filter="true" data-inset="true" data-filter-placeholder="Cari ">
+
+
+
+        <li><marquee scrolldelay="350"><font color="#000033">Komputer adalah alat yang dipakai untuk mengolah data menurut prosedur yang telah dirumuskan</font></marquee></font></li>
+        
+        <li><a href="#fabel1"><h3><font color="#FFFFF">Mengenal Komputer</font></h3><p><font color="#FFFFF">Komputer adalah......</font></font></p></a></li>
+        <li><a href="#fabel2"><h3><font color="#FFFFF">Perangkat Lunak Komputer</font></h3><p><font color="#FFFFF">Perangkat lunak adalah......</font></font></p></a></li>
+        <li><a href="#fabel3"><h3><font color="#FFFFF">Perangkat Keras Komputer</font></h3><p><font color="#FFFFF">Perangkat keras komputer......</font></p></a></li>
+        <li><a href="#fabel5"><h3><font color="#FFFFF">Cara Memperbaiki dan Mengatasi Laptop Blank Hitam  </font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        <li><a href="#fabel6"><h3><font color="#FFFFF">Memperbaiki Memory Card Error</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        <li><a href="#fabel7"><h3><font color="#FFFFF">Cara memperbaiki memory card yang CORRUPT/RUSAK</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        <li><a href="#fabel8"><h3><font color="#FFFFF">Kerusakan dan Cara Memperbaiki Printer Canon Mp237</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        <li><a href="#fabel9"><h3><font color="#FFFFF">Cara Memperbaiki Touchpad Laptop Tidak Berfungsi</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        <li><a href="#fabel10"><h3><font color="#FFFFF">Ciri Power Supply Komputer Rusak</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        <li><a href="#fabel14"><h3><font color="#FFFFF">Cara Memperbaiki Kerusakan Pada Power Supply</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        <li><a href="#fabel15"><h3><font color="#FFFFF">Kerusakan Pada MotherBoard</font></h3><p><font color="#FFFFF"></font></p></a></li>
+        <li><a href="#fabel16"><h3><font color="#FFFFF">Kerusakan Pada Hardisk</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        <li><a href="#fabel17"><h3><font color="#FFFFF">Kerusakan CD/DVD/ROM/RW & Floppy Disk</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        <li><a href="#fabel18"><h3><font color="#FFFFF">Memperbaiki Kerusakan Pada Ram</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        <li><a href="#fabel19"><h3><font color="#FFFFF">Memperbaiki Kerusakan Pada Modem</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        <li><a href="#fabel20"><h3><font color="#FFFFF">Memperbaiki Komputer Sering Restart</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        <li><a href="#fabel21"><h3><font color="#FFFFF">Penyebab Komputer Bila Muncul Pesan "Verifying Dmi Poll Data </font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        <li><a href="#fabel22"><h3><font color="#FFFFF">Cara Memperbaiki Hardisk Failure</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        <li><a href="#fabel23"><h3><font color="#FFFFF">Cara Memperbaiki Komputer yang Mati Total</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+       
+        <li><a href="#fabel25"><h3><font color="#FFFFF">Cara Memperbaiki Partisi Yang Rusak / Hilang “Invalid Partition”</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        <li><a href="#fabel26"><h3><font color="#FFFFF">Cara Memperbaiki Bad Sector Pada Harddisk</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        <li><a href="#fabel27"><h3><font color="#FFFFF">Masalah Pada Prosesor</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        <li><a href="#fabel28"><h3><font color="#FFFFF">Masalah Pada VGA</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        <li><a href="#fabel29"><h3><font color="#FFFFF">Komputer Sering Hang</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+<li><a href="#fabel30"><h3><font color="#FFFFF">Cara Jitu Mengatasi Komputer Tidak Bisa Masuk Windows</font></h3><p><font color="#FFFFF"></font></font></p></a></li>
+        
+        
+        
+        
+        
+   
+          <br>
+          
+          
+        
+          <br><hr><hr>  
+<li><a href="#penutup" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><left><font color="#FFFFF">Penutup</font></left></a></li>
+<div data-role="popup" id="penutup" class="ui-content" style="max-width:280px">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+<p style="text-align:justify">Terimakash telah menggunakan aplikasi kami, semoga anda senang dan bermanfaat, dan kami pun merasa senang, semoga Anda dapat menggunakan aplikasi ini dan menerapkannya langsung.</p>
+<hr>
+</div>	
+            
+<li><a href="#kontakkami" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><left><font color="#FFFFF">Kontak kami</font></left></a></li>
+<div data-role="popup" id="kontakkami" class="ui-content" style="max-width:280px">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+<p style="text-align:justify">Anda dapat menghubungi kami jika ingin menyampaikan hal yang sekiranya kami harus mengetahuinya, baik itu berupa kritik, saran, atau hal lain yang ingin di sampaikan kepada kami, anda dapat menghubungi kami di:
+<hr> 
+afandityo17@gmail.com
+</div>	
+
+<li><a href="#tentangkami" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><left><font color="#FFFFF">Tentang kami</font></left></a></li>
+<div data-role="popup" id="tentangkami" class="ui-content" style="max-width:280px">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+
+Tentang affandiStudio<hr>
+<p style="text-align:justify">Kami adalah team pengembang aplikasi berbasis mobile berfokus pada platform android.
+<hr>
+Salah satunya yaitu aplikasi "Belajar Servis Komputer", Semoga aplikasi dari kami bermanfaat buat Anda.
+<hr>
+terimakasih.</p>
+			</div>	
+            
+            
+<li><a href="#Rating" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><left><font color="#FFFFF">Rating</font></left></a></li>
+<div data-role="popup" id="Rating" class="ui-content" style="max-width:280px">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+<p style="text-align:justify">Jika Aplikasi kami bermanfaat, mohon berikan ulasan dan bintang, untuk pengembangan aplikasi kami, supaya dapat lebih mudah di gunakan oleh, pengguna lainnya.<hr>Jika aplikasi kami butuh perbaikan, mohon kirimkan masukan Anda melalui <u>Kontak Kami</u>. <hr> Bintang anda sangat berpengaruh untuk manfaat kepada orang banyak.<hr>Terimakasih
+</div>	            
+
+
+<br>
+ 
+ <li><a href="https://play.google.com/store/apps/details?id=com.servis.komputer" data-icon="star">Rate Us   (*)</a></li>
+ <li><a href="https://play.google.com/store/search?q=affandiStudio&c=apps" data-icon="plus">Other APPS    (+)</a></li> 
+
+	  <br/><br/><br/>
+      
+      
+      
+     
+      
+      
+      </div>
+      
+	</div><!--choice-list-->
+  </div><!--content-->
+<div data-role="footer">
+	<h1>(c) Affandi</h1>
+</div>
+<center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a>
+<a href="index.html" data-icon="home" data-theme="g">Menu</a>
+</div><!--content--></div> <!--page--></div></center>
+  
+  
+<!-- daris sini --><div data-role="page" id="fabel1" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g"><h1><font color="#fffff">Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center>
+  <b><I>Pengertian Komputer</I></b>
+</center><hr>
+<center>
+  <img src="images/gambar komputer.jpg"></center>
+ <div><strong>Komputer adalah</strong> alat yang dipakai untuk mengolah data menurut prosedur yang telah   dirumuskan. Kata computer semula dipergunakan untuk menggambarkan orang   yang perkerjaannya melakukan perhitungan aritmatika, dengan atau tanpa   alat bantu, tetapi arti kata ini kemudian dipindahkan kepada mesin itu   sendiri. Asal mulanya, pengolahan informasi hampir eksklusif berhubungan   dengan masalah aritmatika, tetapi komputer modern dipakai untuk banyak   tugas yang tidak berhubungan dengan matematika.</div>
+ <div> <br>
+ </div>
+ <div> Dalam arti seperti itu terdapat alat seperti slide rule, jenis   kalkulator mekanik mulai dari abakus dan seterusnya, sampai semua   komputer elektronikyang kontemporer. Istilah lebih baik yang cocok untuk   arti luas seperti "komputer" adalah "yang mengolah informasi" atau   "sistem pengolah informasi." Selama bertahun-tahun sudah ada beberapa   arti yang berbeda dalam kata "komputer", dan beberapa kata yang berbeda   tersebut sekarang disebut disebut sebagai komputer.</div>
+ <div> <br>
+ </div>
+ <div> Kata <em><strong>computer</strong></em> secara umum pernah dipergunakan untuk   mendefiniskan orang yang melakukan perhitungan aritmatika, dengan atau   tanpa mesin pembantu. Menurut <strong>Barnhart Concise Dictionary of Etymology,</strong> kata tersebut digunakan dalam bahasa Inggris pada tahun 1646 sebagai   kata untuk "orang yang menghitung" kemudian menjelang 1897 juga   digunakan sebagai "alat hitung mekanis". Selama Perang Dunia II kata   tersebut menunjuk kepada para pekerja wanita Amerika Serikat dan Inggris   yang pekerjaannya menghitung jalan artileri perang dengan mesin hitung.</div>
+ <p>
+<center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel2" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g">
+    <h1><font color="#fffff">Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center>
+  <p><b><I>Perangkat Lunak Komputer</I></b><hr>
+  </p>
+  <p>&nbsp;</p>
+</center><center></center>
+<div> <strong>Perangkat lunak adalah</strong> istilah umum untuk data yang diformat dan disimpan secara digital,   termasuk program komputer, dokumentasinya, dan berbagai informasi yang   bisa dibaca dan ditulis oleh komputer. Secara garis besar perangkat   lunak komputer juga masih dapat digolongkan menjadi 2 bagian, yaitu:</div>
+<div> <br>
+</div>
+<div> <strong>Sistem Operasi</strong></div>
+<div> Program dasar pada   komputer yang menghubungkan pengguna dengan hardware komputer. Sistem   operasi yang biasa digunakan adalah Linux, Windows, dan Mac OS. Tugas   sistem operasi termasuk (namun tidak hanya) mengatur eksekusi program di   atasnya, koordinasi input, output, pemrosesan, memori, serta instalasi   software.</div>
+<div> <br>
+</div>
+<div></div>
+<div><br>
+</div>
+<div> <strong>Sistem Aplikasi</strong></div>
+<div> Perangkat lunak aplikasi   adalah suatu subkelas perangkat lunak komputer yang memanfaatkan   kemampuan komputer langsung untuk melakukan suatu tugas yang diinginkan   pengguna. Biasanya dibandingkan dengan perangkat lunak sistem yang   mengintegrasikan berbagai kemampuan komputer, tapi tidak secara langsung   menerapkan kemampuan tersebut untuk mengerjakan suatu tugas yang   menguntungkan pengguna. Contoh utama perangkat lunak aplikasi adalah   pengolah kata, lembar kerja, dan pemutar media.</div>
+<div> <br>
+</div>
+<div></div>
+<div> </div>
+<p align="justify"><br/><br/><br/>
+<center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel3" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g">
+    <h1><font color="#fffff">Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Perangkat Keras Komputer</I></b></center><hr>
+
+<p align="justify">
+<div> Perangkat keras komputer   adalah semua bagian fisik komputer, dan dibedakan dengan data yang   berada di dalamnya atau yang beroperasi di dalamnya, dan dibedakan   dengan perangkat lunak (software) yang menyediakan instruksi untuk   perangkat keras dalam menyelesaikan tugasnya.</div>
+<div> <br>
+</div>
+<div> Berikut adalah beberapa contoh perangkat keras komputer dan kegunaanya:</div>
+<br>
+<strong>Keyboard</strong><br>
+<div> Keyboard merupakan unit input yang paling penting dalam suatu pengolahan   data dengan komputer. Keyboard dapat berfungsi memasukkan huruf, angka,   karakter khusus serta sebagai media bagi user (pengguna) untuk   melakukan perintah-perintah lainnya yang diperlukan, seperti menyimpan   file dan membuka file.</div>
+<p><strong>Mouse</strong><br>
+</p>
+<div> 
+  <p>Mouse adalah salah unit masukan (input device). Fungsi alat ini adalah   untuk perpindahan pointer atau kursor secara cepat. Selain itu, dapat   sebagai perintah praktis dan cepat dibanding dengan keyboard.</p>
+</div>
+<p align="justify"><strong>Processor</strong><br>
+<div> Processor disebut juga otak dari komputer semakin bagus tipe processor   maka semakin mahal pula komputer, maka processor disebut sebagai inti   dari komputer. Fungsi processor adalah untuk memproses semua kegiatan   yang dilakukan komputer, yang direquest pengguna.</div>
+<p align="justify"><strong>Motherboard</strong><br>
+<div> Motherboard adalah papan sirkuit tempat berbagai komponen elektronik   saling terhubung seperti pada PC atau Macintosh dan biasa disingkat   dengan kata mobo.Motherboard yang banyak ditemui dipasaran saat ini   adalah motherboard milik PC yang pertama kali dibuat dengan dasar agar   dapat sesuai dengan spesifikasi PC IBM.Motherboard merupakan   perangkat yang sangat penting dan vital dalam perangkat komputer,   sehingga pemilik komputer benar-benar diharapkan paham gejala kerusakan   dan cara memperbaiki Motherboard.</div>
+<p align="justify"><strong>RAM</strong><br>
+<div> RAM   (Random Access Memory) adalah memori utama komputer yang berfungsi   untuk membaca dan menuliskan data. Dengan keberadaan RAM, maka kita bisa   menjalankan 2 aktifitas sekaligus dalam sebuah komputer, yaitu menulis   dan membaca data.</div>
+<p align="justify"><strong>CMOS</strong><br>
+<div> CMOS adalah singkatan dari Complementary Metal Oxide Semiconductor. Dari   bentuknya sudah kelihatan, ia merupakan komponen berbentuk IC   (integrated circuit) Yang fungsinya menampung setting BIOS dan dapat   tetap menyimpan setting-annya selama baterai yang memberikan daya masih   bagus.</div>
+<div><strong>Konektor Casing</strong><br>
+  <br>
+  <div> Konektor Casing berfungsi untuk menyambungkan tombol/saklar dan   indicator pada casing ke motherboard. Pada motherboard yang berbasis   Pentium 4, disertakan pula sebuah port konektor tambahan sebesar 12 volt   agar prosesor bisa bekerja.</div>
+</div>
+<div> </div>
+<div>
+  <div> 
+    <p><strong>Monitor</strong> <br>
+    </p>
+    <div> Monitor komputer adalah   salah satu jenis soft-copy device, karena keluarannya adalah berupa   sinyal elektronik, dalam hal ini berupa gambar yang tampil di layar   monitor. Gambar yang tampil adalah hasil pemrosesan data ataupun   informasi masukan. Monitor memiliki berbagai ukuran layar seperti   layaknya sebuah televisi.</div>
+    <p><strong>Monitor</strong> <br>
+    </p>
+    <div> Monitor komputer adalah   salah satu jenis soft-copy device, karena keluarannya adalah berupa   sinyal elektronik, dalam hal ini berupa gambar yang tampil di layar   monitor. Gambar yang tampil adalah hasil pemrosesan data ataupun   informasi masukan. Monitor memiliki berbagai ukuran layar seperti   layaknya sebuah televisi.Monitor adalah perangkat   komputer yang cukup rentan, lebih-lebih monitor LCD, masalah yang   sering terjadi pada monitor adalah layar biru atau bluescreen.</div>
+    <p><strong>Power Supply </strong><br>
+    </p>
+    <div> Sesuai dengan namanya power supply ini berfungsi mengalirkan listrik ke   setiap bagian komputer agar dapat berjalan sesuai dengan fungsinya. Powe   Supply adalah perangkat yang menentukan apakah komputer anda dapat   menyala, peran power supply adalah nyawa bagi komputer yang kita miliki   sehingga harus dirawat dengan baik, dan diperbaiki ketika rusak.</div>
+    <p><strong>Harddisk</strong><br>
+    </p>
+    <div> Harddisk adalah sebuah   komponen perangkat keras yang menyimpan data sekunder dan berisi   piringan magnetis. Harddisk diciptakan pertama kali oleh insinyur IBM,   Reynold Johnson di tahun 1956. Harddisk pertama tersebut terdiri dari 50   piringan berukuran 2 kaki (0,6 meter) dengan kecepatan rotasinya   mencapai 1.200 rpm (rotation per minute) dengan kapasitas penyimpanan   4,4 MB. Harddisk saat ini sudah ada yang hanya selebar 0,6 cm dengan   kapasitas 750 GB.</div>
+    <p><strong>Kipas (Pendingin)</strong><br>
+    </p>
+    <div> Kipas atau Pendinginan komputer dan yang sering juga disebut pendinginan   CPU adalah alat yang dipasang pada bagian dalam komputer untuk   mengurangi atau menghilangkan panas dari sebuah komputer.</div>
+    <p><br>
+    </p>
+  </div>
+</div>
+<p align="justify"><br>
+  <Br><Br>
+  <marquee scrolldelay="350">
+    <br/>
+    <br/><br/></marquee>
+<center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel5" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g">
+    <h1><font color="#fffff">Servi Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center>
+  <strong>Cara Memperbaiki dan Mengatasi Laptop Blank Hitam </strong>
+</center><hr>
+<center><img src="images/laptopblankhitam.jpg"> </center>
+<p align="justify">Langsung saja admin   uraikan seputar cara memperbaiki laptop blank hitam yang selama ini   mungkin sering membuat sobat yang menggunakan komputer menjadi cemas,   apa saja penyebab dan bagaimanakah cara mengatasinya. Berdasarkan   pengalaman hasil bacaan yang admin pelajari dari Ebook Teknisi Komputer   Lengkap yang ditulis oleh Mas Agussale pemilik Qbonk Media Group. Ebook   yang berkualitas admin rasa, karena isinya 80 persen adalah ilmu praktek   seputar perbaikan laptop, komputer, jaringan, bahkan teknisi   elektronika dan handphone.
+<div> Kita mulai dari proses pengecekan atau pemeriksaaan mengatasi laptop layar blank hitam</div>
+<h4> Cek Arus Apakah Ada Atau Tidak</h4>
+<div> Kegiatan yang mendasar   yang seharusnya kita lakukan adalah pemeriksaan arus pada laptop   tersebut, sebab mungkin saja laptop blank karena memang sedang tidak ada   arusnya. Jika arus pada laptop tersebut memang baik baik saja dan lampu   pada laptop juga menyala di dalam posisi on maka abaikan langkah ini   dan lanjutkan ke step berikutnya.</div>
+<br>
+<h4> Kosongkan Arus Yang Ada di dalam Laptop</h4>
+<div> Mengenai permasalahan   Cara Memperbaiki Laptop yang memang mendapatkan kondisi dimana laptop   tidak menampilkan apapun kecuali layar hitam maka kita mencoba dulu   mengosongkan arus di dalam laptop untuk memastikan semua program   berjalan dari Nol. Cara mengosongkan arus tersebut dengan cara mencabut   baterai laptop dan menekan tombol power sambil di tahan selama 30 detik.   Langkah selanjutnya, silahkan colokan kembali baterainya, Biasanya pada   kasus laptop blank layar hitam ini bisa teratasi sampai step ini.</div>
+<h4> Apa Penyebab Layar Laptop Blank Hitam </h4>
+<div> Sudah seharusnya sebelum   melakukan perbaikan pada laptop yang rusak, termasuk mengatasi laptop   blank tersebut kita harus sudah memahami penyebab laptop tersebut   menjadi blank. yang paling penting itu adalah menganalisa kerusakan pada   perangkat keras dan perangkat lunak pada laptop tersebut, saya sangat   merekomendasikan anda membaca seri belajar Lengkap Teknisi Komputer   Laptop Karya <a href="http://goo.gl/3DKWuh" rel="nofollow" target="_blank"><strong>Qbonk Media Group</strong></a></div>
+<h4> Panel Display rusak</h4>
+<div> Kita harus memastikan apakah Panel Display pada laptop yang mengalami kerusakan, maka cobalah hubungkan   laptop dengan monitor eksternal. ubah mode layar melalui keyboard laptop   dari mode layar internal ke mode layar eksternal. jika layar eksternal   berhasil menayangkan display maka bisa dipastikan kerusakan ada di panel   display internal. layar eksternal bisa berupa monitor CRT jika output   berupa monitor (VGA) port, atau HDTV jika output berupa HDMI. kerusakan   di panel display ada beberapa yaitu diantaranya: kerusakan di inverter,   kabel fleksibel, dan LCD. kalau ada gambar tipis seperti bayangan di   LCD, maka kemungkinan yang rusak adalah lampu LCD (CCFL), atau kabel   fleksibelnya.</div>
+<div> </div>
+<div>
+  <div> <strong>Daftar seri laptop yang sering terkena black screen :</strong></div>
+  <div> seri HP TX1000, seri Sony Vaio VGN, dan seri lainnya yang kebanyakan   memakai nVidia seri 8400 dan 8600. nVidia seri GeForce 8400 dan GeForce   8600 keluaran sekitar tahun 2008 an terkenal paling sering rusak setelah   digunakan antara 2 sampai 4 tahun, hal ini memang karena ada kesalahan   produksi. tetapi nVidia sudah memperbaikinya untuk produk-produknya yang   baru.</div>
+</div>
+<h4> Apakah kerusakan pada VGA Laptop</h4>
+<br>
+<div> Kerusakan chipset VGA umumnya dialami oleh VGA laptop yang dedicated   semisal dari nVidia atau Ati. kerusakan VGA dari Chipset integrated   misal VGA Intel sangat jarang terjadi, kerusakan VGA yang terjadi   berbandingannya sekitar 10 dedicated berbanding 1 integrated. yang   sering terkena pada bagian VGA adalah soket chipset, memori RAM VGA dan   chipset GPU nya.</div>
+<div> <br>
+</div>
+<br>
+<div> <strong>Solusi Mengatasi Kerusakan Pada Laptop Layar Blank Hitam</strong></div>
+<div> Untuk kerusakan pada panel LCD: bawa laptop anda ke tempat service   untuk diketahui bagian mana di panel LCD laptop anda yang mengalami   kerusakan sehingga bisa diperbaiki atau diganti komponennya. Atau bisa baca "Cara Memperbaiki Panel LCD Rusak"</div>
+<div> <br>
+</div>
+<div> Untuk kerusakan pada VGA: solusi termurah: chipset di Reflow (di blower   dengan hot gun) akan   tetapi kerusakan akan timbul lagi dengan mudah hanya dalam jangka waktu   beberapa hari saja. Reball: mengganti bola-bola pin di bawah dudukan   chipset, sehingga sambungan yang jelek bisa diperbaiki lagi. bola-bola   pin yang terbuat dari lead free soldering (bebas timbal)   lebih mudah rusak karena perubahan suhu bila dibandingkan dengan   menggunakan bahan leaded soldering. itulah mengapa setelah beberapa   waktu banyak VGA dari nVidia menjadi rusak dengan gejala Artifak dan   black screen.jika chipset sudah mengalami kerusakan parah bisa diganti   dengan chipset yang baru, itupun jika chipsetnya tersedia.</div>
+<div> <br>
+</div>
+<div> Solusi lain adalah dengan mengganti Motherboard, sayangnya solusi ini   adalah solusi yang memakan biaya paling mahal yaitu antara 1 sampai 2   juta-an. jangan gegabah untuk mengganti motherboard   jika persoalan laptop anda   hanya “no display”/ blank display/ black screen, karena selain mahal   juga masih ada alternatif solusi lain yaitu dengan reball chipset. tarif   reball chipset berkisar antara 500 sampai 700an ribu Rupiah, di   kota-kota besar di Indonesia sekarang sudah banyak tempat servis   laptop/notebook yang melayani jasa reflow dan reball chipset. mereka   umumnya mempunyai alat BGA Rework Station, jadi anda tak perlu khawatir   jika ternyata laptop anda mengalami persoalan tersebut. Kecuali anda   sudah memilik <strong>Referensi Lengkap Memperbaiki Laptop Rusak</strong>.</div>
+<p align="justify"><strong>Ada Beberapa Kemungkinan Lain Penyebab  Laptop Blank Hitam dan Solusi Memperbaikinya :</strong><br>
+<ul>
+  <li> Masalah mungkin disebabkan karena kegagalan memori. Modul memori   gagal dan laptop tidak menyala karena itu. Dalam hal ini Anda dapat   mencoba reseating modul memori untuk memastikan kontak yang baik dengan   slot. Anda dapat mencoba melepas modul memori satu per satu dan menguji   laptop dengan hanya satu modul memori yang terpasang. Anda dapat mencoba   mengganti modul memori dengan modul baru.</li>
+  <li>Jika reseating / mengganti modul memori tidak membantu, coba lepas   hard drive, DVD drive, modem, kartu wireless, keyboard, dll. Dengan kata   lain, bongkar laptop dan hanya terpasang peralatan minimal dan uji   lagi. Jika laptop masih tidak menyala, kemungkinan besar kegagalan.  </li>
+</ul>
+<p align="justify"><br/>
+  <br/>
+<center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel6" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g">
+    <h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center>
+      <strong>Memperbaiki Memory Card Error</strong>
+    </center><hr>
+    <div> <strong>Cara ke-1:</strong></div>
+    <div>
+      <ul>
+        <li>Keluarkan media card dari hh.</li>
+        <li>Bersihkan   lempengan tembaga(warna kuning keemasan) dgn penghapus pensil (yg warna   putih). Lakukan perlahan sampe lempengan tsb terlihat bersih.</li>
+        <li>Masukkan media card ke hh dan check apa udah bisa terbaca di hh.</li>
+      </ul>
+    </div>
+    <div> <br>
+    </div>
+    <div> <strong>Cara ke-2</strong></div>
+    <div> <br>
+    </div>
+    <div>
+      <ul>
+        <li>Ke Options-Memory lalu highlight tulisan “Total Space”</li>
+        <li>Kemudian tekan tombol  dan pilih Repair</li>
+        <li>Check apa udah bisa terbaca di hh.</li>
+      </ul>
+    </div>
+    <div> <br>
+    </div>
+    <div> <strong>Cara ke-3:</strong></div>
+    <div> <br>
+    </div>
+    <div>
+      <ul>
+        <li>Hubungkan hh ke pc pake kabel data.</li>
+        <li>Browse directory media card di windows explorer(biasanya namanya   Removable **) lalu klik right button mouse dan pilih Properties-Tools   trus pilih lg Scan disk, tunggu sampe selesai.</li>
+        <li>Unplug kabel data.</li>
+        <li>Sekarang check lg apa media card udah bisa terbaca di hh.</li>
+      </ul>
+    </div>
+    <div> <br>
+    </div>
+    <div> <strong>Cara ke-4:</strong></div>
+    <div> <br>
+    </div>
+    <div>
+      <ul>
+        <li>Hubungkan hh ke pc pake kabel data.</li>
+        <li>Buat folder baru di hard drive pc sbg backup folder media card.</li>
+        <li>Lakukan error check pada media card.</li>
+        <li>Copy seluruh isi media card ke folder tsb.</li>
+        <li>Hard format media card dgn cara: highlight direktori media card lalu   klik kanan tombol mouse dan pilih ‘Format’. Berikan tanda ☑ di tulisan   FAT16. Tunggu sampe proses selesai.</li>
+        <li>Copy kembali isi backup media card yg ada di backup folder pc.</li>
+      </ul>
+    </div>
+    <div> <br>
+    </div>
+    <div> <strong>Atau pake cara ini</strong></div>
+    <div> Sering   kali memory card setelah di konek ke PC tidak terbaca sebagai removable   disc, alias tidak mau mounting di explorer, Coba periksa dan lakukan   hal berikut :</div>
+    <div> <br>
+    </div>
+    <div> Dari 'homescreen' : OPTIONS&gt;MEDIA CARD.</div>
+    <div> Media Card Support : ON.</div>
+    <div> Mass Storage Mode Support : ON</div>
+    <div> Auto Enable Mass Storage : YES</div>
+    <div> Save dan Exit</div>
+    <div> Kalau 'card'-nya baru dan masih kosong, maka bisa sbb. OPTIONS&gt;MEDIA CARD&gt;BBmenu&gt;klik FORMAT CARD</div>
+    <div> <br>
+    </div>
+    <div> Untuk   memory card yang sudah ada isinya, maka lakukan hanya no.1 s/d 5. Ingat   FORMAT CARD, akan menghapus SEMUA data yang ada di Memory Card.</div>
+    <p align="justify"><br/><br/><br/><center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel7" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g">
+    <h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center>
+      <strong>Cara memperbaiki memory card yang CORRUPT/RUSAK</strong>
+    </center><hr>
+    <div> MMC, Memory Korrupt, Memory Card, Format</div>
+    <div> Kartu memory (MMC) tergolong barang yang mudah rusak,yang dimaksud   kerusakan disini yakni rusaknya sistim file (bukan pisik) ciri2nya MMC   tidak terdeteksi walaupun terdeteksi tapi gk bisa dibuka,</div>
+    <div> Banyak penyebabnya bisa karena :</div>
+    <div> <br>
+    </div>
+    <div>
+      <ul>
+        <li>Panas yang berlebihan</li>
+        <li>Pengaruh medan magnet</li>
+        <li>Kesalahan disaat mencabut/ memasukan mmc keslotnya (nah..Yg ini paling sering kejadian),</li>
+      </ul>
+    </div>
+    <div> Untuk   memperbaikinya siapkan cardreader dan PC tentunya jika gk ada jangan   putus asa,pergi ja kewarnet terdekat cuma Rp.3000/jam,ko!! 15 menit ja   udah beres n sisanya 45 menit bisa dipake berselancar didumay,lumayan kn   dari pd beli MMC yg baru mahal,coy... Pa lagi jenis M2. (ko.. jdi   promosiin warnet,y udh trsrh mo kmna jg yg penting ada PC n   cardreader),caranya :</div>
+    <div> format lewat menu window explorer.</div>
+    <ul>
+      <li>cabut   MMC dan masukan kecardreader,inget jangan sembarangan mencabut MMC   gunakan REMOVE MEMORY untuk mencabut MMC disaat ponsel hidup,jika tidak   ada menu REMOVE MEMORY sebaiknya matikan ponsel dahulu.</li>
+      <li>cari   drive MMC (lihat dimenu windows eksploler misal pada drive H,E,F,G,D)   jika sudah terbaca,klik tombol kanan mouse dan pilih menu format,terus   pilih menu format (FAT,FAT32 &amp; NTSC) pilih sistim Forma FAT.</li>
+      <li>klik   tombol FORMAT NOW dan tunggu hingga selesai jika keluar pesan ''erorr''   dan PC tidak bisa memformat lagi gunakan format lewat menu command   link.</li>
+    </ul>
+    <div> <strong>FORMAT LEWAT COMMAND LINE</strong></div>
+    <div>
+      <ol>
+        <li>klik start=&gt;run,dan ketik CMD.jendela Command akan terlihat pada mode DOS prompt.</li>
+        <li>terus ketik FORMAT h:/FS:FAT (h=adalah drive jika MMC terletak didrive h,jika f tulis f).</li>
+        <li>tunggu   sampai beres,jika masih muncul masalah lain coba pake cardreader yang   lain,jika masih tetap gk bisa dipulihkan,baiknya dituker lagi ketokonya   kalau masih garansi,jika udh gk garansi terserah mau diapain tu MMC   bebas yg jelas tu MMC udah bikin loe pusing,hehehe.</li>
+      </ol>
+    </div>
+    <p align="justify"><br/>
+<center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel8" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g">
+    <h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Kerusakan dan Cara Memperbaiki Printer Canon Mp237</I></b></center><hr>
+      <div> <strong><em>Kerusakan pada Printer Canon Mp237</em></strong> memang kerap terjadi,   namun seperti biasa untuk memperbaiki kerusakan pada semua merk printer   yang perlu kita mengerti adalah menganalisa hal hal terkait tentang   kerusakan pada bagian mana yang dialami oleh printer tersebut.</div>
+      <div> <br>
+      </div>
+      <div> Pada printer canon mp237 sama halnya dengan beberapa printer canon   lainya maupun merk berbeda seperti hp dan epson sudah dilengkapi dengan   lampu yang berkedip sebagai signal yang membantu kita mengetahui   kerusakan pada printer tersebut. Lampu berkedip dalam jumlah yang   berbeda tersebut adalah kode komunikasi pada printer yang memiliki arti   masing masing.</div>
+      <div> <strong>Berikut adalah arti kode kedipan pada printer canon mp237</strong></div>
+      <ul>
+        <li>Error 1000 Lampu Blinking Sebanyak 2 Kali : Kertas tidak ada /   terdeteksi, silahkan masukkan kertas pada rear tray (tempat kertas)   kemudian tekan tombol Black / Colour pada printer </li>
+        <li>Error 1486, 1487 Lampu Blinking Sebanyak 7 Kali :Pemasangan   Cartridge tidak benar, silahkan perbaiki letak dan penguncian Cartridge,   jika masih berlanjut ganti dengan Cartridge yang baru </li>
+        <li>Error 1684 Lampu Blinking Sebanyak 14 Kali :Cartridge tidak   kompatibel dengan printer atau letak Cartridge tidak tepat, pastikan   posisi pemasangannya benar, jika masih berlanjut silahkan ganti dengan   Cartridge yang baru. </li>
+        <li>Error 1700 Lampu Blinking Sebanyak 8 Kali : Absorber tinta hampir penuh, silahkan lakukan head cleaning pada printer. </li>
+        <li>Error 1687 Lampu Blinking Sebanyak 4 Kali : Letak Cartridge tidak   tepat, silahkan perbaiki letak Cartridge dan pengunciannya pada   printer. </li>
+        <li>Error 1682 Lampu Blinking Sebanyak 15 Kali : Cartridge Rusak, silahkan ganti Cartridge dengan yang baru. </li>
+        <li>Error 1300 Lampu Blinking Sebanyak 3 Kali : Kertas Paper Jammed, silahkan bersihkan kertas yang menyangkut pada printer. </li>
+        <li>Error 1485, 1401, 1403 Lampu Blinking Sebanyak 5 Kali : Printer   Tidak menemukan Cartridge, silahkan perbaiki letak Cartridge pada   printer, pasang secara benar, jika masih berlanjut ganti Cartridge   dengan yang baru. </li>
+        <li>Error 1186 Lampu Blinking Sebanyak 13 Kali : Tidak dapat membaca   tinta yang tersedia pada Cartridge, silahkan tekan tombol Stop/Reset   untuk mengabaikan peringatan Error. </li>
+        <li>Error 1188 Lampu Blinking Sebanyak 16 Kali : Cartridge tidak   terdeteksi / atau tinta pada Cartridge habis, silahkan tekan tombol   Stop/Reset selama 5 detik, matikan printer dan hidupkan kembali. </li>
+        <li>Error 5100 Lampu Blinking Sebanyak 2 Kali : Ini disebabkan karena   kertas menyakut pada printer, silahkan bersihkan kertas, matikan   kemudian hidupkan kembali. </li>
+        <li>Error B200 Lampu Blinking Sebanyak 10 Kali : Matikan Printer beserta   Catu daya listriknya diamkan sejenak hingga beberapa menit kemudia   hubungkan listrik dan hidupkan kembali.</li>
+      </ul>
+      <p align="justify"><br/><br/><br/><center>
+    </div></div><div data-role="page" id="fabel9" data-theme="g"><div data-role="content"><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel9" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g">
+    <h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center>
+      <strong>Cara Memperbaiki Touchpad Laptop Tidak Berfungsi</strong>
+    </center><hr>
+    <div> Ada 2 Cara mengatasi   Touchpad Laptop yang tidak berfungsi, study kasus tutorial ini pernah   saya coba windows 7, saya rasa masih sama dengan settingan di windows 8   meski belum pernah dicoba. </div>
+    <div> <br>
+    </div>
+    <div> Cara pertama :<br>
+      Sebernarnya hanya   terjadi kesalahan kecil yaitu belum tercentangnya "Tap to Click". Kalau   belum paham bisa dilihat pada gambar ini gan.</div>
+    <div><br>
+    </div>
+    <div>
+      <div> <a href="http://1.bp.blogspot.com/-UWo3_erI80g/UnZOmEV6CSI/AAAAAAAADYU/LxBLCZMWhHI/s1600/touchpad+laptop+tidak+berfungsi.jpg" imageanchor="1"><img alt="memperbaiki touchpad laptop tidak berfungsi" src="http://1.bp.blogspot.com/-UWo3_erI80g/UnZOmEV6CSI/AAAAAAAADYU/LxBLCZMWhHI/s1600/touchpad+laptop+tidak+berfungsi.jpg" title="Touchpad Laptop TIdak berfungsi" border="0"></a></div>
+      <div> <br>
+      </div>
+      Gambar icon settingan touchpad berbeda di setiap merk laptop tertentu. seperti contoh gambar di bawah :<br>
+  <div> <a href="http://3.bp.blogspot.com/-0LnXJOJirMo/UnZQVy88HXI/AAAAAAAADYg/UiuCX2KoYQs/s1600/Synaptic-Config.png" imageanchor="1"><img alt="Memperbaiki Touchpad Laptop" src="http://3.bp.blogspot.com/-0LnXJOJirMo/UnZQVy88HXI/AAAAAAAADYg/UiuCX2KoYQs/s1600/Synaptic-Config.png" title="Setting Mouse Laptop" border="0"></a></div>
+  <div> <br>
+  </div>
+  <div> Cara Kedua :</div>
+  <ul>
+    <li>jika settingan   touchpad sudah benar (aktif/on) di software touchpad bawaan dan touchpad   masih belum bisa bekerja normal kembali, maka troubleshooting dilakukan   ke tingkat kedua yaitu : hapus driver mouse/touchpad dari Device   Manager dengan melakukan tahap2 sebagai berikut : masuk ke control panel   –&gt; system –&gt; device manager. kemudian cari bagian mice and other   pointing device –&gt; klik simbol di sampingnya kemudian hapus driver   yang bernama Synaptics PS/2 Port Touchpad dengan cara arahkan pointer   mouse di driver tsb –&gt; klik kanan –&gt; pilih delete.</li>
+  </ul>
+  <ul>
+    <li>setelah melakukan   delete driver, restart kembali laptop sobat agar driver touchpad   tersebut bisa refresh kembali dengan cara automatit install waktu OS   windowsnya up kembali.</li>
+  </ul>
+  <div> Nah, semoga dengan 2   solusi diatas sobat sudah bisa memperbaiki settingan touchpad laptop   yang tidak mau klik alias bermasalah, kalau masih bermasalah juga saya   rekomendasikan untuk install kembali driver touchpadnya. Beberapa   kesalahan lagi bisa saja terjadi pada perangkat keras.</div>
+    </div>
+    <p align="justify"><br/>
+    </div></div><div data-role="page" id="fabel11" data-theme="g"><div data-role="content"><center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel10" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g">
+    <h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Ciri Power Supply Komputer Rusak</I></b></center><hr>
+      <div> Kerusakan pada perangkat elektronik termasuk komputer dapat diketahui   solusinya jika kita mengetahui tanda tanda kerusakan pada komponen   komputer yang dimaksud. Sama halnya ketika kita ingin mencari tau apakah   ciri ciri power supply komputer rusak maka akan ada langkah langkah   yang sebaiknya kita tempuh sebelum perbaikan.</div>
+      <div> </div>
+      <div> Kali ini, admin akan menjelakan beberapa tanda / ciri power supply yang rusak :</div>
+      <h3> <strong>Komputer Tidak Menyala Sama Sekali</strong></h3>
+      <div> Keadaan ini merupakan kondisi yang paling mencerminkan kerusakan dari power supply komputer anda. Biasanya, ketika<a href="http://belajar-ilmu-servis-komputer-jaringan.blogspot.com/2015/12/ciri-power-supply-komputer-rusak-dan.html"> <strong><em>power supply mengalami kerusakan</em></strong></a>,   maka komputer tidak akan bisa menyala sama sekali meskipun sumber   listrik dan komponen pelengkap lainnya dalam keadaan yang baik.</div>
+      <h3> <strong>Kipas Power Supply Tidak Berputar Sewaktu Komputer Dinyalakan</strong></h3>
+      <div> Tanda lain dari <strong>kerusakan pada power supply</strong> adalah kipas pada   power supply tidak mau berputar, padahal komputer sudah dalam posisi ON,   dan juga seluruh komponen kelistrikan sudah terpasang dengan benar.</div>
+      <h3> <strong>Lampu Indikator Komputer Tidak Menyala</strong></h3>
+Lampu indikator kompter juga tidak mau menyala, sehingga hal ini juga   berakibat pada kesuluruhan sistem komputer tidak mau menyala dan   beroperasi dengan baik.
+<h3> <strong>Komputer Mau Menyala, Tapi berhenti sampai setting BIOS</strong></h3>
+<div>
+  <div> Komputer yang mengalami kerusakan pada power supply juga seringkali   tidak mau masuk ke dalam sistem operasi, sehingga hanya berada pada   layar BIOS saja, tanpa terjadi apa – apa.</div>
+  <div> <br>
+  </div>
+  <div> Selain beberapa tanda diatas, beberapa kerusakan lain pada power supply bisa dilihat dari jenis kerusakan kecil seperti :</div>
+  <div>
+    <ul>
+      <li>Socket USB tidak bekerja dengan baik.</li>
+      <li>Komputer sering mati sendiri, ataupun mengalami restart sendiri.</li>
+      <li>Kinerja dari komputer melambat, karena komponen CPU tidak memperoleh arus listrik yang optimal.</li>
+      <li>Beberapa aplikasi tidak dapat berjalan dengan sempurna.</li>
+      <li>Terkadang sering juga berpengaruh terhadap malfungsi dari hardware,   seperti layar monitor yang meredup, ataupun komputer yang menjadi tidak   responsive.</li>
+    </ul>
+  </div>
+</div>
+<p align="justify"><br/><br/><br/>
+<center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+<!-- daris sini --><div data-role="page" id="fabel14" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g"><h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Cari Memperbaiki Kerusakan Pada Power Supply</I></b></center><hr>
+    <div> <strong>Gejala :</strong> Setelah dihidupkan PC   tidak bereaksi apa-apa, tidak ada tampilan di  monitor, tidak ada lampu   indikator (led) yang menyala, kipas <span id="IL_AD3">power supply</span> tidak berputar, lampu indikator pada monitor tidak menyala.</div>
+    <div> 
+      <p><strong>Solusi : </strong>Periksalah  apakah   kabel terhubung dengan benar dan steker terpasang dengan baik  pada   soketnya, periksa juga apakah ada tombol on/off dibelakang tepatnya    dibelakang Power Supply sudah dalam posisi On, Jika sudah yakin    terpasang dengan benar tapi tetap tidak ada respon untuk meyakinkan    silahkan anda ganti kabel power dengan yang anda yakini bagus. Masalah    terjadi karena tidak adanya tegangan listrik yang masuk, kerusakan ada    pada kabel power.    </p>
+    </div>
+    <div> <strong>Masalah :</strong> Setelah dihidupkan PC   tidak bereaksi apa-apa, tidak ada tampilan di  monitor, tidak ada lampu   indikator (led) yang menyala, kipas power supply tidak berputar, lampu   indikator pada monitor menyala.</div>
+    <div> 
+      <p><strong>Solusi :</strong> lakukan seperti   langkah diatas, tetapi jika masih belum ada respon berati masalah ada   pada Power Supply, Silahkan anda ganti PS nya, Saya sarankan sebaiknya   anda ganti saja Power Supply yang rusak dengan yang baru, dan   hati-hatilah dalam pemasangannya.    </p>
+    </div>
+    <div> <strong>Catatan :</strong> Jika kerusakan hanya   pada Power Supply  saja, Setelah anda menggantinya, komputer akan   kembali bekerja dengan  normal. Kecuali jika ada masalah pada komponen   yang lainnya seperti  Mother Board, VGA Card dan Memory.</div>
+    <p align="justify">
+<p align="justify">
+  <marquee scrolldelay="350"></marquee>
+
+<br/><br/><br/><center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel15" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g">
+    <h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center>
+    <center>
+      <p><b><I>Kerusakan pada Motherboard</I></b></p><hr>
+      <p><img src="images/gambar motherboard.jpg"></p>
+    </center>
+    </center>
+      <div> 
+        <p><strong>Gejala :</strong> Setelah dihidupkan,   tidak ada tampilan di monitor, lampu indikator  (led) di panel depan   menyala, lampu indikator (led) monitor  berkedip-kedip, kipas power   supply dan kipas procesor berputar, tidak ada suara beep di speaker.      </p>
+      </div>
+      <div> <strong>Solusi :</strong> Langkah pertama lepas semua kabel power yang terhubung ke listrik,    kabel data ke monitor, kabel keyboad/mouse, dan semua kabel yang    terhubung ke CPU, kemudian lepas semua sekrup penutup cashing. Dalam    keadaan casing terbuka silahkan anda lepaskan juga komponen-komponen    lainnya, yaitu kabel tegangan dari power supply yang terhubung ke    Motherboard, harddisk, floppy, hati-hati dalam pengerjaannya jangan    terburu-buru. Begitu juga dengan Card yang menempel pada Mboard (VGA,    Sound atau Card lainnya). Sekarang yang menempel pada cashing hanya    MotherBoard saja. Silahkan anda periksa Motherboadnya dengan teliti,    lihat Chip (IC), Elko, Transistor dan yang lainnya apakah ada yang    terbakar.</div><<br>
+
+      <div> Jika  tidak ada tanda-tanda komponen yang terbakar kemungkinan   Motherboard  masih bagus, tapi ada kalanya Mother board tidak jalan   karena kerusakan  pada program yang terdapat di BIOS</div><br>
+
+      <div> <strong>Gejala :</strong> Pada    saat CPU dinyalakan kemudian melakukan proses Post setelah itu proses    tidak berlanjut dan diam beberapa saat tidak langsung masuk ke   operating  system, dan kemudian di layar monitor ada pesan "harddisk   error,  harddisk Failur, setelah itu muncul pesan "press F1 to continou"   setelah  kita menekan tombol F1 tidak masuk Operating system dan muncul   pesan "<span id="IL_AD9">Operating system not found</span>".</div>
+      <p align="justify"><br/><br/><br/><center>
+    </div></div><div data-role="page" id="fabel16" data-theme="g"><div data-role="content"><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel16" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g"><h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Kerusakan Pada Harddisk</I></b></center><hr>
+ <center><img src="images/harddisk.jpg"></center>
+ <div> <strong>Solusi :</strong> Periksa kabel tegangan dan kabel data yang masuk ke harddisk apakah    longgar, sebaiknya dikencangkan, kemudian nyalakan dan coba anda    dengarkan apakah suara yang keluar dari harddisk normal, jika tidak    normal berati harddisk rusak di controllernya.</div><br>
+
+ <div> <strong>Gejala :</strong> Pada saat CPU dinyalakan kemudian melakukan proses Post setelah itu muncul pesan "Operating system not found". </div><br>
+
+ <div> <strong>Solusi :</strong> Ada kemungkinan Operating system rusak, bisa diatasi dengan install    ualng atau jika OS anda menggunakan windows 2000/XP ada Fasilitas    Repairnya. atau ada kemungkinan juga harddisk anda tidak terdeteksi dan    lakukan langkah diatas</div><br>
+
+ <div> <strong>Gejala :</strong> harddisk bad sector?</div>
+ <div> <strong>Solusi :</strong><strong> </strong>Ada    beberapa faktor penyebab terjadi bad sector diantaranya, tegangan    listrik tidak stabil, sering terjadi putusnya aliran listrik secara    mendadak, setelah pemakaina tidak di shot down, pemakaian yang terlalu    lama, ada 2 jenis bad sector yaitu fisik dan software.....Untuk    mengatasinya ada beberapa cara, diantaranya menggunakan software untuk    menghilangkan badsector....pembahan lebih lanjut ada di eBook Metode    perbaikan komputer dan bisa anda dapatkan jika anda bergabung menjadi    Member Aktif.</div>
+ <p align="justify"><br/><br/><br/>
+<center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel17" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g">
+    <h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Kerusakan CD/DVD/ROM/RW & Floppy Disk</I></b></center><hr>
+    <center><img src="images/cd.jpg"></center>
+    <div> <strong>Gejala : Jenis kerusakan yang biasa ditemui :</strong></div>
+    <div> 1. Tidak terdeteksi di windows</div>
+    <div> 2. Tidak bisa keluar masuk CD</div>
+    <div> 3. Tidak bisa membaca/menulis/hanya bisa membaca saja. (CD)</div>
+    <div> 4. Tidak bisa membaca/menulis/write protect (Floppy disk)</div>
+    <div> <strong>Solusi :</strong></div>
+    <div> 1.  Periksa kabel data dan kabel tegangan   yang masuk ke CD-floppy, perikas  di setup bios apakah sudah dideteksi?   sebaiknya diset auto. Periksa  apakah led menyala, jika tidak kerusakan   di Controllernya.</div>
+    <div> 2. Kerusakan ada pada mekanik <span id="IL_AD2">motor</span> atau karet motor.</div>
+    <div> 3. Kerusakan Biasanya pada optik, tetapi ada kemungkinan masih bisa diperbaiki dengan cara men-set ualng optik tersebut. </div>
+    <div> 4. Head Kotor, bisa dibersihkan menggunakan Cutenbud</div>
+    <div> (langkah-langkah diatas secara lengkap dapat anda temukan di <span id="IL_AD1">e-book</span> "Metode perbaikan komputer cepat dan akurat" dan bisa anda dapatkan jika anda bergabung menjadi member perbaikankomputer.com</div>
+    <div> <strong><br>
+      Masalah BIOS</strong></div>
+    <div> <strong>Gejala :</strong><strong> </strong>Hati-hati    dalam Update Bios, ketika meng-Update anda keliru memilih versi Bios,    PC jadi tidak jalan bahkan anda tidak dapat masuk ke BIOS.</div>
+    <div> Solusi    : Biasanya Update tidak dapat dibatalkan, hanya jenis Motherboard    tertentu yang memiliki backup BIOS pada Chip-nya, Disitu tersimpan jenis    asli BIOS yang tidak dapat dihapus, untuk dapat merestore-nya anda    tinggal memindahkan Posisi Jumper khusus yang biasanya sudah ada    petunjuk di buku manualnya. Kemudian hidupka PC dan tunggu 10 detik,    BIOS yang asli telah di Restore, kembalikan Posisi Jumper pada posisi    semula, dan PC siap dijalankan kembali. Jika Motherboard tidak memiliki    pasilitas tersebut, Chip BIOS harus dikirim ke Produsen, Jenis BIOS    dapat anda lihat di buku manualnya. Berhati-hati dalam pemasangannya    jangan sampai kaki IC BIOS patah atau terbalik Posisinya.</div>
+    <div> Gejala :    CPU mengeluarkan suara Beep beberapa kali di speakernya dan tidak ada    tampilan ke layar monitor, padahal monitor tidak bermasalah.</div>
+    <div> Solusi :    Bunyi Beep menandakan adanya pesan kesalahan tertentu dari BIOS, Bunyi    tersebut menunjukan jenis kesalahan apa yang terjadi pada PC, Biasanya    kesalahan pada Memory yang tdk terdeteksi, VGA Card, yang tidak    terpasang dengan baik, Processor bahkan kabel data Monitor pun bisa jadi    penyebabnya.Silahkan anda periksa masalah tersebut.</div>
+    <div> Berikut Pesan kesalahan BIOS</div>
+    <div> Bunyi kesalahan BIOS biasanya tidak semua Motherboard menandakan kesalahan yang sama tergantung dari jenis BIOS nya.</div>
+    <div> <strong>[<span id="IL_AD10">AMI BIOS</span>]</strong></div>
+    <div> Beep 1x : RAM/Memory tidak terpasang dengan Baik atau Rusak, Beep 6x : Kesalahan Gate A20 - Menunjukan Keyboard yang rusak atau IC Gate A20-nya sendiri, Beep 8x : Grapihic Card / VGA Card tidak terpasang dengan baik atau Rusak, Beep 11x : Checksum Error, periksa Batre Bios, dan ganti dengan yang baru.</div>
+    <div> [<span id="IL_AD11">AWARD BIOS</span>]</div>
+    <div> Beep 1x Panjang : RAM/Memory tidak terpasang dengan Baik atau Rusak, Beep 1x Panjang 2x Pendek : Kerusakan Pada <span id="IL_AD7">Graphic Card</span> (VGA), Periksa bisa juga Pemasangan pada slotnya tidak pas (kurang masuk), Beep 1x Panjang 3x Pendek : Keyboard rusak atau tidak terpasang. Beep Tidak terputus / bunyi terus menerus : RAM atau Graphic Card tidak terdeteksi.</div>
+    <div> Batrey CMOS Rusak / Lemah</div>
+    <div> Gejala :  Muncul Pesan CMOS Checksum   Vailure / Batrey Low, diakibatkan tegangna  yang men-supply IC CMOS/BIOS   tidak normal dikarenakan batrey lemah,  sehingga settingan BIOS kembali   ke Default-nya/setingan standar pabrik,  dan konfigurasi Hardware harus   di Set ulang.</div>
+    <div> Solusi : Segera Ganti Batrey nya</div>
+    <div> Gejala : CPU yang sering Hang?</div>
+    <div> Solusi : Ada beberapa faktor terjadi   hanging diantaranya : Ada BadSector di Harddisk, Ada Virus, Ada masalah   di Hardware seperti Memory Kotor/Rusak, MBoard Kotor/Rusak, Cooling Fan   perputaran fan nya sudah lemah, Power Supply  tidak stabil.....sebaiknya   jangan dipaksakan untuk digunakan karena  akan berakibat lebih fatal,   silahkan hub: kami untuk dapat mengatasi  masalah tersebut</div>
+    <div> Gejala : Komputer sering tampil blue screen apa penyebabnya?</div>
+    <div> Solusi : Pesan    Blue Screen bisa disebabkan system windows ada yang rusak, Bisa dari    Memory, Bisa dari hardisk, bisa dari komponen lainnya, tergantung pesan    blue screen yang ditampilkan.</div>
+    <div> Gejala : Komputer jadi lebih lambat dari sebelumnya, padahal awalnya tidak begitu lambat</div>
+    <div> Solusi :  Penyebab komputer anda   prosesnya lambat ada beberapa faktor yaitu :  Space hardisk terlalu   penuh, terlalu banyak program / software yang  memakan space harddisk   dan memory, ada virus, harddisk badsector.</div>
+    <p align="justify"><br/><br/><br/>
+<center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel18" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g">
+    <h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center>
+      <b><I>Memperbaiki Kerusakan Pada RAM</I></b>
+    </center><hr>
+<p align="justify"> Kerusakan pada RAM biasanya disebabkan beberapa kemungkinan, berikut beberapa penyebab kerusakan RAM dan solusinya.</p>
+
+<b>Perhatikan Pemasangan Slot RAM,</b>
+
+<p>apakah sudah tepat.Kamu dapat mematikan computer,dan selanjutnya memeriksa pada dudukan RAM.Atau bisa dengan cara melepas RAM,kemudian pasang kembali.Kamu juga dapat mencoba menurunkan sedikit timing RAM pada BIOS.</p>
+<p>Jika perbaikan kamu rasa sudah selesai,silahkan test ulang computer kamu dengan cara menghidupkan kembali computer.Jika masih terjadi kesalahan,ada kemungkinan lain yang menyebabkan kekacauan pada computer tersebut.</p>
+<br>
+
+<b>Produsen RAM berbeda</b>
+<br>
+
+<p>Pada beberapa jenis motherboard,modul memory buatan produsen yang berbeda jika dipasang bersamaan pada satu PC akan menimbulkan CRASH.Untuk mengetesnya,kamu dapat mematikan komputer kemudian mencabut salah satu RAM yang terpasang pada slot motherboard,dan menghidupkan kembali computer.Jika dengan cara ini masalah yang di alami PC kamu sudah terselasaikan,berarti kamu harus mengganti RAM yang berasal dari produsen yang sama.</p>
+<br>
+
+<b>Ram Kotor</b>
+<br>
+
+<p>kadangkala RAM juga bisa kotor, dikarenakan terkena debu dan sebagainya, sehingga menyebabkan RAM tidak terbaca Oleh PC/Laptop, oleh karena itu kita bisa membersihkan Bagian Kuningan Ram menggunakan Penghapus Pensil, agar permukaan RAM kembali bersih dan bisa terbaca lagi oleh PC/laptop.</p><br/><br/><br/><center>
+<div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel19" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g"><h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Cara Memperbaiki Kerusakan Modem</I></b></center><hr>
+    <div> Mungkin agan-agan semua sering mangalami gangguan/kerusakan  pada modem kalian, dan kerusakan modem tersebut biasanya disebabkan beberapa  hal, diantaranya:</div>
+    <div> <br>
+    </div>
+    <div> ·                     <span dir="LTR"> </span>Karena sering men-colok dan men-cabut modem  tanpa safely remove ataupun mematikan dahulu    sistem komputer (shutdown)</div>
+    <div> ·                     <span dir="LTR"> </span>Oleh karena sebab diatas, maka yang akan  bermasalah adalah software daripada modem itu sendiri. Maka sering kita alami  tiba - tiba profil modem hilang, atau sinyal modem tidak ada, dan biasanya akan  ada pesan yang artinya "modem tidak tersedia".</div>
+    <div> <br>
+    </div>
+    <div> Cara memperbaikinya:</div>
+    <div> ·                     <span dir="LTR"> </span>Cara pertama, buka device manager dengan cara  klik kanan icon computer lalu klik propertis. Lalu klik device manager.</div>
+    <div> ·                     <span dir="LTR"> </span>Apabila  modem anda benar2 bermasalah, akan ada tanda  tanya ataupun tanda seru pada bagian modem.</div>
+    <div> ·                     <span dir="LTR"> </span>Lalu klik kanan pada modem anda lalu klik  update driver. Jika masih bermasalah!</div>
+    <div> ·                     <span dir="LTR"> </span>Cara  kedua, cabut modem anda dari laptop/pc, lalu  uninstall software modem anda. Lalu pasang kembali modem, kemudian install lagi  modem anda.</div>
+    <div> <br>
+    </div>
+    <div> Mungkin segitu dulu gan saran yang bisa ane kasih...!!!</div>
+    <p align="justify">
+<p align="justify">
+  <marquee scrolldelay="350"></marquee>
+
+<br/><br/><br/><center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+ 
+<!-- daris sini --><div data-role="page" id="fabel20" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g"><h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Memperbaiki Komputer Sering restart</I></b></center><hr>
+    <div> Sering kita Bertanya, mengapa komputer saya  sering restart sendiri atau sebelum masuk windows (saat booting), restart  mendadak, dan sering atau terus-menerus restart tanpa tahu apa penyebabnya.  Atau mungkin saat kita lagi asyik main games. Untuk mengatasi masalah sering  restart pada komputer PC atau Laptop banyak hal yang harus diperhatikan,  tentunya anda sendiri yang lebih mengerti tentang spesifikasi PC atau laptop  yang anda miliki.</div>
+    <div> <br>
+    </div>
+    <div> Bnayak   penyebab komputer anda sering restart sendiri, tapi saya mempunyai   beberapa cara untuk mengatasi masalah sering Restart pada komputer anda.</div>
+    <div> Berikut ini beberapa hal dasar yang harus anda  ketahui sebagai penyebab dan cara mengatasi komputer sering restart sendiri /  beberapa hal yang paling sering menjadi penyebab komputer restart :</div>
+    <div> ·         <span dir="LTR"> </span><strong>Kelistrikan</strong>:  Listrik adalah hal utama yang harus anda periksa, dalam hal ini ialah Voltase  (Voltage) tegangan listrik anda. Gunakan AVO Meter untuk mengecek tegangan  voltase listrik anda, colokkan avo meter pada listrik dinding anda, apakah  sudah mencapai 220 V , jika tidak mencapai tegangan 220 V atau hanya sekitar  160 – 190 V ( naik turun ), saya jamin komputer anda akan restart terus  menerus, dalam hal ini sebagai solusi maka anda harus menggunakan bantuan  Stabilizer / Stavolt. Jika perlu suruh orang PLN untuk membetulkan listrik  rumah anda dan marahi sekalian. [Supply listrik yang kurang akan menyebabkan  komputer restart / mati dan berdampak pada kerusakan Hardware, Hard Disk,  Motherboard dan Memory]</div>
+    <div> ·         <span dir="LTR"> </span><strong>Power Supply</strong> : Kerusakan Power Supply  sedikit sekali yang memprediksi, Power Supply yang rusak akan mengalirkan  listrik yang tidak sempurna yaitu naik-turun dan tersendat-sendat, ketika power  supply tegangan turun, komputer anda akan restart. Solusi : Cara mudah dan  ampuh ialah menggunakan fan / kipas yang memiliki lampu, perhatikan terang  lampunya, jika terkedip-kedip segeralah ganti power supply anda.</div>
+    <div> <br>
+    </div>
+    <div> Jika anda merasa Kelistrikan bukan yang menjadi  alasan komputer anda restart maka perhatikan berikut ini:</div>
+    <div> <br>
+    </div>
+    <div> <strong>Restart saat Booting Windows.</strong></div>
+    <div> Jika resrat saat booting windows, hal ini lebih  disebabkan karena kerusakan pada system start up, istilahnya file corrupt pada  windows, atau memory yang anda pakai kurang besar / rusak. Solusi : Jika rusak  windows maka anda harus instalasi ulang / meng install windows lagi. Ingat!!!  terkadang hal ini juga karena memory, saat windows restart maka CPU / Processor  akan bekerja sangat kencang, jika memory tidak menunjang maka akan terjadi  restart.</div>
+    <div> <br>
+    </div>
+    <div> <strong>Restart saat Menjalankan Program / Main Games  (Low / Bad Memory)</strong></div>
+    <div> Saat anda menjalankan aplikasi yang besarnya  tidak sesuai dengan spesifikasi PC komputer anda maka akan terjadi restart, Low  Memory yang biasa menjadi penyebab nya. Misalkan anda main games yang besar dan  anda menjalankan Multi Tasking misalna main games dan membuka program – program  yang lainnya yang menyebabkan memory anda bekerja ekstra keras, termasuk anti  virus, anti virus akan memakan source komputer anda lumayan banyak dan  terkadanf komputer anda akan menjadi berat. Solusi tambah kapasitas Memory.  Ingat !!! Bad Memory juga menyebabkan komputer sering Blue Screen dan restart.</div>
+    <div> <br>
+    </div>
+    <div> <strong>CPU / Processor Panas</strong></div>
+    <div> CPU / Processor yang terlalu panas dapat  menyebabkan komputer resrat, cek suhu CPU anda pada sistem BIOS, suhu normal  berkisar antara 45º – 55º , jika ini yang menjadi penyebabnya Solusi: Lepas CPU  / Processor , bersihkan berikan Thermal Pasta / Pasta Pendingin CPU, lihat  kipas / fan nya, kalo perlu ganti yang bagus, jangan yang bertuliskan Made in  China atau yang harganya 30 rb-an.</div>
+    <div> <br>
+    </div>
+    <div> <strong>Program Crash / Virus-Malware</strong></div>
+    <div> Banyak program yang memakan source komputer  terlalu besar, saya sarankan sesuaikan program yang anda install dengan  spesifikasi komputer anda, Virus juga sering mengambil sumber daya komputer  yang besar tanpa kita sadari, Solusi , Ganti komputer lama anda dengan komputer  yang mumpuni dan pasanglah Anti virus.</div>
+    <br/>
+    <br/><br/><center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel21" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g"><h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center>
+  <b><I>Penyebab Komputer Bila Muncul Pesan "Verifying Dmi Poll Data</I></b>
+</center><hr>
+<div>Pada saat komputer anda melakukan booting, kemudian loading windows, tiba-tiba muncul pesan: </div>
+<div>“Verifying dmi pool data”. Setelah itu proses booting gagal dan komputer langsung hang. </div>
+<div>Penyebabnya :  </div>
+<div>1.  File Bootable terhapus atau rusak (corrupt) </div>
+<div>2.  Setting type harddisk di BIOS salah (Perksa Kembali setting di BIOS nya) </div>
+<div>3.  Deviec   Boot di BIOS belum diset dengan benar (Periksa di setting BIOS, apakah   Device Bootingnya sudah benar? Dapat anda lihat mana yang lebih dahulu   melakukan Booting? Apakah Floppy Disk, CDROM, atau Harddisk. Untuk   proses booting ini yang pertama melakukan booting harus Harddisk   terlebih dahulu, dan jangan lupa anda periksa apakah di Floppy disk ada   disketnya? Karena kalau ada disket bisa menyebabkan komputer gagal   melakukan Booting. </div>
+<div>4.  Terputusnya koneksi dengan harddisk (Periksa Kabel data dan Kabel Power Harddisk) </div>
+<div>5.  Harddisk mengalami kerusakan. </div>
+<p align="justify">
+<marquee scrolldelay="350"></marquee>
+
+<br/><br/><br/><center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel22" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g">
+    <h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Cara Memperbaiki Hardisk Failure</I></b></center><hr>
+      <div>Biasanya  Setelah   melakukan Power On Self Test, Bios memberi laporan bahwa ada kesalahan   hardware, laporan kesalahannya “Harddisk Failure”. Komputer akan   berhenti dan tidak melakukan proses Booting system. </div>
+      <div><br>
+      </div>
+      <div><strong>Langkah-langkahnya</strong>:</div>
+      <div><br>
+      </div>
+      <div>1.  Dalam keadaan mati, periksa kabel data dan  kabel   power hardisk, apakah sudah benar pemasangannya, periksa Jumper   Harddisk apakah sudah benar posisinya? (Jumper Harddisk Harus di posisi   Master /  Cable Select, itu  dapat anda  lihat di User Manual hardisk, biasanya terdapat di sticker atas Harddisk. Periksa kembali apakah ada yang longgar atau lepas. </div>
+      <div>2.  Nyalakan kembali komputer anda,  masuk ke setting BIOS. Periksa pada Setup BIOS, (Standard Setup) apakah masih dapat mendeteksi Harddisk. </div>
+      <div>3.  Jika   Harddisk tidak terdeteksi, berarti fisik hardisk sudah rusak. Ada   beberapa gejala kerusakan bila harddisk tidak terdeteksi sama selali:</div>
+      <div>•  Dalam keadaan nyala anda amati dan coba dengarkan di harddisk, apakah ada tanda-tanda </div>
+      <div>kehidupan. Biasanya akan terdengar perputaran piringan / platter. Jika terdengar berarti </div>
+      <div>kerusakan tedapat di Controllernya.  </div>
+      <div>•  Anda amati lagi dan dengarkan apakah terdengar seperti ada benturan logam didalam </div>
+      <div>Harddisk. Jika terdengar berarti kerusakan terdapat di controllernya. </div>
+      <div>•  Anda amati lagi dan dengarkan apakah terdengar tanda-tanda kehidupan. Jika tidak </div>
+      <div>terdengar sama sekali kerusakan masih sama terdapat di controllernya (Untuk kerusakan </div>
+      <div>diatas anda dapat mengganti Controller-nya. Coba anda cari di tempat service / toko </div>
+      <div>komputer terdekat. Controller tersebut harus persis sama dengan type / jenis</div>
+      <p align="justify"></div></div><div data-role="page" id="fabel23" data-theme="g"><div data-role="content">
+<p align="justify">
+  <marquee scrolldelay="350"></marquee>
+
+<br/><br/><br/><center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel23" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g">
+    <h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Cara Memperbaiki Komputer Mati Total</I></b></center><hr>
+<p align="justify">Sang Raja hutan “Singa” ditembak pemburu, penghuni hutan rimba jadi gelisah. Mereka tidak mempunyai Raja lagi. Tak berapa seluruh penghuni hutan rimba berkumpul untuk memilih Raja yang baru. Pertama yang dicalonkan adalah Macan Tutul, tetapi macan tutul menolak. “Jangan, melihat manusia saja aku sudah lari tunggang langgang,” ujarnya.<br><Br> “Kalau gitu Badak saja, kau kan amat kuat,” kata binatang lain. “Tidak-tidak, penglihatanku kurang baik, aku telah menabrak pohon berkali-kali.” “Oh…mungkin Gajah saja yang jadi Raja, badan kau kan besar..”, ujar binatang-binatang lain. “Aku tidak bisa berkelahi dan gerakanku amat lambat,” sahut gajah.<br><Br>
+<blockquote><p align="justify">Binatang-binatang menjadi bingung, mereka belum menemukan raja pengganti. Ketika hendak bubar, tiba-tiba kera berteriak, “Manusia saja yang menjadi raja, ia kan yang sudah membunuh Singa”. “Tidak mungkin,” jawab tupai. “Coba kalian semua perhatikan aku…, aku mirip dengan manusia bukan ?, maka akulah yang cocok menjadi raja,” ujar kera. Setelah melalui perundingan, penghuni hutan sepakat Kera menjadi raja yang baru. Setelah diangkat menjadi raja, tingkah laku Kera sama sekali tidak seperti Raja. Kerjanya hanya bermalas-malasan sambil menyantap makanan yang lezat-lezat.<br><Br>
+Penghuni binatang menjadi kesal, terutama srigala. Srigala berpikir, “bagaimana si kera bisa menyamakan dirinya dengan manusia ya?, badannya saja yang sama, tetapi otaknya tidak”. Srigala mendapat ide. Suatu hari, ia menghadap kera. “Tuanku, saya menemukan makanan yang amat lezar, saya yakin tuanku pasti suka. Saya akan antarkan tuan ke tempat itu,” ujar srigala. Tanpa pikir panjang, kera, si Raja yang baru pergi bersama srigala. Di tengah hutan, teronggok buah-buahan kesukaan kera. Kera yang tamak langsung menyergap buah-buahan itu. Ternyata, si kera langsung terjeblos ke dalam tanah. Makanan yang disergapnya ternyata jebakan yang dibuat manusia. “Tolong…tolong,” teriak kera, sambil berjuang keras agar bisa keluar dari perangkap.</p></blockquote>
+<p align="justify">“Hahahaha! Tak pernah kubayangkan, seorang raja bisa berlaku bodoh, terjebak dalam perangkap yang dipasang manusia, Raja seperti kera mana bisa melindungi rakyatnya,” ujar srigala dan binatang lainnya. Tak berapa lama setelah binatang-binatang meninggalkan kera, seorang pemburu datang ke tempat itu. Melihat ada kera di dalamnya, ia langsung membawa tangkapannya ke rumah.<br><Br><br>
+<marquee scrolldelay="350"><center><i>(SELESAI)</i></center></marquee>
+
+<br/><br/><br/><center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel25" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g"><h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Cara Memperbaiki Partisi Yang Rusak / Hilang “Invalid Partition”</I></b></center><hr>
+    <div>Biasanya  Pesan ini muncul pada waktu booting, dan komputer gagal melakukan proses booting. </div>
+    <div>Pesan yang muncul “Invalid Partition Table” Berarti Partisi di harddisk anda terhapus atau hilang. </div>
+    <div>Solusinya   : Anda bisa melakukan partisi lagi tapi resikonya data dan program yang   sudah ada akan hilang, jika data dan program sangat diperlukan dan anda   tidak mau kehilangannya, jangan dulu melakukan partisi harddisk. Saya   sarankan menggunakan software Recovery data, seperti Ontrack Recovery. </div>
+    <div>Untuk  menghilangkan Bad  Sector Tanpa harus  anda  takut  kehilangan data, anda dapat menggunakan program utility HDD Regenerator.</div>
+    <div><br>
+    </div>
+    <div>Maaf kalau postingan saya kali ini kurang lengkap, tetapi saya harap dapat bermanfaat bagi para pembaca sekalian.</div>
+    <p align="justify">
+<marquee scrolldelay="350"></marquee>
+
+<br/><br/><br/><center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel26" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g"><h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Cara Memperbaiki Bad Sector Pada Harddisk</I></b></center><hr>
+    <div>Sebelumnya,  Anda   bisa mem-backup data anda dulu dengan cara digabungkan dengan harddisk   yang normal, jangan lupa seting jumpernya diposisi Slave.  </div>
+    <div>1.  Lakukan   proses LLF (Low Level Format), bisa dengan Program MaxLLF dan   DiskManager atau HDD Regenerator. (Perhatian! Pastikan data anda backup   dulu). </div>
+    <div>2.  Lakukan Partisi dengan satu Partisi. </div>
+    <div>3.  Lakukan   Perintah Format /c (untuk memeriksa letak dimana terdapat bad sector).   Ketik: “Format C: /c” lalu ENTER (opsi /c untuk melakukan perintah   pemeriksaan bila terjadi bad sector, pemeriksaan ini terjadi saat proses   format berlangsung). </div>
+    <div>4.  Jika proses menemukan bad sector akan muncul pesan : “Trying to recover to allocation unit” </div>
+    <div>diikuti   angka dibelakangnya, yaitu angka yang menunjukan posisi bad sector.   Sebagai contoh, jika kerusaka terjadi pada proses sebagai berikut :   “Formating  2,202.01M Trying to   recover allocation unit 750,000”. Catat posisi bad sector tersebut,   berarti kerusakan terjadi pada prosentase ke 34% 750,000 /   2,202,010x100%  = 34%. Lakukan pencatatan posisi kerusakan </div>
+    <div>seperti diatas (dalam prosentase), ketika terjadi kerusakan-kerusakan yang lain.  </div>
+    <div>5.  Sebagai contoh, jika kerusakan terjadi di dua tempat yaitu pada posisi 34% dan 65% maka dapat diambil kesimpulan : </div>
+    <div>•  0% - 33% Plater masih dalam keadaan normal. </div>
+    <div>•  Posisi 34% pada plater terjadi bad sector </div>
+    <div>•  Posisi 35% - 64% Plater masih dalam keadaan normal </div>
+    <div>•  Posisi 65% bad sector </div>
+    <div>•  Posisi 66% - 100% Plater masih dalam keadaan normal. </div>
+    <div>6.  Lakukan partisi ulang sesuai dengan prosentase dimana ditemukan bad sector, buatlah partisi </div>
+    <div>dengan primary “Drive C” dan exetended partisi  sesuai dengan kondisi Bad sector. Perhatikan  gambar pemetaan di bawah ini:</div>
+    <br/><br/><br/><center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel27" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g">
+    <h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Masalah Pada Prosesor</I></b></center><hr>
+<p align="justify">Processor merupakan komponen yang sangat penting bagi sebuah PC   (Personal Computer). Processor merupakan otaknya komputer. Jika   processor rusak maka komputer tidak dapat berfungsi. Ketika processor   anda rusak atau terbakar karena terlalu panas suhu komputernya tentunya   anda akan menggantinya dengan processor yang baru tetapi tetap satu   merek. Sebenarnya untuk melakukan instalasi Processor tergolong   sederhana. Tetapi dibutuhkan juga beberapa persiapan yang matang,ini   dikarenakan Processor sangat berpengaruh terhadap kinerja semua komponen   yang ada dalam komputer. Langkah-langkah untuk melakukan Instalasi   Processor.<br>
+Beberapa hal yang perlu dipersiapkan dalam proses instalasi processor adalah :<br>
+<ul>
+  <li>Jenis Processor ( biasanya soket)</li>
+  <li>Heatsink Fan (pendingin)</li>
+  <li>Pasta (perekat)</li>
+  <li>Buku manual Motherboard</li>
+  <li>Toolbox</li>
+</ul>
+Persiapan area kerja :<br>
+±         Langkah<br>
+Lepaskan kabel yang terhubung pada komputer, buka cassing dan   lepaskan kabel-kabel yang mengganggu dalam mengacces processor, seperti   kabel harddisk, kabel CD ROM, kabel disk drive dan sebagainya. Pakailah   sandal atau sepatu untuk mengantisipasi arus listrik statis. Jika perlu   gunakan sarung tangan dari bahan isolator. Hati-hati karena listrik   statis kadangkala dapat merusakkan processor.<br>
+±         Melepas Processor lama<br>
+<ul>
+  <li>Lepas kabel headsink fan Processor dari motherboard atau kabel power <a href="http://universal-study.blogspot.com/2014/05/kumpulan-tanda-kerusakan-pada-komputer.html">ATX</a> eksternal.</li>
+  <li>Lepas socket heatsink / fan yang ada di atas processor. Ada dua   pengunci yang mencengkeram heatsink pada bagian dasar socket yang harus dilepas.Tekan kebawah penjepit utama sampai lepas.</li>
+  <li>Setelah headsink lepas, naikan lengan pengunci socket pada posisi terbuka dan lepaskan processor dari socket dengan mudah.</li>
+</ul>
+±         Memasang Processor baru<br>
+<ol>
+  <li>Naikkan lengan pengunci socket pada posisi terbuka, lalu masukkan   pin-pin processor ke socket. Jika posisi tepat, processor akan bisa   masuk dengan mudah.</li>
+  <li>Oleskan pasta pada chip. Gunakan pasta (perekat) tersebut pada   bagian chip yang timbul, bukan pada board rangkaian yang   mengelilinginya.</li>
+  <li>Pasangkan heatsink pada socket dan processor. Jaga heatsink agar   tidak menyentuh processor tapi menyentuh pendingin besinya. Pada   sebagaian besar heatsink, pemasangannya harus sama tinggi atau sejajar   processor.</li>
+  <li>Setelah heatsink terpasang, pasangkan pengunci dengan benar.</li>
+</ol>
+±         <a href="http://universal-study.blogspot.com/2014/05/kumpulan-tanda-kerusakan-pada-komputer.html">Test Processor.</a><br>
+Setelah pemasangan processor selesai, pasang kembali kabel-kabel   internal cassing dan eksternal cassing sesuai tempatnya masing-masing.   Perhatikan apakah speed Processor yang tampil sama dengan angka default   yang ada pada processor. Tetapi yang terjadi adalah Prosesor Baru Yang   Tidak Terdeteksi<em>, </em>tetapi pada saat booting pertama kali,   ternyata speed processor yang tampil di BIOS tidak sama dengan angka   default prosesor baru tersebut.<br>
+<strong><em>Solusi</em></strong><strong><em>:</em></strong><br>
+Jika pada saat booting pertama kali setelah mengganti prosesor,   ternyata speed processor yang tampil di BIOS tidak sama dengan angka   default prosesor baru maka lakukan langkah pengecekan sebagai berikut:<br>
+<ol>
+  <li>Cek kembali processor apakah sudah terinstall dengan tepat.</li>
+  <li>Jika processor sudah terpasang dengan tepat, tetapi tetap tidak   terdeteksi dangan baik , coba cek setting motherboard. Apakah jumper –   jumper yang ada telah terpasang dengan benar.</li>
+</ol>
+Hati-hati untuk langkah ini. Paling tidak anda harus memahami posisi   processor yang tepat dangan mempelajari buku manual prosesor. Jika perlu   panggil teknisi atau yang lebih berpengalaman untuk mendampingi anda<strong>.</strong><br>
+<p align="justify"><marquee scrolldelay="350"></marquee>
+
+<br/><br/><br/><center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel28" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g"><h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Masalah Pada VGA</I></b></center><hr>
+<br>
+VGA Card merupakan penghubung jalanya keluarnya tampilan gambar ke   monitor. Tanpa ada VGA Card, PC tidak dapat digunakan. Kualitas dari   kemampuan VGA mempengaruhi gambar yang muncul di monitor. Pada   prinsipnya kerja system VGA adalah mengubah gelombang sinyal dari   mainboard yang kemudian diolah di system VGA Card kemudian di transfer   ke monitor sehingga keluar tampilan gambar di layar Monitor. Ada   beberapa jenis VGA dari perkembangan awal hingga sekarang antara lain   sebagai berikut:<br>
+1.      CGA (color  graphic adapter)<br>
+2.      EGA (echanced graphic adapter)<br>
+3.      VGA (video graphic adapter)<br>
+4.      SVGA (super video graphic adapter)<br>
+5.      XVGA<br>
+<strong>Kerusakan VGA On board</strong><br>
+<strong><em>Solusi: </em></strong><br>
+Pada saat anda menghidupkan komputer dan komputer anda bisa hidup   atau terlihat berfungsi normal sedangkan di monitor tidak tampil atau   muncul tampilan apapun ataupun tampilan BIOS sekalipun. Maka kemungkinan   yang sedang trouble adalah monitornya atau kalau tidak adalah pada   VGAnya. Tetapi disini yang terjadi adalah bahwa minitornya terlihat baik   – baik saja, karena lednya terlihat berkedip – kedip dan bertanda bahwa   monitor baik – baik saja. Langkah selanjutnya adalah, bukalah casing   CPU dan lihatlah keadaan CPU apakah di dalamnya kotor terkena debu?.   Setelah keadaan di dalam CPU bersih cobalah kembali untuk  menghidupkan   kembali komputer yang telah dibersihkan CPUnya dari debu. Jika di layar   monitor komputer tidak dapat menampilkan sesuatu ataupun tidak   menampilkan layar BIOS atau bahkan bisa muncul tampilan Bios dan bisa   loading sampai di layar Windows XP tetapi kemudian komputer mati secara   tiba-tiba. Cobalah cek dan pastikan apakah kabel VGAnya sudah masuk dan   tersambung dengan port dengan benar, kemudian cek indikator pada monitor   apakah monitor berjalan dengan normal atau tidak setelah itu restartlah   komputer dengan menekan tombol reset pada CPU. Jika setelah di cek   dengan langkah – langkah tadi monitor belum bisa menampilkan tampilannya   maka kemungkinan masalahnya adalah pada VGA ONBOARDnya terkena korosi   atau tidak kuat terhadap arus monitornya. Solusi selanjutnya adalah anda   pasang VGA Card yang cocok untuk kebutuhan spesifikasi komputer anda.   Cobalah memasang VGA Card di slotnya. Tapi sebelum anda pasang VGA   cardnya terlebih dahulu kita lihat atau kita cek apakah slot AGP VGAnya   bersih, jika belum bersihkan dahulu agar terlihat mantap sehingga bisa   digunakan. Setelah slot terlihat bersih, maka pasang VGA cardnya.   Setelah VGA  terpasang maka segera di cek apakah VGAnya berfungsi atau   tidak. Setelah komputer di nyalakan dan tennyata hasilnya Ok yang   menjadi masalah memang adalah VGA Onboardnya<br>
+F  Tidak ada tampilan dilayar Monitor walaupun tombol power pada   monitor dan CPU sudah dihidupkan dan kabel pada VGA Card sudah terpasang   dengan benar dan ada kode Beep yang menunjukan kode kesalahan.<br>
+<strong><em>Solusi :</em></strong><br>
+VGA Card juga dapat mengalami trouble karena disebabkan oleh kondisi   yang tidak memungkinkan dikarenakan oleh beberapa hal yaitu:<br>
+<ol>
+  <li>Terlalu lama pemakaian sehingga perlu diganti dengan yang  baru</li>
+  <li>Kerusakan pada soket pin</li>
+  <li>Kerusakan pada jalur kebel vga ke monitor</li>
+</ol>
+Untuk menangani kasus diatas dapat dilakukan cara sebagai berikut :<br>
+<ol>
+  <li>Periksa koneksi kabel apakan terpasang dengan benar apa tidak atau   mungkin kabel VGA yang ke monitorlah yang rusak sehingga perlu diganti   dengan yang baik.</li>
+  <li>Periksa VGA Card apakan tertancap dengan benar ke slot AGP atau tidak jika tidak pasang dengan prosedur yang sesuai dan benar.</li>
+  <li>Ganti dengan VGA yang lain untuk memastikan VGA Cardnya yang rusak.</li>
+  <li>Periksa Slot AGP apakah berfungsi dengan baik apa tidak.</li>
+  <li>Bersihkan VGA Card dan slot AGP dengan kuas sampai bersih sehingga tidak mengurangi kinerja system tersebut.</li>
+  <li>Periksa konektor pin pada VGA Card apakah masih normal apa tidak.</li>
+</ol>
+Setelah pengecekan dilakukan kita dapat langsung mendiagnosa   kerusakan yang terjadi. Kita dapat menentukan bahwa VGA Cardlah yang   rusak bukan pada perangkat lain sehingga perlu diganti dengan VGA Card   yang lain. Untuk menangani kasus tersebut sebaiknya bila mengganti VGA   Card kita sebaiknya penggantian komponen sesuai dengan kapsitas yang   telah di berikan oleh standar mainboard agar tidak terjadi kerusakan   yang lebih fatal lagi. Seperti contoh apabila kita mengganti VGA lain   yang spesifikasi yang lebih tinggi tanpa mengup-grade kita tidak akan   berhasil karena kartu grafis yang diberikan akan berbeda dengan yang   sebelumya.
+<p align="justify"><br/><br/><br/><center>
+<div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel29" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g"><h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Komputer Sering Hang</I></b></center><hr>
+<p align="justify"><strong><em>Gejala:</em></strong><br>
+CPU yang sering Hang?<br>
+<br>
+<strong><em>Solusi:</em></strong><strong></strong><br>
+Ada beberapa faktor terjadi hanging diantaranya ada BadSector di   Harddisk, Ada Virus, Ada masalah di Hardware seperti Memory Kotor/Rusak,   MBoard Kotor/Rusak, Cooling Fan perputaran fan nya sudah lemah, Power   Supply tidak stabi. Sebaiknya jangan dipaksakan untuk digunakan karena   akan berakibat lebih fatal, silahkan hub: kami untuk dapat mengatasi   masalah tersebut.<br>
+<br>
+<strong><em>Gejala: </em></strong><br>
+Komputer sering tampil blue screen apa penyebabnya?<br>
+<br>
+<strong><em>Solusi:</em></strong><br>
+Pesan Blue Screen bisa disebabkan system windows ada yang rusak, Bisa   dari Memory, Bisa dari hardisk, bisa dari komponen lainnya, tergantung   pesan blue screen yang ditampilkan.<br>
+<br>
+<strong><em>Gejala:</em></strong><br>
+Komputer jadi lebih lambat dari sebelumnya, padahal awalnya tidak begitu lambat<br>
+<br>
+<strong><em>Solusi:</em></strong><strong></strong><br>
+Penyebab komputer anda prosesnya lambat ada beberapa faktor yaitu :   Space hardisk terlalu penuh, terlalu banyak program / software yang   memakan space harddisk dan memory, ada virus, harddisk badsector.<br/><br/><br/>
+<center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel30" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g"><h1><font color="#fffff">Servis Komputer</font></h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Cara Jitu Mengatasi Komputer Tidak Bisa Masuk Windows</I></b></center><hr>
+<p align="justify">Saat anda menyalakan ataupun merestart komputer dan ternyata komputer hanya menampilkan <em>error</em> atau <em>blue</em> <em>screen</em>,   maka anda mengalami salah satu permasalahan yang sering muncul bagi   pengguna komputer. Permasalahan tersebut adalah komputer tidak bisa   masuk windows. Permasalahan ini muncul karena proses <em>booting</em> dari komputer yang tidak sempurna atau ada kemungkinan proses <em>booting</em>-nya terhenti ditengah jalan.<br/>
+<p><a href="http://www.perangkatkeras.net/wp-content/uploads/2015/11/windows-failed-to-start-0xc000000e-625x480.png"><img src="http://www.perangkatkeras.net/wp-content/uploads/2015/11/windows-failed-to-start-0xc000000e-625x480-300x230.png" alt="windows-failed-to-start-0xc000000e-625x480" srcset="http://www.perangkatkeras.net/wp-content/uploads/2015/11/windows-failed-to-start-0xc000000e-625x480-300x230.png 300w, http://www.perangkatkeras.net/wp-content/uploads/2015/11/windows-failed-to-start-0xc000000e-625x480.png 625w" sizes="(max-width: 300px) 100vw, 300px" width="300" height="230"></a></p>
+<p><em>Komputer gagal masuk ke windows</em></p>
+<p>Sebagai orang awam di dunia komputer   mungkin anda akan panik dan bingung atas munculnya masalah ini. Mungkin   anda akan berpikir apakah komputer anda rusak dan sebagainya. Tapi   sebelum menjadi panik, ada baiknya anda mengetahui beberapa hal yang   mungkin dapat menjadi penyebab komputer tidak dapat masuk ke windows.   Pengetahuan ini tentu akan sangat membantu anda ketika dihadapkan pada   masalah sejenis di kemudian hari.</p>
+<p>Berikut ini adalah beberapa penyebab komputer anda tidak dapat masuk ke windows :</p>
+<ol>
+  <li>Ada file yang tidak sengaja terhapus dalam Sistem Operasi Windows</li>
+  <li>Ada kemungkinan virus, <em>spyware</em> ataupun Trojan yang ikut loading saat anda men-start up komputer.</li>
+  <li>Ada kerusakan pada file atau driver yang menyebabkan windows gagal dalam membacanya.</li>
+  <li>Sistem Operasi Windows yang rusak atau belum diinstal.</li>
+  <li>Ada setting BIOS yang settingannya dirubah atau tidak benar.</li>
+</ol>
+<p>Dari beberapa alasan yang dikemukakan   diatas, anda dapat mencoba mengecek dan mengatasi masalah-masalah   tersebut dengan beberapa cara, diantaranya sebagai berikut :</p>
+<p>Dari beberapa alasan yang dikemukakan diatas, anda dapat mencoba   mengecek dan mengatasi masalah-masalah tersebut dengan beberapa cara,   diantaranya sebagai berikut :</p>
+<ol>
+  <li>Cobalah start-up dengan menggunakan Safe Mode</li>
+</ol>
+<p>Anda dapat menekan  F5 dari keyboard anda   ketika komputer pertama kali akan masuk ke windows. Kemudian pilih Safe   Mode, ketika komputer berhasil masuk ke windows berarti akan ada loading   yang tidak dapat dibaca oleh windows dengan benar. Coba matikan loading   tersebut dengan menggunakan “MSconfig” pada langkah start-up. (Start   =&gt; run =&gt; Msconfig).</p>
+<ol start="2">
+  <li>Cara paling mudah untuk memulihkan komputer yang tidak dapat masuk   ke windows adalah dengan cara repair windows. Masukkan CD instalasi   windows kemudian ubah BIOS untuk mencoba start-up via CD atau DVD-ROM,   kemudian setelah instalasi masuk ke bagian install windows maka pilih   opsi repair windows. Anda dapat menginstal windows ke folder baru atau   lakuka format harddisk jika repair windows gagal.</li>
+  <li>Pastikan bahwa anda tidak mengubah setting BIOS sebelumnya. Jika   memang anda telah merubah setting BIOS maka kembalikan setting BIOS   seperti semula. Jika anda lupa, sebaiknya pilih Loading BIOS Default.</li>
+  <li>Kerusakan pada Driver VGA Card juga dapat menjadi penyebab komputer   tidak dapat masuk ke windows. Untuk penyebab ini, anda dapat mencoba   untuk melakukan Safe Mode lalu uninstall Driver VGA Card yang rusak   kemudian install ulang Driver VGA yang benar ketika masuk ke windows   secara normal.</li>
+</ol>
+<p>Jika keempat cara diatas sudah anda   lakukan dan ternyata anda gagal, maka ada kemungkinan bahwa salah satu   hardware anda mengalami kerusakan. Biasanya hardware yang mengalami   kerusakan adalah Memory Harddisk VGA dan mungkin saja Mainboard juga   rusak, tetapi kerusakan Mainboard merupakan kemungkinan paling kecil</p>
+<p>Dan itulah beberapa cara yang dapat anda   lakukan jika komputer anda gagal masuk ke windows. Jadi jangan terlalu   panik atau langsung berpikir untuk pergi men-service-kan komputer anda.   Coba lakukan beberapa tips diatas dan cari tahu dimana letak  kerusakan   pada komputer anda. Selamat mencoba..</p>
+<p align="justify"><br/>
+  <br/>
+<center><div data-role="footer" data-position="fixed"><a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="g">Scroll</a><a href="javascript:stopScroll()" data-icon="minus" data-theme="g">Stop</a><a href="index.html" data-icon="grid" data-theme="g">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+<!-- daris sini --><div data-role="page" id="fabel31" data-theme="g"><div data-role="header" data-position="fixed" data-theme="g"><h1><!-- sampai sini -->
+</h1></div></div><div data-role="page" id="fabel58" data-theme="g"><div data-role="content"></div></div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+.ui-page.ui-body-a {
+	background: url(../images/bg.jpg);
+	box-shadow:  0px 0px 20px 10px rgba(90, 90, 90, 0.2) inset;
+}
+
+.ui-header .ui-title {
+	text-indent:-9999px;
+	font-size:0px;
+	background:url(../images/header_logo.png) no-repeat 95% 5px ;
+	height:33px;
+	padding:5px 0 5px 50px;
+	margin:0px;
+	color:red;
+}
+
+img { border: 0; max-width: 100%; }
+
+div.wrapper{  
+	float:center; /* important */  
+	position:relative; /* important(so we can absolutely position the description div */  
+}  
+div.description{  
+	position:absolute; /* absolute position (so we can position it where we want)*/  
+	bottom:3px; /* position will be on bottom */  
+	left:0px;  
+	width:100%;  
+	/* styling bellow */  
+	background-color:red;  
+	font-family: 'tahoma'; 
+	letter-spacing: 0px; 
+	font-size:17px;  
+	color:white;  
+	opacity:0.6; /* transparency */  
+	filter:alpha(opacity=60); /* IE transparency */  
+}  
+p.description_content{  
+	padding:12px;  
+	margin:0px;  
+}  
+h3.bahan_dan_cara_membuat{    
+	/* styling bellow */   
+	font-family: 'tahoma'; 
+	letter-spacing: 1px; 
+	font-size:19px;  
+}  
+ul.daftar_bahan{    
+	/* styling bellow */   
+	font-family: 'tahoma'; 
+	letter-spacing: 0px; 
+	font-size:17px;  
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 2em;
+	text-indent: -0.7em;
+}  
+ol.daftar_bahan{    
+	/* styling bellow */   
+	font-family: 'tahoma'; 
+	letter-spacing: 0px; 
+	font-size:17px;  
+}
+
+ol.daftar_bahan li{ 
+	border-left: 1px solid #999;
+	padding: 5px;
+}
+
+p.intro{
+	font-family: 'tahoma'; 
+	letter-spacing: 0px; 
+	font-size:17px;  
+}
+
+#photo img { 
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+background-color: #fff;
+border: 1px solid #ccc;
+padding: 5px; 
+}
+
+#list_resep .choice_list  h3{
+padding-top:10px;
+}
+
+#home .choice_list  h3{
+padding-top:10px;
+}
+
+.choice_list  img{
+padding:3px;
+}
