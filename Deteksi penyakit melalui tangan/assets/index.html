@@ -1,0 +1,923 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mendeteksi Penyakit Dari Tangan</title>
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> 	 
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+		// all dialog buttons should close their parent dialog
+		$(".ui-dialog button").live("click", function() {		
+			$("[data-role='dialog']").dialog("close");		
+		});
+		$(document).on("mobileinit", function(){
+		  $.mobile.defaultPageTransition = "slide";
+		});
+	
+function pageScroll() {
+   	window.scrollBy(0,60);
+   	scrolldelay = setTimeout('pageScroll()',10000); // scrolls every 1000 milliseconds
+}
+function stopScroll() {
+   	clearTimeout(scrolldelay);
+}
+function jumpScroll() {
+window.scroll(0,0); // horizontal and vertical scroll targets
+}
+</script>
+<script src="../js/jquery.mobile-1.2.0.min.js"></script>
+<script src="../js/dw_tooltip_c.min.js" type="text/javascript"></script>
+<script src="../js/chords.min.js" type="text/javascript"></script>
+
+
+</head>
+
+<body>
+<div data-role="page" id="halaman" data-theme="a">
+<header data-role="header" data-position="fixed">
+<h1>Mendeteksi Penyakit Dari Tangan</h1>
+</header>
+  <div data-role="content"><div class="choice_list">
+
+
+
+
+<center>
+<marquee scrolldelay="350">
+<div class="tanggal">
+<script>
+
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+var dayarray=new Array("Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu")
+var montharray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember")
+document.write("<b><i><u>"+dayarray[day]+", "+daym+" "+montharray[month]+" "+year+"</b></i></u>")
+
+</script>
+</div></marquee>
+</center>
+
+
+
+
+
+	  <ul data-role="listview" data-theme="c" data-inset="true">
+        
+<li><a href="#Pendahuluan" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><center>Pendahuluan</center></a></li>
+<div data-role="popup" id="Pendahuluan" class="ui-content" style="max-width:280px">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+<p style="text-align:justify">Aplikasi ini berisi tentang Cara Mendeteksi Penyakit Dari Tangan. Untuk mengetahui selengkapnya silahkan buka dibawah <b>Affandi developer</b></p><hr>
+Semoga bermanfaat.<hr>
+<br>
+Kritik dan Saran: afandityo17@gmail.com
+
+</div>	
+
+<div data-role="content"  role="main">
+<ul data-role="listview" data-filter="false" data-inset="true" data-filter-placeholder="cari yang pernah anda buka disini..."
+
+
+<p align="left"> 
+<center> <img src="images/123 - Copy.png"/< center><p></p></center>
+
+<li><font color="#FFFFFF"><marquee scrolldelay="350">Mendeteksi Penyakit Dari Tangan</marquee></font></li>
+
+<li><a href="#a2"><h3>Deteksi Telapak Tangan</h3><p>Kenali Gangguan Kesehatan dari Telapak Tangan</p></a></li>
+        
+<li><a href="#a1"><h3>Deteksi Jari</h3><p>Ketahui Penyakit dan Diagnosa Keluhan Melalui Jari Tangan</p></a></li>
+
+<li><a href="#a3"><h3>Cara Diagnosa</h3><p>Berikut Cara Diagnosa Penyakit Melalui Telapak Tangan</p></a></li>
+        
+<li><a href="#a4"><h3>Cara Lain Mendiagnosa</h3><p>Cara Lain Deteksi Telapak Tangan</p></a></li>
+        
+<li><a href="#a5"><h3>Deteksi Kuku Jari</h3><p>Diagnosa Penyakit Dari Kuku Jari Tangan</p></a></li>
+
+<li><a href="#a6"><h3>Deteksi Penyakit</h3><p>Penyakit Dari Telapak Tangan, Kuku dan Jari</p></a></li>
+
+<li><a href="#a7"><h3>Deteksi Kondisi Tangan</h3><p>Kondisi Tangan Yang Menandakan Gangguan Kesehatan</p></a></li>
+
+<li><a href="#a8"><h3>Telapak Tangan Pucat</h3><p>Telapak Tangan Pucat Berkaitan dengan Anemia</p></a></li>
+
+<li><a href="#a9"><h3>Warna Telapak Tangan</h3><p>Deteksi Penyakit Dari Warna Telapak Tangan</p></a></li>
+
+<li><a href="#a10"><h3>Titik Akupuntur Telapak Tangan</h3><p>Deteksi Penyakit Dari Titik Akupuntur Telapak Tangan</p></a></li>
+
+
+
+
+          <br>
+<li><a href="#kontakkami" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><center>Kontak Kami</center></a></li>
+<div data-role="popup" id="kontakkami" class="ui-content" style="max-width:280px">
+<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+<p style="text-align:justify">Anda dapat menghubungi kami jika ingin menyampaikan hal yang sekiranya kami harus mengetahuinya, baik itu berupa kritik, saran, atau hal lain yang ingin di sampaikan kepada kami, anda dapat menghubungi kami di:
+<hr>
+afandityo17@gmail.com</p>
+</div>	
+
+
+      
+      
+      
+     
+      
+      
+      </div>
+      
+	</div><!--choice-list-->
+  </div><!--content-->
+<div data-role="footer">
+	<h1>AffandiStudio</h1>
+</div>
+<center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="home" data-theme="a">Menu</a>
+</div><!--content--></div> <!--page--></div></center>
+
+
+
+
+
+              
+<!-- daris sini --><div data-role="page" id="a1" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Deteksi Jari</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Ketahui Penyakit dan Diagnosa Keluhan Melalui Jari Tangan</I></b></center><hr>
+ <p>
+  <p align="left"> 
+<center> <img src="images/123.png"/< center><p></p></center>
+<hr><p>
+Semua mahluk hidup tidak mesti punya jari, dan hanya manusia yang selalu punya jari baik jari tangan maupun jari kaki. Jari merupakan bagian tubuh yang berfungsi membantu tugas manusia dalam melakukan aktivitasnya, tentunya untuk pekerjaan yang bersifat motorik.<p>
+
+Jari tangan terdiri dari sekelompok ruas tulang yang dibungkus daging atau otot. Jari tangan digunakan hampir untuk seluruh pekerjaan manusia seperti mengetik, mengusap, mencabut, memukul, makan, minum dan lain-lain yang termasuk pekerjaan inti manusia dan dilakukan dalam keseharian.<p>
+
+<b>Bagian dari jari tangan manusia adalah sebagai berikut:</b><p>
+<li><b>Jempol</b><br> Berbeda dengan jari yang lain karena tempatnya agak sedikit mundur ke belakang, memiliki ruas jari lebih sedikit dan agak pendek. Digunakan untuk memegang suatu benda dan menekannya ke bagian jari yang lain.<p>
+
+<li><b>Jari Telunjuk</b><br>Merupakan jari yang digunakan untuk menunjukkan atau mengisyaratkan sesuatu dan merupakan jari yang sangat penting dalam kegiatan menulis, memainkan alat musik, dll.<p>
+
+<li><b>Jari Tengah</b><br>Dinamakan jari tengah memang letaknya tepat di tengah antara 4 jari yang lain. Merupakan jari terpanjang daripada jari yang lain.<p>
+
+<li><b>Jari Manis</b><br> Terletak diantara jari kelingking dan jari tengah. Biasanya juga dipasang cincin di jari manis.<p>
+
+<li><b>Jari Kelingking</b><br>Jari yang letaknya di pinggir sendiri dan panjangnya hampir sama dengan Jempol tapi bentuknya lebih kecil.<p>
+
+<b>Sensor Penyakit Melalui Jari Tangan</b><p>
+Seperti kita ketahui pada setiap tubuh kita jika mendapatkan rangsangan maka akan disalurkan ke otak untuk diolah lebih lanjut, dan otak akan memberikan umpan balik (feedback) atas rangsangan tersebut.<p> Misalnya jika kita menginjak duri, kulit mengirim informasi ke otak dan otak mengolahnya sehingga yang akan kita rasakan nantinya suatu rasa sakit dan kita akan sedikit melompat dan tangan kita memegang kaki dan mulut kita berteriak.<p>
+
+Satu rangsangan dapat menimbulkan beberapa reaksi pada tubuh kita. Dan waktu yang dibutuhkan untuk menerima rangsangan, mengolah rangsangan dan memberikan umpak balik adalah sangat cepat, mungkin 1/1000 detik.<p>
+
+Tuhan memberikan sistem seperti ini yang tidak mungkin manusia membuat yang sama. Manusia hanya bisa mempelajarinya.
+Salah satu yang bisa dipelajari adalah sistem saraf yang ada di sekitar tangan.<p> Menurut ilmu akupuntur tradisional, perubahan warna tangan, tegangnya otot tangan, serta kelembamannya dapat mengidentifikasikan kesehatan seseorang.<p>
+
+Tanda-tanda penyakit dapat diketahui jika tangan terasa sakit bila dipijat pada titik tertentu, warna tangan dari merah menjadi keunguan, tangan sangat keras bila dipijat, tangan terasa lembek, atau terjadi pembengkakan.<p>
+
+Titik yang sakit ketika dipijat mengindkasikan penyakit yang ada dalam tubuh kita. Dengan memijat titik-titik tersebut secara teratur akan meringankan penyakit yang kita derita.<p>
+
+<li><b>Tanda-Tanda Pada Jari </b></li><bR>
+
+<b>Kelingking
+Bengkok</b><bR>
+Tandanya:<p>
+
+Organ saraf dalam jantung alami persoalan.<p>
+ 
+Melukiskan permasalahan tulang punggung kita ada yg tidak pada tempatnya (bila diraba menonjol) atau kendor lantaran kecelakaan, hingga menyebabkan terganggunya saraf tulang belakang, bila berlangsung di bagian atas bakal punya pengaruh pada otak apabila terdapat di bagian bawah bakal mengganggu alat reproduksi, hingga pada wanita umumnya miliki permasalahan pada. <p>
+
+Kelingking bengkok dapat juga mengisyaratkan pada wanita kerap melahirkan, pernah operasi.<p>
+ 
+Melukiskan tingkat stress seorang. <p>
+
+Pernah alami panas tinggi hingga mengakibatkan mata minus. <p>
+
+Bila yang bengkok atasnya saja pada wanita jatuh (turun), kesan yang muncul yaitu sakit pinggang. <p>
+
+<b>Runcing</b> <bR>
+Tandanya: amati jari kelingking runcing. Ini melukiskan ketidak perawanan pada wanita.<p>  
+
+<b>Jari Manis 
+Bengkok</b> <bR>
+Tandanya: memiliki persoalan pada saraf system imunitas badan, serta memiliki persoalan pada usus halus. <p>
+
+<B>Jari Tengah 
+Bengkok</B><bR> 
+Tandanya : memiliki persoalan pada organ selaput jantung, umumnya kerap kaget. <p>
+
+<b>Jari Telunjuk 
+Bengkok</b><bR>
+Tandanya : memiliki persoalan pada saraf usus. <p>
+
+<b>Ibu Jari</b><p>
+
+Ibu Jari 
+Tipis<br>
+-Pertanda : memiliki sinusitis atau miliki permasalahan alergi.<p>
+ 
+Gurat-gurat biru atau hijau pada pangkal ibu jari<br> 
+-Pertanda : memiliki permasalahan pada paru-paru. Bila guratan itu hingga pada kuku ibu jari jadi orang itu terkena-sinusitis. Melukiskan juga ada alergi. Sinyal tanda alergi yaitu : Rambut rontok, jerawat dimuka, bersin pada saat pagi, salesma atau flu, sembelit, wasir yang serius. Pada punggung ada bintik-bintik merah, kerap sakit gigi, kuku rusak, mata merah serta gatal, telinga berair serta muncul bisul, mulut baud an asma. <p>
+
+Ada Tonjolan<bR> 
+Tandanya: Mengisyaratkan ada penyakit amandel. Masalah pada kelenjar Thyroid.<p> 
+
+Gurat biru melingkar<br> 
+Tandanya : memiliki penyakit mag/gastric, migrant, tandanya juga memberikan wasir.<p>
+
+<b>Semua Jari </b><p>
+
+Semuanya jari menipis<bR>
+Tandanya : memiliki sakit diabetes militus serta pinggang jadi mengecil <p>
+
+<li><b>Tanda-Tanda Lain Pada Jari</b></li> 
+
+Pembengkakan<bR>
+Tandanya : masalah pada manfaat ginjal lantaran yang memproses air pada badan yaitu ginjal. Umumnya ditandai ada kantong air di bawah mata. <p>
+
+Penciutan <bR>
+Tandanya : mengisyaratkan organ ginjal kekurangan cairan hingga mengganggu manfaat ginjal. Ginjal membutuhkan air untuk perawatannya. (baiknya minimum 2, 5 liter/hari.<p> 
+
+Kerutan-kerutan <bR>
+Tandanya : bila ada kerutan-kerutan memanjang dari pangkal jari hingga buku jari ke-2 ini memberikan ada masalah pada manfaat ginjal yang telah tiba pada permasalahan buang air kecil.<p> 
+
+Ujung jari merah <bR>
+Tandanya : kandungan kolestrolnya tinggi. Makin merah makin tinggi kadar kolestrolnya.<p> 
+
+Ruas Jari Hitam <bR>
+Tandanya : sangat banyak karbon atau tokosid pada usus hingga umumnya mengganggu pada buang air besar yang mengakibatkan sembelit atau terus-terusan. Umumnya ini dapat tandanya angin telah menebar kebagian sendi hingga gampang sakit dipersendian.<p> 
+
+Gurat-Gurat Biru <bR>
+Tandanya : bila pada jari ada gurat-gurat biru atau hijau pada telapak tangan berwarna putih (pucat) atau binti-bintik merah mengisyaratkan dalam kondisi stress. <br>
+
+
+<br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+                
+<!-- daris sini --><div data-role="page" id="a2" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Deteksi Telapak Tangan</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Kenali Gangguan Kesehatan dari Telapak Tangan</I></b></center><hr>
+ <p>
+  
+<center> <img src="images/judul5.png"/< center><p></p></center>
+<hr><p>
+Telapak tangan adalah bagian saraf paling ujung dari tubuh manusia. Apa saja yang berlaku pada tubuh manusia akan terlihat pada tangan. Tak heran bila telapan tangan bisa menunjukkan suatu penyakit yang ada di dalam tubuh seseorang.<p>
+
+Melalui telapak tangan, sebenarnya kita bisa mendeteksi lebih awal berbagai penyakit serta kelainan yang terjadi dalam tubuh kita, tanpa harus memeriksa lebih dulu ke dokter. Namun, untuk lebih memastikan penyakit atau kelainan tersebut boleh dikonfirmasi ke dokter untuk memberi pengobatan lebih lanjut.<p>
+
+Pada telapak tangan tersimpan 1000 rahasia kesehatan manusia. Analis telapak tangan atau <b>‘The Sign of Hands’</b> telah lama digunakan oleh bangsa Yunani.<br> Itulah sebabnya mengapa analisis telapak tangan merupakan salah satu bentuk analisis yang sangat dianjurkan bagi orang-orang yang berprofesi di bidang pengobatan ketika hendak merawat atau mengobati pasien yang datang berobat.<p>
+
+Di antara bagian telapak tangan yang bisa menunjukkan keadaan suatu penyakit dalam tubuh manusia adalah, telapak tangan bagian atas, telapak tangan bagian belakang, semua jari (dari kelingking hingga ibu jari), ruas-ruas jari bagian atas dan kuku.<p>
+
+<b>Berikut bebarapa gangguan kesehatan yang bisa dideteksi melalui bagian telapak tangan kita:</b><p>
+
+<li><b>Penyakit jantung</b><br>
+Penemuan terbaru menunjukkan osteoarthritis dalam jari dapat menjadi petunjuk peringatan awal bagi pria bahwa mereka memiliki penyakit jantung. Para ilmuwan Finlandia meneliti 8000 orang dengan melihat ujung jari kelingking yang bengkok ke dalam, ditemukan 46 persen pria lebih beresiko meninggal di usia muda akibat serangan jantung dibanding pria tanpa osteoarthritis.<p>
+
+Alasan hubungan ini belum jelas tetapi para ahli mengira hal ini akibat tingkat lemak yang tinggi dalam darah yang dapat menutupi arteri atau dapat juga osteoarthritis menujukan rendahnya tingkat hormon seks pria, testoteron, yang melindungi pria terhadap penyakit jantung.<p>
+
+Para ahli mengatakan satu alasan bahwa jari memberikan petunjuk bernilai bagi kesehatan karena gen yang mengontrol perkembangan juga mengontrol testis pada pria dan sel telur pada wanita.</p>
+
+<li><b>Kanker payudara</b><br>
+Wanita dapat diketahui mereka beresiko memiliki kanker payudara di usia muda dengan membandingkan kesamaan kedua jarinya. Jika telunjuk lebih panjang dari jari manis, ini artinya mereka lebih memilki tingkat ostrogen yang lebih tinggi, suatu hormon yang membantu pertumbuhan kanker.<p>
+
+<li><b>Autisme</b><br>
+Sebuah penelitian yang dipublikasikan tahun 2001 menunjukan anak autistic memiliki jari manis yang sangat panjang, ini menunjukkan mereka nampaknya memiliki jumlah testosteron yang tidak biasa dalam rahimnya yang mengakibatkan bentuk perilaku pria yang sangat berlebihan seperti kesulitan komunikasi dan kurang kesadaran terhadap kondisi emosional orang lain.<p>
+
+<li><b>Masalah paru-paru</b><br>
+Ketika dokter melihat gejala masalah pernapasan, mereka seringkali memeriksa kuku tangan. Ini karena warna kulit dibawah kuku berubah menjadi corak biru ketika terjadi komplikasi pernapasan.<br> Darah yang mengandung oksigen memiliki warna merah terang tetapi darah yang kehilangan oksigen berwarna merah gelap. Ini salah satu gejala yang muncul pada bayi yang mengidap bronchitis akut.<p>
+
+<li><b>Stres</b><br>
+Dalam keadaan tertekan, tubuh akan mengeluarkan hormon streoid yang dapat melemahkan sistem kekebalan tubuh. Tanda-tanda di telapak tangan orang yang mengalami stres adalah terdapat urat-urat biru atau hijau di pergelangan tangan, telapak tangan dan di sepanjang jari-jari. Serta terlihat jelas di betis kaki.<p>
+
+<li><b>Kekurangan vitamin</b><br>
+Noda putih di ujung jari menunjukan kekurangan zat seng. Seng penting untuk menjaga sistem kekebalan. Sumber makan mengandung seng antara lain susu, tiram, ayam, biri-biri, semua jenis biji-bijian, kacang dan sayuran berdaun hijau.<p>
+
+
+
+
+<br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+
+                
+<!-- daris sini --><div data-role="page" id="a3" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Cara Diagnosa</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Berikut Cara Diagnosa Penyakit Melalui Telapak Tangan</I></b></center><hr>
+ <p>
+  
+<center> <img src="images/judul5.png"/< center><p></p></center>
+<hr><p>
+Analisis telapak tangan <b>“The Sign of Hand”</b> telah lama digunakan oleh bangsa Yunani sejak ribuan tahun yang lalu. Itulah sebabnya analisis telapak tangan merupakan salah satu bentuk analisis yang sangat dianjurkan untuk dilakukan oleh seorang Herbalis ketika hendak merawat penyakit pasien yang berobat kepadanya.<p>
+
+Tangan merupakan bagian saraf yang paling ujung dari tubuh manusia. Apa saja yang berlaku pada tubuh manusia akan terlihat pada tangan.<br><b>Di antara bagian-bagian tangan yang bisa menunjukkan keadaan suatu penyakit yang berlaku pada manusia adalah:<font face="Courier New, Courier, monospace"> telapak tangan bagian atas, punggung tangan, semua jari (mulai dari kelingking hingga ibu jari), ruas-ruas jari bagian atas dan kuku.<br></font></b> Pengamatan pada telapak tangan adalah menyangkut perubahan warna dan perubahan fisik (biasanya bengkok ke kiri / kekanan / ke hadapan).<p>
+
+<li><b>Masalah Kolon (Sembelit)</b><br>
+Penyakit bersumber dari masalah usus besar (kolon), dan sembelit merupakan masalah yang paling utama.<br><b> Tanda-tanda di tangan pasien untuk masalah sembelit dan permasalahan kolon lainnya adalah sebagai berikut:</b><br>
+<ul type="circle">
+<li>Garis-garis ruas jari-jari pada punggung tangan berwarna gelap, semakin gelap warnanya mengindikasikan semakin parah permasalahan sembelitnya.</li>
+
+<li>Garis-garis yang ada pada telapak tangan dan ruas seluruh jari berwarna gelap, semakin gelap warnanya mengindikasikan semakin parah permasalahan sembelitnya.</li>
+
+<li>Terdapat bayangan kehitaman secara keseluruhan dari telapak tangan, menandakan lebih kronik dari garis-garis berwarna gelap di ruas jari-jari.</li>
+
+<li>Apabila jari telunjuk dan jari tengah direntangkan terasa sakit, maka mengindikasikan juga adanya masalah sembelit.</li>
+
+<li>Permasalahan usus besar lainnya dapat dilihat pada keadaan ibu jari (jempol) yang bengkok.</li>
+
+<li>Jari telunjuk bengkok juga mengindikasikan adanya permasalahan pada usus besar.</li></ul><p>
+
+<b>indikasi dari sembelit adalah sebagai berikut:</b><br>
+<ul type="disc">
+<li>Buang Air Besar (BAB) sering (tiap hari) tapi tak cukup kadarnya.</li>
+<li>Buang Air Besar (BAB) sering (tiap hari) tapi tak keluar habis.</li>
+<li>Terjadi kekurangan air dalam badan (kurang air minum)</li>
+<li>Selalu Mengantuk</li>
+<li>Buang Air Besar selang satu hari atau bahkan selang dua hari</li>
+<li>Buang Air Besar mencret, menandakan sembelit yang parah</li></ul><p>
+
+Jika terjadi keadaan sembelit yang sangat parah, dapat ditherapy dengan puasa air putih, dimana kotoran yang menempel di usus / kolon akan dikeluarkan perlahan-lahan lewat BAB dan biasanya berwarna kehitaman seperti ter (aspal).<p>
+
+Sembelit adalah sebuah permasalahan (sumber penyakit), namun wujudnya berupa penyakit-penyakit degeneratif seperti kencing manis, darah tinggi, asam urat, dan sebagainya.<p>
+
+<li><b>Masalah  Paru-paru / angin</b></li><br>
+Masuk angin tak bisa dipisahkan dengan masalah sembelit. Tanda-tanda di tangan pasien untuk masalah angin adalah terdapat bintik-bintik putih di telapak tangan berwarna kemerah-merahan. Ada dua kemungkinan, jika dasar telapak tangan berwarna merah maka bintik-bintik berwarna putih.<p>
+
+Dan sebaliknya jika dasar telapak tangan berwarna putih maka bintik-bintik berwarna merah. Hal ini diakibatkan oleh gas yang berlebihan.<br>
+<b>Indikasi dari Masuk angin adalah cepat marah / emosi: darah keluar lebih kental bila di bekam, suara tinggi dan pandangan tajam. Masuk angin ini terkait dengan masalah kolesterol.</b><p>
+
+<li><b>Masalah Pikiran (Stress)</b><br>
+Alam fikiran menguasai 50% kesehatan pasien. Dalam keadaan tertekan (stress) yang berterusan tubuh akan mengeluarkan hormon steroid yang dapat melemahkan sistim imunity. Tanda-tanda di tangan pasien stress adalah terdapat urat-urat biru / hijau pergelangan tangan, telapak tangan dan disepanjang jari-jari serta sangat terlihat jelas di betis kaki.<p>
+
+<b>Indikasi dari stress adalah terlalu sedih, cepat marah / emosi tidak nyenyak tidur dan terasa migrain. Masalah stress ini ada hubungannya dengan masalah jantung, paru-paru, dan kekurangan vitamin C.</b><p>
+
+<li><b>Masalah Jantung</b><br>
+Masalah jantung tidak identik dengan penyakit jantung. Masalah jantung maksudnya adalah terdapat gangguan–gangguan pada organ jantung. Berlakunya arteriklorosis (penyumbatan arteri) adalah dikarenakan terjadinya kondisi stress yang berkepanjangan.<p> <b>Tanda-tanda di tangan pasien yang mengalami gangguan jantung adalah sebagai berikut:</b><br>
+<ul type="circle">
+<li>Jari kelingking yang bengkok mengindikasikan adanya permasalahan pada organ dalam jantung.</li>
+<li>Jari Tengah yang bengkok mengindikasikan adanya permasalahan pada organ pembungkus jantung.</li>
+<li>Tapak tangan berpeluh / berkeringat menandakan seseorang mengalami gangguan pada jantung, paru-paru, sesak nafas dan stress.</li>
+<li>Kuku bergelombang juga mengindikasikan adanya permasalahan jantung.</li><p></p></li></li></ul>
+
+<b>Simptom/Ciri-Ciri dari masalah jantung adalah dada kiri terasa sakit, kebas pada jari-jari, nyeri seperti di tusuk, mudah terperanjat, berdebar-debar, tidak lelap/sukar tidur.</b><br> Masalah ini ada hubungannya dengan masalah kolesterol atau tingginya kadar LDL (Low Density Lipoprotein) dalam tubuh.<p>
+
+<li><b>Masalah Kolesterol</b><br>
+Masalah kolesterol hampir menimpa kebanyakan penduduk yang tinggal di wilayah pesisir pantai, yang diakibatkan oleh pola diet/makan. Masalah kolesterol sangat terkait erat dengan masalah jantung dan kardiovaskular.<br> <b>Tanda-tanda di tangan pasien yang mengalami permasalahan kolesterol ini adalah sebagai berikut:</b><p>
+<ul type="circle">
+<li>Ruas ujung jari-jari berwarna lebih merah / lebih gelap dari ruas jari di bawahnya. semakin gelap warnanya menandakan kadar kolesterol di tubuh makin tinggi.</li>
+<li>Telapak tangan berwarna merah, terlihat bengkak dan terdapat urat berwarna biru.</li></ul>
+ciri dari masalah kolesterol adalah masalah emosi atau cepat marah. Masalah kolesterol terkait erat dengan masalah sembelit, masuk angin.<p>
+
+<li><b>Masalah Alergi / Sinusitis</b><br>
+Masalah Alergi / Sinusitis hampir menimpa kebanyakan penduduk Asia. Masalah ini biasanya dikaitkan dengan masalah paru-paru (pernafasan) atau asma.<br> Tanda-tanda di tangan pasien yang mengalami permasalahan ini adalah terdapat urat-urat berwarna biru / kehijau-hijauan pada perut telapak tangan di bagian bawah ibu jari.<br> Ibu Jari bagian atas kempot, juga menandakan berlakunya masalah sinusitis.<p>
+
+<b>Ciri dari masalah Alergi/Sinusitis adalah bersin-bersin, terutama di waktu pagi: rambut rontok, mata gatal, kaki pegal-pegal, cepat lelah, asma. Jika kondisi ini berkepanjangan maka akan menimbulkan masalah keputihan bagi perempuan, atau bawasir bagi laki-laki.</b><p>
+
+<li><b>Masalah Inbalance Hormon (ketidakseimbangan Hormon)</b><br>
+Masalah inbalance hormon atau ketidak seimbangan hormon dapat menyebabkan berlakunya masalah berkurangnya keinginan seks (tapi tak identik dengan impotensi); masalah di rahim/peranakan.<br> Masalah ini biasanya berlanjut pada masalah Tiroid, Ovarium, Prostat, Uterus, Fibroid (kista), Endrometris, dan Kanker Rahim.<p>
+
+<b>Tanda-tanda di tangan pasien yang mengalami permasalahan inbalance hormon adalah:</b><br>
+<ul type="circle">
+<li>Telapak tangan berwarna pucat merah, terdapat urat berwarna biru dan terlihat sangat mencolok.</li>
+<li>Telapak tangan licin/kesat dan kulit telapak tangan kering.</li>
+<li>Terdapat bulan sabit terbalik hanya di kuku ibu jari menandakan hormon dalam keadaan balance. Sebaliknya apabila bulan sabit terbalik tersebut ada disemua kuku, atau ada di kuku-kuku lain selain ibu jari, maka menandakan terdapat masalah in balance hormon.</li>
+<li>Jari Kelingking kempot menandakan berkurangnya kemampuan seks.</li>
+<li>Ibu jari bengkok menandakan masalah kesuburan yang rendah.</li><p>
+<b>Ciri dari masalah in balance hormon adalah berkurangnya keinginan seks, perasaan rendah diri, kemurungan yang mendalam, bahkan depresi.</b></p></ul>
+
+<li><b>Masalah Wanita (Rahim dan Uterus)</b><br>
+Masalah wanita yang banyak dialami adalah masalah rahim jatuh (prolapsus), keputihan, senggugut, fibroi,; endrometrosis. Masalah wanita ini apabila berkepanjangan akan menyebabkan terjadinya kanker rahim.<p> Beberapa kondisi yang menyebabkan seorang wanita mudah terserang kanker:<br>
+<ul type="circle">	
+<li>Datang darah haid pada usia dibawah 10 tahun</li>
+<li>Berhenti darah haid pada usia di atas 50 tahun</li>
+<li>Tidak melahirkan anak</li>
+<li>Melahirkan anak pada usia 35 tahun terutama anak sulung</li>
+<li>Tidak menyusui anak
+<li>Pernah menderita kanker jinak (kista / tumor)</li>
+<li>Memiliki garis keturunan terserang kanker</li>
+<li>Pengguna Pil Kesuburan (Hormon) ataupun KB.</li></ul>
+<b>Tanda-tanda di tangan pasien yang mengalami permasalahan wanita ini adalah:</b><br>
+<ul type="disc">
+<li>Jari kelingking meruncing / menirus menandakan masalah rahim / peranakan.</li>
+<li>Jari Kelingking bengkok bagian atasnya saja menandakan rahim jatuh (prolapsus), jika berkelanjutan akan mengarah pada permasalahan kista / tumor.</li></ul>
+
+<b>Sebab dari masalah wanita adalah keputihan, dilep, stress dalam jangka waktu lama, cepat lelah.</b><p>
+
+<li><b>Masalah Buah Pinggang (Ginjal)</b><br>
+Masalah buah pinggang yang banyak dialami adalah masalah pegal-pegal di pinggang, kencing tak tuntas, menahan kencing, batu karang/ginjal, kencing tak keluar (edena), kencing darah, dan lain sebagainya.<p>
+
+Masalah Ginjal ada kaitannya dengan masalah hati dan jantung. Perlu diketahui bahwa kondisi kerusakan ginjal tidak melebihi 25% belum memberikan kesan sakit pada pasien.<p>
+
+Apabila seorang Ayah/Ibu telah mengalami masalah ginjal, maka berdasarkan penelitian di Malaysia sekitar 60% anak yang dilahirkan akan mewarisi masalah ginjal tersebut.<p>
+
+<b>Tanda-tanda di tangan pasien yang mengalami permasalahan ginjal ini adalah:</b><br>
+<ul type="circle">
+<li>Ruas pertama dari seluruh jari –jari terlihat buncit / bengkak air.</li>
+<li>Ruas pertama jari telunjuk berkerut-kerut / keriput, menandakan kurang air atau sering menahan air kencing, biasanya juga terlihat kelopak mata berwarna hitam.</li>
+<li>Terasa sakit di tiga jari (ibu jari, jari telunjuk dan jari tengah).</li>
+<li>Ujung-ujung jari relatif tidak meruncing menandakan seseorang mengalami masalah ginjal, untuk wanita biasanya letak rahim tidak pada tempatnya.</li>
+<li>Mata kaki bengkak atau mata bergelambir menandakan ada masalah ginjal dan jantung.</li>
+<li>Ruas ujung jari-jari bengkok ke dalam menandakan adanya masalah batu karang/ginjal dan gout/asam urat.</li>
+<b>Sebab dari masalah ginjal adalah sakit di pinggang, obesitas, kebas ujung jari.</b></ul><p>
+
+<li><b>Masalah Lainnya</b></li><br>
+Selain tanda-tanda seperti yang diuraikan di atas, masih terdapat tanda-tanda lain yang bisa di lihat di telapak tangan, diantaranya adalah:
+<b>a)</b> Apabila kuku bergelombang; strik (bergaris-2) dan telapak tangan keras / terdapat benjolan, ini menandakan keracunan / toksid heavy metal (logam berat).<p>
+
+<b>b)</b> Bawah mata dan telapak tangan terlihat pucat, banyak bintik-bintik putih dan urat berwarna biru tersebar merata menandakan seseorang mengalami masalah tekanan darah rendah atau anemia.  Kondisi ini juga dapat di lihat jika kuku ditekan beberapa saat sampai berwarna putih, dan perlu waktu yang lama untuk kembali kekeadaan normal. Cadangan herba HPA yang digunakan untuk masalah darah rendah adalah Healt B, Spirulina, Teh Herba, Omega 3, Mengkudu.<p>
+
+c) Adanya garisan di tepi perut ibu jari, terlihat bergetar berwarna biru/hijau, ini menandakan adanya masalah tiroid atau masalah gastric/maag (angin dalam usus).  Simptomnya adalah jika letih / lapar terasa sakit di ulu hati.<p>
+
+d) Mata minus atau pernah mengalami kecelakaan (accident), dapat dilihat juga pada ujung jari kelingking yang bengkok.<p>
+
+e) Tanda kadar gula yang tinggi dapat dilihat di punggung jari-jari pas di bawah kuku,  semakin gelap warnanya maka semakin tinggi kadar gulanya.<p>
+
+f) Kuku berwarna agak kemerah-merahan (pink) menunjukan seseorang mudah bingung.<p>
+
+g) Kuku bergelombang menunjukan kelainan (gangguan) pada hati<p>
+
+h) Kuku bergaris menunjukan kelainan (gangguan pada ginjal)<p>
+
+<li><b>Masalah Daya Tahan Tubuh (Sistim Imunity)</b></li><bR>
+
+Dari keseluruhan tanda-tanda yang dijelaskan diatas, adalah baru sebatas indikasi adanya permasalahan pada organ yang bersangkutan. Permasalahan tersebut akan ujud pada pasien apabila sistim imunity tubuhnya dalam keadaan menurun/rendah. Tanda-tanda system imunity rendah adalah:<p>
+
+a)      Ujung Jari manis terlihat bengkok mengindikasikan menurunnya sistim imunity.  Selain itu juga terdapat masalah pada usus kecil  dan usus 12 jari (masalah pencernaan).  Ini ada kaitanya juga dengan masalah empedu, ulu hati dan maag.<p>
+
+b)      Telapak tangan berwama hitam legam menandakan kondisi daya tahan tubuh lemah dan jelek.<p>
+
+c)      Telapak tangan cekung atau berlopak (cukup dalam) menandakan sistim imunity yang rendah, juga menandakan adanya ganguan pada saraf dalaman. Jika diiringi rasa sakit di pundak / belikat, maka pada wanita ada kaitannya dengan rahim/peranakan.  Jika pria ada kaitannya dengan tenaga hayat.<p>
+
+Contoh kasus berlakunya keadaan penyakit yang melibatkan keadaan telapak tangan cekung:<p>
+
+a)      Pada pasien yang berusia lebih dari 40 tahun, jika memiliki telapak tangan yang cekung, ruas jari pertama buncit, adanya sembelit, warna telapak tangan kemerahan dan lembab, maka dapat dipastikan  pasien tersebut telah mengidap kencing manis (diabetes).<p>
+
+b)      Pada pasien wanita dewasa, yang memiliki telapak tangan yang cekung, dan juga mengalami gangguan pada hormon tiroid, telapak tangan kepucat-pucatan/kebiru-biruan, masalah angin yang kronik, masalah alergi maka dapat dipastikan pasien ini telah mengidap penyakit keputihan, fibroid dan endrometriosis.<p>
+
+c)      Ujung jari tengah bengkok, terdapat bintik­-bintik putih, telapak tangan licin, gemuk dan berkeringat, menandakan seseorang mengidap stroke / koleps.<p>
+
+Untuk mendapatkan ketrampilan (skill) dalam menganalisis penyakit melalui telapak tangan diperlukan banyak mempraktekannya pada pasien. Disamping itu belajar pada si pasien sangat membantu dalam meningkatkan ketrampilan ini, yaitu melalui counter cek pertanyaan kepada si pasien.<p> 
+
+  
+<br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+
+<!-- daris sini --><div data-role="page" id="a4" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Cara Lain Mendiagnosa</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Cara Lain Deteksi Telapak Tangan</I></b></center><hr>
+ <p>
+ 
+<center> <img src="images/judul5.png"/< center><p></p></center>
+<hr><p>
+<b>Selain tanda-tanda seperti yang diuraikan di atas, masih terdapat tanda-tanda lain yang bisa di lihat di telapak tangan, diantaranya adalah:</b><p>
+<ul type="circle">
+<li>Apabila kuku bergelombang; strik (bergaris-2) dan telapak tangan keras / terdapat benjolan, ini menandakan keracunan / toksid heavy metal (logam berat).</li>
+
+<li>Bawah mata dan telapak tangan terlihat pucat, banyak bintik-bintik putih dan urat berwarna biru tersebar merata menandakan seseorang mengalami masalah tekanan darah rendah atau anemia. Kondisi ini juga dapat di lihat jika kuku ditekan beberapa saat sampai berwarna putih, dan perlu waktu yang lama untuk kembali kekeadaan normal.</li>
+<li>Adanya garisan di tepi perut ibu jari, terlihat bergetar berwarna biru/hijau, ini menandakan adanya masalah tiroid atau masalah gastric/maag (angin dalam usus). sebabnya adalah jika letih / lapar terasa sakit di ulu hati.</li>
+<li>Mata minus atau pernah mengalami kecelakaan (accident), dapat dilihat juga pada ujung jari kelingking yang bengkok.</li>
+<li>Tanda kadar gula yang tinggi dapat dilihat di punggung jari-jari pas di bawah kuku, semakin gelap warnanya maka semakin tinggi kadar gulanya.</li>
+<li>Kuku berwarna agak kemerah-merahan (pink) menunjukan seseorang mudah bingung</li>
+<li>Kuku bergelombang menunjukan kelainan (gangguan) pada hati</li>
+<li>Kuku bergaris menunjukan kelainan (gangguan pada ginjal)</li></ul><p>
+
+<li><b>Masalah Daya Tahan Tubuh (Sistim Imunity)</b><br>
+Dari keseluruhan tanda-tanda yang dijelaskan diatas, adalah baru sebatas indikasi adanya permasalahan pada organ yang bersangkutan. Permasalahan tersebut akan ujud pada pasien apabila sistim imunity tubuhnya dalam keadaan menurun/rendah.<p> <b>Tanda-tanda system imunity rendah adalah:</b><br>
+<ul type="circle">
+<li>Ujung Jari manis terlihat bengkok mengindikasikan menurunnya sistim imunity. Selain itu juga terdapat masalah pada usus kecil dan usus 12 jari (masalah pencernaan). Ini ada kaitanya juga dengan masalah empedu, ulu hati dan maag.</li>
+<li>Telapak tangan berwama hitam legam menandakan kondisi daya tahan tubuh lemah dan jelek.</li>
+<li>Telapak tangan cekung atau berlopak (cukup dalam) menandakan sistim imunity yang rendah, juga menandakan adanya ganguan pada saraf dalaman.</li><p>
+
+Jika diiringi rasa sakit di pundak / belikat, maka pada wanita ada kaitannya dengan rahim/peranakan. Jika pria ada kaitannya dengan tenaga hayat.<p></ul>
+<b>Contoh kasus berlakunya keadaan penyakit yang melibatkan keadaan telapak tangan cekung:</b><br>
+<ul type="circle">
+<li>Pada pasien yang berusia lebih dari 40 tahun, jika memiliki telapak tangan yang cekung, ruas jari pertama buncit, adanya sembelit, warna telapak tangan kemerahan dan lembab, maka dapat dipastikan pasien tersebut telah mengidap kencing manis (diabetes).</li>
+<li>Pada pasien wanita dewasa, yang memiliki telapak tangan yang cekung, dan juga mengalami gangguan pada hormon tiroid, telapak tangan kepucat-pucatan/kebiru-biruan, masalah angin yang kronik, masalah alergi maka dapat dipastikan pasien ini telah mengidap penyakit keputihan, fibroid dan endrometriosis.</li>
+<li>Ujung jari tengah bengkok, terdapat bintik¬-bintik putih, telapak tangan licin, gemuk dan berkeringat, menandakan seseorang mengidap stroke / koleps.</li></ul><p>
+
+ada cara mudah untuk mengetahui risiko penyakit yang mungkin akan diderita. Bukan melalui cek laboratorium atau menelusuri riwayat kesehatan, tapi sesederhana melihat jari-jari tangan, terutama jari telunjuk dan jari manis.<p>
+
+Mungkin metode ini terdengar tidak masuk akal, tapi beberapa penelitian makin banyak dilakukan untuk mendukung metode ini.<p> Yang terbaru adalah studi yang dimuat dalam <b>British Journal of Cancer</b> yang menyimpulkan bahwa ukuran jari telunjuk yang lebih panjang dari jari tangan lainnya lebih rendah risikonya untuk terkena kanker prostat.<p>
+
+Teorinya begini, panjang jari-jari tangan ditentukan sejak janin di dalam kandungan dan dipengaruhi oleh paparan hormon estrogen dan testosteron.<p> Hormon seks pria, testosteron, memengaruhi panjang jari manis dan hormon estrogen memengaruhi panjang jari telunjuk.<br>
+Sebelum mengetahui risiko penyakit lain, pertama amati jari tangan Anda untuk melihat panjang jari telunjuk dan jari manis.<p>
+
+<b>Jika jari manis lebih panjang dari telunjuk Anda berisiko mengalami penyakit:</b><br>	
+<li><b>Osteoarthritis</b><br> Peneliti dari Universitas Nottingham menemukan orang yang jari manisnya lebih panjang dari jari telunjuk beresiko dua kali lipat menderita osteoarthirits di bagian lututnya. Tim peneliti menyimpulkan hal itu setelah mengukur jari-jari 2.000 orang</li>
+
+<li><b>Anoreksia</b><br> Walau belum disimpulkan, tapi menurut John Manning, ahli biologi, ada bukti-bukti bahwa orang yang menderita anoreksia biasanya punya ukuran jari manis yang panjang.</li>
+
+<li><b>Flu</b><br> Dalam penelitian yang dilakukan Manning terhadap 200 orang di Liverpool ditemukan orang yang jari manisnya panjang cenderung lebih mudah terkena flu. <i>“Hormon testosteron berpengaruh pada sistem imun tubuh sehingga seseorang lebih mudah terpapar infeksi,”</i> katanya.</li>
+
+<li><b>Autisme</b><br> Beberapa penelitian menunjukkan orang dalam kelompok jari manis panjang beresiko lebih tinggi menderita autisme atau ADHD.<br>Kabar baiknya, orang yang jari manisnya panjang cenderung tidak merokok. <i>“Ini karena hormon testosteron berkaitan dengan tipe orang yang ekstrovert. Sementara itu kebiasaan merokok biasanya dilakukan orang yang introvert”</i></li><p>
+
+
+<b>Jika jari telunjuk lebih panjang dari jari manis Anda beresiko terkena penyakit:</b><p>
+
+<li><b>Kanker payudara atau serviks</b><br> Wanita berusia 35-75 tahun yang menderita kanker payudara biasanya memiliki ukuran jari telunjuk lebih panjang. Para peneliti menduga hal itu terkait dengan paparan estrogen di dalam kandungan. Hormon itu diketahui terkait dengan perkembangan kanker payudara.</li>
+
+<li><b>Penyakit jantung</b><br> <i>“Makin panjang ukuran jari manis, makin rendah risiko Anda terkena serangan jantung di usia muda”</i>. Ia berpendapat hormon testosteron bermanfaat untuk melindungi jantung.</li>
+
+<li><b>Bulimia</b><br> <i>“Kaum wanita lebih sering menderita bulimia dibanding pria dan fakta bahwa ukuran jari telunjuk yang panjang terkait bulimia makin menunjukkan bahwa hal ini berhubungan dengan paparan estrogen dalam kandungan,”</i></li>
+<li><b>Asma dan alergi</b></li>
+ 
+ 
+ 
+ <br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+
+<!-- daris sini --><div data-role="page" id="a5" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Deteksi Kuku Jari</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Diagnosa Penyakit Dari Kuku Jari Tangan</I></b></center><hr>
+ <p>
+ 
+<center> <img src="images/judul5.png"/< center><p></p></center>
+<hr><p>
+Sebetulnya semua penyakit dapat dilihat dari luar tubuh manusia. Mata, wajah, lidah dan kuku dapat mencerminkan kesehatan seseorang karena apa yang ada di dalam tubuh kita tercermin ke luar tubuh.<p>
+
+Salah satu bagian tubuh yang dapat mencerminkan kesehatan seseorang adalah kuku jari kita. Kuku jari kita berbentuk seperti bulan sabit yang terbalik, dan dengan ini kondisi kesehatan akan terbaca.<p> Ada beberapa fakta yang aneh (karena jarang dan mungkin belum pernah kita dengar) tentang kuku jari yang harus kita ketahui.<p>
+
+<b>Berikut adalah tanda-tanda yang harus diperhatikan jika muncul pada telapak tangan Anda:</b><p>
+<li><b>Kuku Berubah Warna</b><br>
+Kuku yang sehat seharusnya berwarna merah muda. Jika kuku Anda berubah warna menjadi kuning kehijauan, maka kemungkinan besar Anda terkena infeksi jamur. Selain itu, kuku yang berwarna kuning juga bisa menjadi pertanda penyakit paru-paru.<p> Sementara itu kulit yang terlihat gelap bisa menjadi tanda-tanda psoriasis. Jika ada perubahan warna pada kuku Anda, ada baiknya segera hubungi dokter.<p>
+
+<li><b>Kuku Berbentuk Sendok</b><br>
+Kuku yang sehat terlihat lebar pada bagian bawah dan mengerucut pada bagian atas. Jika kuku Anda terlihat sebaliknya, dan menyerupai sendok, ini merupakan tanda kekurangan zat besi atau anemia.<p>
+
+Anda bisa mengatasinya dengan mengonsumsi suplemen zat besi atau banyak makan sayur yang berdaun. Jika kuku Anda terlihat sedikit menggembung seperti bola, maka ini lebih berbahaya lagi. Kuku yang seperti bola menunjukkan adanya penyakit dalam seperti kanker paru-paru atau penyakit jantung.<p>
+
+<li><b>Benjolan Pada Jari</b><br>
+Benjolan pada jari yang dekat dengan kuku adalah tanda pertama untuk osteoarthritis. Benjolan ini muncul karena penyakit yang menyebabkan persendian merenggang dan memunculkan tulang baru.<p>
+
+<li><b>Tangan Bergetar</b><br>
+Tangan memang biasanya bergetar dalam skala tertentu, namun jika getaran tangan Anda bisa terlihat dan cenderung berlebihan, maka kemungkinan Anda memiliki gejala penyakit Parkinson, yang mempengaruhi sistem saraf.<p>
+
+Namun, terkadang tangan yang gemetar juga bisa disebabkan oleh stres, ketakutan, kebanyakan minum alkohol atau kopi. Anda mungkin juga memiliki getaran tangan yang diturunkan oleh orang tua Anda. Jika tak yakin, segera periksakan pada dokter.<p>
+
+<li><b>Kulit Kering</b><br>
+Kulit yang sangat kering bisa menjadi tanda kelenjar tiroid yang kurang aktif dan menyebabkan kulit kehilangan kelembaban. Ini juga bisa berarti Anda terkena alergi dari sabun atau kosmetik.<p> Tangan juga kehilangan kelembaban ketika wanita mengalami menopause, karena kebanyakan kulit menjadi kering ketika tingkat hormon estrogen wanita menurun.<p>
+
+<li><b>Telapak Tangan Merah</b><br>
+Sejak dulu, dokter melihat tangan yang merah sebagai tanda kelainan lever. Tangan yang terlihat merah disebabkan oleh pembuluh darah yang melebar. Hal ini disebabkan oleh hormon yang tidak seimbang karena kerusakan pada lever.<p>
+
+Tanda merah sering terlihat pada tepi luar pergelangan tangan, pangkal ibu jari, sepanjang pergelangan tangan dan jari kelingking. Tanda-tanda lainnya adalah kuku yang berwarna putih dan kulit yang kuning.<p>
+
+<li><b>Telapak Tangan Berkeringat</b><br>
+Telapak tangan sering menjadi panas dan berkeringat ketika Anda gugup atau cemas. Namun jika hal ini terus terjadi, maka kemungkinan ada ada yang bermasalah dengan kelenjar tiroid Anda.<p> Tiroid yang terlalu aktif menyebabkan peningkatan metabolisme. Ini berarti Anda membakar terlalu banyak kalori dan berkeringat lebih banyak.<p>
+
+Sekarang, coba lihat telapak tangan Anda. Adakah tanda-tanda seperti di atas? Jika iya, maka belum terlambat untuk segera memeriksakan diri ke dokter.<p>
+
+ 
+  <br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+<!-- daris sini --><div data-role="page" id="a6" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Deteksi Dari Kuku Jari Tangan</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Diagnosa Penyakit Dari Kuku Jari Tangan</I></b></center><hr>
+ <p>
+ 
+<center> <img src="images/judul5.png"/< center><p></p></center>
+<hr><p>
+
+Tubuh sering memberikan petunjuk visual yang berhubungan dengan kondisi kesehatan kita. Selain melalui mata, lidah, urine, dan kulit, kita dapat mendeteksi masalah kesehatan dengan mengamati perubahan kondisi tangan.<p>
+
+Perubahan kecil yang terjadi pada telapak tangan, kuku, dan jari, memberikan petunjuk masalah kesehatan yang mungkin tidak kita harapkan. Kenali perubahan mendasar yang perlu disadari berikut ini, seperti dilansir oleh Times of India<p>
+
+<b>* Telapak tangan berkeringat.</b><bR>
+Saat cemas atau gugup wajar telapak tangan berkeringat. Namun, jika berkeringat setiap saat tanpa sebab yang jelas dan sulit untuk mengontrol, bisa jadi kita mengalami gangguan kelenjar tiroid atau penyakit jantung. Munculnya keringat tanpa terkendali di telapak tangan dapat disebabkan oleh kelenjar tiroid yang terlalu aktif, hingga menyebabkan peningkatan metabolisme. Membuat tubuh membakar kalori berlebih yang menyebabkan suhu tubuh meningkat dan berkeringat tanpa terkendali di bagian tubuh tertentu.<p>
+
+<b>* Telapak tangan memerah.</b><bR>
+Kondisi telapak tangan yang memerah bisa menjadi tanda gangguan hati. Ini mungkin terjadi karena pelebaran pembuluh darah dalam merespon ketidakseimbangan hormon yang dipicu oleh kerusakan hati. Perubahan warna telapak tangan umumnya muncul di sekitar pergelangan tangan dari pangkal ibu jari dan jari kelingking. Selain gangguan hati, kondisi ini juga sering memberikan gejala penyakit seperti rematik arthritis dan gangguan tiroid.<p>
+
+<b>* Tangan gemetar.</b><bR>
+Semua orang pasti pernah merasakan gemetar di tangan. Tentu saja, ketika dalam keadaan cemas, panik, atau kelelahan karena memegang beban berat. Ini akan menjadi tidak wajar jika gemetar terjadi tanpa sebab dan sulit untuk mengontrol. Merasakan gemetar tak terkendali di tangan bisa menjadi peringatan dini dari serangan Parkinson, penyakit yang mempengaruhi sistem saraf seperti gangguan gerakan otot tubuh. Jangan menunda untuk berkonsultasi dengan dokter jika Anda mengalami masalah seperti ini.<p>
+
+<b>* Kuku berubah warna.</b><bR>
+Kuku yang sehat cenderung memiliki warna merah muda. Jika terlihat warna kuku  menunjukkan semburat kuning kehijauan, kemungkinan infeksi jamur. Dalam kasus-kasus tertentu, perubahan warna tersebut bisa jadi tanda awal penyakit paru-paru. Sementara noda kecokelatan seperti tahi lalat pada garis kuku dapat menjadi indikasi penyakit psoriasis kulit. Apapun itu, Anda tidak perlu menunda untuk berkonsultasi dengan dokter jika melihat perubahan yang tidak biasa pada kuku.<p>
+
+<b>* Kuku berbentuk sendok</b><bR>
+Kondisi kuku yang sehat umumnya berbentuk sedikit melengkung dengan posisi mengarah ke bawah kuku. Jadi, jika kuku Anda terlihat berlawanan atau cekung ke atas seperti sendok, segera konsultasikan ke dokter karena ini menunjukkan gejala kekurangan zat besi atau anemia. Kuku rapuh yang tampak tidak wajar juga dapat menjadi tanda masalah kesehatan yang lebih serius seperti kanker paru-paru dan penyakit jantung.<p>
+
+<b>* Muncul benjolan di jari.</b><bR>
+Jika Anda melihat benjolan kecil di dekat kuku jari, itu bisa jadi tanda awal dari osteoarthritis. Benjolan yang mungkin timbul akibat kehilangan ruang sendi sehingga sendi membengkak seperti bentuk tulang baru. Wanita lebih rentan terhadap kondisi tersebut.<p>
+
+<b>* Kulit tangan kering. </b><bR>
+Kondisi ini sering memberikan petunjuk awal gangguan tiroid yang memicu hilangnya kelembaban kulit. Juga mengindikasikan terjadinya alergi atau gangguan sensitivitas kulit yang disebabkan oleh pemakaian produk kosmetik tertentu.<p>
+
+Bagaimana kondisi tangan Anda saat ini? Semoga Anda sehat-sehat selalu.
+
+<br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+<!-- daris sini --><div data-role="page" id="a7" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Deteksi Kondisi Tangan </h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Kondisi Tangan Yang Menandakan Gangguan Kesehatan</I></b></center><hr>
+ <p>
+ 
+<center> <img src="images/judul5.png"/< center><p></p></center>
+<hr><p>
+
+Tangan adalah bagian tubuh yang paling penting untuk melakukan aktifitas sehari-hari mulai dari mengetik, menulis, mengambil barang dan lain-lain. Hal ini menyebabkan orang seringkali menyepelekan perubahan kondisi tangan yang merupakan pertanda gejala-gejala penyakit yang bisa jadi berbahaya.<p>
+
+Berikut adalah 7 petunjuk penting yang dapat diungkapkan oleh tangan mengenai kesehatan manusia:<p>
+
+<b>1. Noda merah pada telapak tangan</b><bR>
+Dalam jangka pendek, telapak tangan berwarna merah dapat disebabkan mencengkeram benda terlalu keras, terlalu lama mencuci tangan atau mengangkat teko yang masih panas.<p>
+
+Pada ibu hamil, telapak tangan merah adalah kondisi yang normal karena aliran darah yang meningkat menyebabkan kemerahan pada perempuan.<p>
+
+Tetapi jika telapak tangan tetap memerah untuk jangka waktu yang panjang, kondisi ini disebut eritema palmaris, yaitu tanda penyakit hati kronis (sirosis) dan penumpukan lemak pada hati.<p>
+
+"Peradangan hati secara bertahap mengganggu kinerja hati sehingga hati tidak lagi mampu membuang limbah dari tubuh secara efisien," kata Blanchard. Hasilnya adalah kelebihan hormon-hormon yang pada gilirannya menyebabkan pembuluh darah di tangan dan kaki membesar sehingga dapat terlihat dari kulit.<p>
+
+Jika hal ini terjadi, segera periksa ke dokter untuk mengevaluasi gejala lain penyakit hati seperti kaki dan perut bengkak, urat yang menonjol pada perut dan tubuh bagian atas, serta kelelahan. Tes yang paling umum untuk mengetahui kerusakan hati adalah mengukur jumlah bilirubin dan enzim hati.<p>
+
+<b>2. Panjang jari</b><bR>
+Perbandingan panjang jari dapat memberitahu kemungkinan penyakit tertentu. Jari manis pria cenderung lebih panjang daripada jari telunjuknya, namun sebaliknya pada wanita.<p>
+
+Wanita dengan pola 'maskulin' memiliki jari manis lebih panjang daripada jari telunjuknya dan dua kali lebih berisiko menderita osteoartritis, demikian menurut penelitian tahun 2008 yang diterbitkan dalam jurnal Arthritis and Rheumatism.<p>
+
+Penelitian ini menemukan bahwa osteoartritis lutut lebih umum ditemui pada pria dan wanita dengan jari manis yang lebih panjang, tetapi efeknya paling menonjol pada wanita.<p>
+
+Jari telunjuk yang lebih panjang juga dikaitkan dengan tingginya risiko kanker payudara pada wanita dan risiko kanker prostat pada pria. Sebuah penelitian tahun 2010 menemukan bahwa laki-laki yang jari telunjuknya lebih panjang dari jari manis 33 persen lebih berisiko terserang kanker prostat.<p>
+
+Para ilmuwan belum yakin mengapa, tetapi percaya bahwa panjang jari dipengaruhi oleh jumlah hormon testosteron dan estrogen di dalam rahim.<p>
+
+Jari manis yang lebih panjang mengindikasikan paparan testosteron yang tinggi ketika dalam kandungan, sementara jari telunjuk yang lebih panjang menunjukkan paparan estrogen yang lebih tinggi.<p>
+
+Karena estrogen adalah bahan bakar kanker payudara, jari telunjuk yang lebih panjang berkorelasi dengan risiko kanker payudara yang lebih tinggi. Pada pria, testosteron yang lebih banyak terkait risiko kanker prostat yang lebih tinggi.<p>
+
+Wanita yang memiliki jari manis lebih panjang sebiknya waspada terhadap gejala lemah sendi, terutama di lutut. Pria yang berisiko tinggi terkena kanker prostat harus proaktif melakukan pengetesan kanker. Perempuan yang berisiko tinggi terserang kanker payudara sebaiknya menjalani mammogram atau menjadwalkan MRI.<p>
+
+Beberapa peneliti percaya bahwa panjang jari sebaiknya digunakan sebagai kriteria untuk mencari tahu keberadaan kanker secara komprehensif. Namun gagasan ini masih diperdebatkan.<p>
+
+<b>3. Jari bengkak</b><Br>
+Jari bengkak dapat terjadi karena penyebab sederhana seperti cuaca panas akan mengalami menstruasi, atau terlalu banyak makan makanan asin.<p>
+
+Tetapi jika jari-jari terasa tebal dan kaku atau tidak muat dimasuki cincin setelah banyak minum atau mengurangi makanan asin, pembengkakan dapat jadi pertanda kekurangan hormon tiroid (hipotiroidisme).<p>
+
+Ketika tiroid kurang aktif, hormon-hormon penting yang mengatur metabolisme dan menjaga fungsi tubuh dengan benar juga berkurang. Dan ketika metabolisme melambat, hasilnya adalah pertambahan berat badan dan pengumpulan air.<p>
+
+"Salah satu tempat pertama yang dapat dilihat bahwa berlebihnya air adalah jari. Yang bersangkutan juga dapat merasakan jari-jari terasa kaku karena sulit ditekuk," kata Kenneth Blanchard, endokrinologi yang menulis 'What Your Doctor May Not Tell You About Hypothyroidism'.<p>
+
+Mintalah kepada dokter untuk melakukan pemeriksaan tiroid secara rutin dengan tes darah untuk mengukur tingkat thyroid-stimulating hormone atau TSH. Pastikan dokter menyadari pedoman skrining baru yang menyatakan bahwa tingkat TSH harus antara 0,3 dan 3,0.<p>
+
+<b>4. Kuku pucat</b><Br>
+Dalam keadaan normal, kuku yang ditekan akan menjadi putih. Dan ketika tekanan dilepas, kuku berubah merah muda lagi. Jika kuku tetap putih lebih dari satu menit setelah ditekan atau terlihat pucat sepanjang waktu, bisa jadi pertanda anemia.<p>
+
+Anemia atau kekurangan zat besi menyebabkan kuku pucat kerana tidak cukup terdapat sel darah merah yang beredar dalam aliran darah. Jika tidak diobati dari waktu ke waktu, kekurangan zat besi yang parah juga dapat menyebabkan kuku berbentuk sedikit cekung.<p>
+
+Jika anemia adalah penyebab kuku pucat, garis tipis di bagian bawah kuku cenderung terlihat sangat pucat.<p>
+
+"Kekurangan zat besi dapat menyebabkan kelelahan. Gejala ini dapat diobati dengan cara meningkatkan asupan makanan yang kaya zat besi seperti seperti bayam, daging merah, sayuran hijau, dan kacang-kacangan. Tetapi mungkin perlu mengkonsumsi suplemen zat besi juga," kata Blanchard.<p>
+
+Jika zat besi menyebabkan masalah pencernaan, sebaiknya minum formula anti sembelit. Akan lebih baik jika mengkonsumsi vitamin C pada saat yang sama karena membantu penyerapan zat besi.<p>
+
+<b>5. Garis-garis kecil berwarna merah di bawah kuku</b><br>
+Garis-garis ini disebut sempalan perdarahan karena terlihat seperti serpihan kecil berwarna merah atau kecoklatan di bawah kuku. Ini dapat menjadi pertanda infeksi jantung atau darah. Seiring dengan arah pertumbuhan kuku, area ini menyerupai pecahan yang terjebak di bawah kuku.<p>
+
+Serpihan perdarahan terjadi ketika gumpalan darah menghambat aliran darah dalam pembuluh kapiler kecil di bawah kuku. Gejala ini paling sering terjadi karena infeksi pada katup jantung yang disebut subacute bacterial endocarditis.<p>
+
+Jika terdapat bintik-bintik merah di bawah kuku namun tidak pernah didiagnosis dengan masalah jantung, jangan panik. Kemungkinan besar ini disebabkan hal lain. Bisa jadi hanya luka pada tangan.<p>
+
+Periksalah suhu tubuh untuk memastikan kemungkinan demam, sebab bacterial endocarditis biasanya disertai dengan demam ringan. Jika belum pernah diperiksa namun cemas tentang gejala-gejala ini, hubungi dokter untuk dilakukan pemeriksaan.<p>
+
+Dokter akan menjalankan serangkaian tes untuk mengevaluasi aliran darah di jantung.<p>
+
+<b>6. Ujung jari yang tebal dan bulat</b><bR>
+Penebalan ujung jari bisa jadi tanda penyakit jantung atau paru-paru. Biasanya terlihat juga pembulatan kuku sehingga jari-jari terlihat melengkung ke bawah.<p>
+
+Jika sistem peredaran darah dari jantung atau paru-paru terganggu, kadar oksigen dalam darah cenderung menurun. Seiring waktu, hal ini menyebabkan jaringan pada bantalan jari tumbuh, sehingga ujung jari tampak menonjol keluar.<p>
+
+Jika jari-jari tangan dan kaki telah menebal, kemungkinan sudah terjadi gejala lain seperti sesak napas atau batuk kronis. Penebalan juga terjadi pada penyakit katup jantung yang menyebabkan kelelahan dan nyeri dada. Temui dokter untuk memeriksa jantung dan paru-paru secara menyeluruh.<p>
+
+<b>7. Ujung jari berwarna biru</b><bR>
+Ujung jari berwarna abu-abu, kebiru-biruan, atau mati rasa dapat menjadi tanda gangguan sirkulasi yang dikenal sebagai penyakit Raynaud atau sindrom Raynaud.<p>
+
+Sindrom Raynaud menyebabkan kejang mendadak sementara dalam pembuluh darah dan arteri. Arteri menyempit dan menyulitkan aliran darah ke tangan dan jari. Gejalanya adalah ujung jari mati rasa, semburat kebiruan, serta tangan terasa dingin.<p>
+
+Sebanyak 5 hingga 10 persen orang dari populasi mengalami kondisi ini. Sindrom Raynaud lebih sering terjadi pada wanita dibandingkan pria dan memburuk dalam cuaca dingin. Bisa juga disebabkan karena stres.<p>
+
+Perubahan suhu mendadak, misalnya memegang es batu, dapat meyebabkan sindrom Raynaud. Pakailah sarung tangan jika pergi ke luar rumah dalam cuaca dingin, karena dingin merupakan salah satu pemicu utama sindrom Raynaud. Suhu di bawah 15 derajat Celcius sudah menjadi masalah bagi penderita sindrom Raynaud.<p>
+
+Sangat penting untuk tidak mengabaikan gejala ini, karena serangan sindrom Raynaud dari waktu ke waktu dapat membatasi sirkulasi dan menyebabkan kerusakan jaringan.<p>
+
+Cara terbaik untuk mencegahnya adalah mengubah gaya hidup untuk menjaga sirkulasi darah tetap sehat. Merokok dan kafein dapat menyempitkan pembuluh darah. Berhentilah merokok dan kurangi kopi, teh, dan cola. Perbanyak latihan aerobik untuk meningkatkan denyut jantung dan membuat darah tetap terpompa.<p>
+
+<br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+
+<!-- daris sini --><div data-role="page" id="a8" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Telapak Tangan Pucat </h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Telapak Tangan Pucat Berkaitan dengan Anemia</I></b></center><hr>
+ <p>
+<center> <img src="images/judul5.png"/< center><p></p></center>
+<hr><p>
+
+
+Kondisi telapak tangan normal umumnya memiliki warna kemerahan. Lalu, apakah telapak tangan pucat berkaitan dengan anemia?<p>
+
+Di dalam tubuh, aliran darah dapat mencapai ke bagian tepi organ tubuh (perifer), salah satunya adalah tangan, termasuk telapak tangan. Fungsi hemoglobin dalam tubuh adalah mengikat oksigen agar dapat dialirkan ke seluruh tubuh. Aliran tubuh manusia berasal dari jantung sampai ke seluruh tubuh, mencapai bagian tepi organ tubuh/perifer, seperti telapak tangan.<p>
+
+Telapak tangan yang pucat biasanya berkaitan dengan tidak adekuatnya aliran darah tersebut karena oksigen yang dibawa oleh hemoglobin tidak mencukupi. Umumnya, telapak tangan yang memiliki kadar hemoglobin yang normal akan berwarna kemerahan, sedangkan telapak tangan yang berwarna agak pucat dapat diindikasikan dengan kurangnya kadar hemoglobin.<p>
+
+Dalam mendiagnosis anemia, dokter biasanya akan melakukan pemeriksaan sebagai berikut:<p>
+
+1.	Mengetahui tanda dan gejala anemia, misalnya mudah lelah, tidak dapat berkonsentrasi, adanya riwayat perdarahan, timbul keluhan sakit kepala yang berulang, adanya konsumsi makanan yang tidak adekuat dalam memenuhi kebutuhan zat besi, adanya penurunan berat badan, dan adanya kemungkinan penyakit kronis atau penyakit kelainan darah lainnya.<p>
+
+2.	Melakukan pemeriksaan fisik. Selain pada telapak tangan yang pucat, pemeriksaan fisik yang berkaitan dengan anemia juga dapat dilihat dari konjungtiva mata yang tampak pucat pada ke dua mata, ada atau tidaknya pembesaran hati dan limpa, adanya bengkak pada kaki (biasanya berkaitan dengan anemia yang disebabkan oleh penyakit ginjal), adanya kelainan tonus otot yang melemah, dan juga diperlukan pemeriksaan fisik pada anus (berkaitan dengan perdarahan dan juga curiga tumor/kanker).<p>
+
+3.	Pemeriksaan laboratorium dan pemeriksaan penunjang lain. Selain memeriksa kadar hemoglobin, dokter juga perlu mencari penyebab anemia yang terjadi. Adakah kelainan anemia yang terjadi berhubungan dengan penyakit tertentu, seperti penyakit kronik gangguan ginjal, jantung dan penyakit kronik lainnya. Dokter akan melakukan pemeriksaan sesuai dengan indikasi medis yang diderita setiap pasien. Dan pasien akan diberikan tatalaksana yang sesuai dengan kondisi penyakit yang dialaminya.<p>
+
+Adakalanya anemia yang diderita karena nutrisi yang tidak adekuat. Penanganan anemia tergantung dari penyebabnya. Jika penyebabnya adalah karena kekurangan zat besi, maka dapat diberikan suplemen zat besi, dan penerapan pola hidup sehat dengan mengonsumsi makanan yang kaya akan zat besi.
+Jadi, apabila Anda memiliki telapak tangan yang pucat disertai dengan gejala dan tanda penyakit seperti yang telah disebutkan di atas, jangan ragu untuk segera memeriksakan diri Anda ke dokter.<p>
+
+<br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+
+<!-- daris sini --><div data-role="page" id="a9" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Warna Telapak Tangan</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Deteksi Penyakit Dari Warna Telapak Tangan</I></b></center><hr>
+ <p>
+<center> <img src="images/judul5.png"/< center><p></p></center>
+<hr><p>
+
+Tidak sedikit yang tahu bahwa warna telapak tangan dapat menunjukkan kondisi kesehatan sekaligus kepribadian.<p>
+
+Kita dapat melihat banyak hal dari orang itu dari telapak tangan mereka.<p>
+
+Dari mulai karir, kehidupan, keberuntungan atau apa pun yang berhubungan dengan hidup dapat ditunjukkan dari warna telapak tangan.
+Tahu kah Moms jika sebagian orang mempunyai warna telapak tangan yang berbeda dengan telapak tangan kita?
+Tidak sedikit yang tahu bahwa warna telapak tangan dapat menunjukkan kondisi kesehatan sekaligus kepribadian.<p>
+
+Kita dapat melihat banyak hal dari orang itu dari telapak tangan mereka.<p>
+
+Dari mulai karir, kehidupan, keberuntungan atau apa pun yang berhubungan dengan hidup dapat ditunjukkan dari warna telapak tangan.
+Berikut arti dari setiap warna telapak tangan orang - orang.<p>
+
+<b>1. Telapak tangan merah muda</b><br>
+
+Merah mudah adalah warna yang sebagian besar orang miliki.<p>
+
+Warna ini menunjukkan bahwa mereka mempunyai kehidupan yang disiplin dan seimbang.
+Mulai pola makan, gaya hidup, pendidikan sampai kesejahteraan berada pada tempatnya.<p>
+
+Jika telapak tangan Moms berwarna ini berarti Moms termasuk orang yang sehat.
+Selain itu, warna ini menunjukkan, mereka pemikir hebat.<p>
+
+<b>2. Telapak tangan merah</b><bR>
+Orang - orang dengan warna telapak tangan ini akan mudah menarik perhatian karena jarang sekali orang yang memilikinya.
+Jika Kalian mempunyai warna telapak tangan merah, Moms adalah seorang pekerja keras dan suka menjadi pekerja sosial.<p>
+
+Warna merah menunjukkan emosi mereka sehinggga orang ini akan cocok jika bekerja yang membutuhkan tenaga dari pada pikiran.<p>
+
+<b>3. Telapak tangan kuning</b><bR>
+Orang dengan telapak tangan ini harus berhati - hati karena ini dikaitkan dengan masalah kesehatan seperti penyakit kuning.
+Mereka lebih rentan terhadap stres, cemas, khawatir, dan terlalu banyak berpikir.<p>
+
+Selain itu, mereka lebih mendengarkan isi hati dan akan kesal jika suatu hal berubah menjadi negatif. 
+Sehingga mereka akan mudah tertekan dan pendiam setelahnya.<p>
+
+<b>4. Telapak tangan putih & pucat</b><bR>
+Jika Moms memiliki telapak tangan dengan warna ini, Moms adalah sosok yang tenang tetapi bisa membuat orang di sekitarnya tertawa geli.
+Mereka adalah sosok yang lembut saat berbicara, bertingkah laku baik, dan mereka menghargai apa yang telah diberikan kepada mereka.
+Selain itu, mereka menikmati setiap proses dalam hidup.<p>
+
+Di sisi lain, orang ini tidak memiliki ekspektasi terhadap orang lain dan biasanya akan menjadi sosok yang dingin kepada orang lain.<p>
+
+<br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+
+<!-- daris sini --><div data-role="page" id="a10" data-theme="c"><div data-role="header" data-position="fixed" data-theme="a"><h1>Titik Akupuntur Telapak Tangan</h1><!-- untuk judul di header --></div><div data-role="content"><center><b><I>Deteksi Penyakit Dari Titik Akupuntur Telapak Tangan</I></b></center><hr>
+ <p>
+<center> <img src="images/judul5.png"/< center><p></p></center>
+<hr><p>
+
+
+
+Berikut ini adalah beberapa hubungan tangan dengan meredian syaraf dan tanda-tanda yang dapat membantu kita mendeteksi penyakit:<p>
+
+<b>1.Meredian Paru-Paru</b><p>
+
+Dimulai dari titik di sisi luar atas ibu jari tepat di bawah kuku ibu jari. melintasi gunung-gunungan jempol.jalur ini berhubungan dengan paru-paru dan saluran pernafasan. bila di pijat terasa sakit berarti si penderita terkena flu, asma, infeksi saluran pernafasan dan lain-lain. Bila ibu jari kanan yang sakit berarti organ pernafasan kanan yang sakit, begitu juga sebaliknya.<p><br>
+
+<B>2. Meredian Jantung</B><p>
+
+Dimulai dari titik bawah kuku kelingking sebelah dalam. melinatasi gunung-gunungan di bawah jari kelingking. jalur ini berhubungan dengan jantung dan peredaran darah. bila di pijat sakit berarti si penderita mengalami gangguan dengan jantung atau penyakit yang berhubunngan dengan ginjal, mengompol, rasa tidak enak dalam dada, berdebar-debar, pusing, pikiran tegang dll.<p><br>
+
+<b>3.  Meredian Selaput Jantung</b><p>
+
+Dimulai dari titik yang terletak di bawah kuku jari tengah melintasi telapak tangan bagian tengah.jalur ini mempengaruhi kegiatan jantung, peredaran darah, usus kecil. bila di pijat sakit berarti pasien dalam keadaan gelisah, sakit mullut, sakit perut, juga sakit kelainan pada limfa.<p><br>
+
+<B>4.  Meredian usus besar</B><P>
+
+Dimulai dari bawah kuku jari telunjuk melewati punggung tangan. Bila di pijat sakit berarti pasien mengalami gangguan sistem pencernaan, pundak dan bahu terasa nyeri, sakit kepala depan, sakit di pinggang, bokong dan paha.<P><Br>
+
+<B>5.  Meredian Usus Kecil</B><P>
+
+Di mulai dari titik yang terletak di bawah kuku jari kelingking sebelah luar melewati punggung tangan sebelah luar. Jalur ini berhubungan dengan usus kecil. bila di pijat sakit berarti pasien mengalami sembelit, sakit di bagian perut, sakit bagian kepala belakang, nyeri tangan.<P><Br>
+
+<b>6.  Meredian Tri Pemanas</b><P>
+
+Dimulai dari titik yang terletak di bawah kuku jari manis. meredian ini mengatur sistem lymfe dan sistem hormonal. bila di pijat sakit berarti penderita mengalami suhu badan yang panas atau dingin, migrain, nyeri dada, kolik kandung empedu.<P><BR>
+
+Dari telapak tangan dan punggung kita dapat mengetahui penyakit yang ada di tubuh kita dengan cepat dan jelas. Menurut ilmu akupuntur tradisional, dengan melihat warna, elastisitas daging dan otot tangan serta kelembabannya, dapat menolong mengurangi dan menyembuhkan penyakit yang bersarang di tubuh kita.<P><Br>
+
+<B>Gangguan usus besar/Sembelit</B><P>
+
+1. Garis ruas jari pada pungung tangan berwarna gelap warnanya, mengindikasikan sembelit yang semakin parah<P>
+
+2. garis-garis pada telapak tangan dan ruas seluruh jari tangan berwarna gelap, indikasi sembelit semakin parah<P>
+
+3. ada bayangan kehitaman secara keseluruhan dari telapak tangan, menandakan sembelit lebih kronik dari pada garis berwarna gelap pada ruas jari<P>
+
+4. jari telunjuk dan jari tengah di renggangkan terasa sakit<P>
+
+5. ibu jari ( jempol) bengkok, biasanya bengkok kearah belakang<P>
+
+6. jari telunjuk bengkok ( kekiri, kekanan atau ke belakang juga mengindikasikan adanya permasalahan pada usus besar<P><Br>
+
+<B>Masalah Angin</B><P>
+
+Masalah angin pada seseorang bisa di lihat dari warna telapak tangannya,  warna yang tidak merata ( terdapat bintik-bintik warna atau putih) mengindikasikan bahwa di tubuh terdapat banyak angin. warna dasar telapak tangan adalah putih atau merah, apabila warna dasar telapak tangan putih maka gangguan angin di  tandai dengan bintik-bintik merah pada telapak tangan, sedangkan apabila warna dasar telapak tangan merah maka gangguan di tandai dengan adanya bintik-bintik warna putih.<P><Br>
+
+<b>Masalah Jantung</b><P>
+
+Tanda-tanda yang nampak apabila ada gangguan jantung sebagai berikut:<p>
+
+1. Jari kelingking bengkok<p>
+
+2.  jari tenggah bengkok. indikasi gangguan pembungkus jantung ( perikardium)<p>
+
+3. Telapak tangan berkeringat. indikasi gangguan jantung, paru-paru, sesak nafas dan stress.<p>
+
+4. kuku bergelombang<p><bR>
+
+<b>Masalah Ginjal</b><P>
+
+Masalah ginjal di tandai dengan tanda-tanda di tangan sebagai berikut:<P>
+
+1. Ruas pertama seluruh jari terlihat kembung (bengkak air)<P>
+
+2. Ruas pertama jari telunjuk keriput, indikasi kurang air atau sering menahan air kencing<P>
+
+3. Terasa sakit di tiga Jari ( ibu jari, telunjuk dan jari tengah)<P>
+
+4. ujung-ujung jari relatif tidak meruncing menandakan seseorang mengalami masalah ginjal, untuk wanita biasanya letak rahim tidak pada tempatnya.<P>
+
+5. mata kaki bengkak atau mata berkantong, indikasi masalah ginjal dan jantung.<P>
+
+6. ruas ujung-ujung jari bengkok.<P>
+
+
+
+<br/><br/><br/><center>
+<div data-role="footer" data-position="fixed">
+<a href="javascript:pageScroll()" data-icon="arrow-d"data-theme="a">Scroll</a>
+<a href="javascript:stopScroll()" data-icon="minus" data-theme="a">Stop</a>
+<a href="index.html" data-icon="grid" data-theme="a">Menu</a></div><!--content--></div> <!--page--></div></center><!-- sampai sini -->
+
+
+</body>
+</html>
